@@ -1,0 +1,2 @@
+cat: '*R1_001.fastq.gz': No such file or directory
+Error response from daemon: Cannot kill container: nxf-AuGmzjEleeAbyDbAAllgwzoO: Container 00979ac462c1bf12c624bf394525bf45028396f2070a3edf86b43655c540534e is not running

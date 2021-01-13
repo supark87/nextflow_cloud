@@ -1,0 +1,6 @@
+#File	19ANBe00D0065PfFxxx0_S9_L001_R1.fastq.gz	19ANBe00D0065PfFxxx0_S9_L001_R2.fastq.gz
+#Total	9182
+#Matched	10	0.10891%
+#Name	Reads	ReadsPct
+Nextera_transposase_read2	7	0.07624%
+Nextera_transposase_read1	3	0.03267%

@@ -1,0 +1,24 @@
+java -Djava.library.path=/usr/local/bbmap/jni/ -ea -Xmx1g -Xms1g -cp /usr/local/bbmap/current/ jgi.BBDukF -Xmx1g k=27 hdist=1 edist=1 ktrim=l in=19ANBe00D0066PfFxxx0_S10_L001_R1.fastq.gz in2=19ANBe00D0066PfFxxx0_S10_L001_R2.fastq.gz out=19ANBe00D0066PfFxxx0_S10_L001_trimmed_R1.fastq ref=adapters.fa qtrim=rl minlength=100 out2=19ANBe00D0066PfFxxx0_S10_L001_trimmed_R2.fastq stats=19ANBe00D0066PfFxxx0_S10_L001_stats.txt
+Executing jgi.BBDukF [-Xmx1g, k=27, hdist=1, edist=1, ktrim=l, in=19ANBe00D0066PfFxxx0_S10_L001_R1.fastq.gz, in2=19ANBe00D0066PfFxxx0_S10_L001_R2.fastq.gz, out=19ANBe00D0066PfFxxx0_S10_L001_trimmed_R1.fastq, ref=adapters.fa, qtrim=rl, minlength=100, out2=19ANBe00D0066PfFxxx0_S10_L001_trimmed_R2.fastq, stats=19ANBe00D0066PfFxxx0_S10_L001_stats.txt]
+Version 38.20
+
+0.089 seconds.
+Initial:
+Memory: max=1073m, total=1073m, free=1044m, used=29m
+
+Added 2488 kmers; time: 	0.402 seconds.
+Memory: max=1073m, total=1073m, free=1039m, used=34m
+
+Input is being processed as paired
+Started output streams:	0.344 seconds.
+Processing time:   		1.495 seconds.
+
+Input:                  	8572 reads 		1026602 bases.
+QTrimmed:               	0 reads (0.00%) 	0 bases (0.00%)
+KTrimmed:               	10 reads (0.12%) 	1594 bases (0.16%)
+Total Removed:          	4368 reads (50.96%) 	280856 bases (27.36%)
+Result:                 	4204 reads (49.04%) 	745746 bases (72.64%)
+
+Time:                         	2.367 seconds.
+Reads Processed:        8572 	3.62k reads/sec
+Bases Processed:       1026k 	0.43m bases/sec

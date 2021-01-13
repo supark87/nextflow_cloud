@@ -1,0 +1,428 @@
+Jan-06 12:05:18.768 [main] DEBUG nextflow.cli.Launcher - $> nextflow run trim1testVCF8.nf -with-docker 'tools:latest' -resume
+Jan-06 12:05:18.894 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 20.07.1
+Jan-06 12:05:18.910 [main] INFO  nextflow.cli.CmdRun - Launching `trim1testVCF8.nf` [elated_engelbart] - revision: ba5de39ac0
+Jan-06 12:05:18.931 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /Users/subinpark/Downloads/from_jehoon/nextflow.config
+Jan-06 12:05:18.932 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/subinpark/Downloads/from_jehoon/nextflow.config
+Jan-06 12:05:18.961 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Jan-06 12:05:19.351 [main] DEBUG nextflow.config.ConfigBuilder - Enabling execution in Docker container as requested by cli option `-with-docker tools:latest`
+Jan-06 12:05:19.397 [main] DEBUG nextflow.Session - Session uuid: fcf66518-1992-4117-b0ea-8f170f95b665
+Jan-06 12:05:19.398 [main] DEBUG nextflow.Session - Run name: elated_engelbart
+Jan-06 12:05:19.398 [main] DEBUG nextflow.Session - Executor pool size: 16
+Jan-06 12:05:19.457 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 20.07.1 build 5412
+  Created: 24-07-2020 15:18 UTC (11:18 EDT)
+  System: Mac OS X 10.15.7
+  Runtime: Groovy 2.5.11 on Java HotSpot(TM) 64-Bit Server VM 11.0.8+10-LTS
+  Encoding: UTF-8 (UTF-8)
+  Process: 74471@adminusers-MBP.attlocal.net [192.168.1.116]
+  CPUs: 16 - Mem: 32 GB (10.2 GB) - Swap: 26 GB (1.2 GB)
+Jan-06 12:05:19.487 [main] DEBUG nextflow.Session - Work-dir: /Users/subinpark/Downloads/from_jehoon/work [Mac OS X]
+Jan-06 12:05:19.488 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/subinpark/Downloads/from_jehoon/bin
+Jan-06 12:05:19.533 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
+Jan-06 12:05:19.535 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jan-06 12:05:19.736 [main] DEBUG nextflow.Session - Session start invoked
+Jan-06 12:05:20.250 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jan-06 12:05:20.259 [main] DEBUG nextflow.Session - Workflow process names [dsl1]: GenerateVCFHap, combineFastq, postFastQC, annotate, trimFastq, GenerateVCFSam, vartpype, alignReads, spread, processAlignments, GenerateVCFHFree, filter, extract, merge, buildIndex, summarize, preFastQC
+Jan-06 12:05:20.294 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: fq/; pattern: **{R1,R2}*.fastq.gz; options: [:]
+Jan-06 12:05:20.429 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-06 12:05:20.430 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-06 12:05:20.434 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Jan-06 12:05:20.441 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=16; memory=32 GB; capacity=16; pollInterval=100ms; dumpInterval=5m
+Jan-06 12:05:20.581 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-06 12:05:20.581 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-06 12:05:20.601 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-06 12:05:20.601 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-06 12:05:20.620 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-06 12:05:20.620 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-06 12:05:20.634 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-06 12:05:20.634 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-06 12:05:20.649 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-06 12:05:20.649 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-06 12:05:20.668 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-06 12:05:20.668 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-06 12:05:20.684 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-06 12:05:20.684 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-06 12:05:20.695 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-06 12:05:20.696 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-06 12:05:20.709 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-06 12:05:20.709 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-06 12:05:20.722 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-06 12:05:20.722 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-06 12:05:20.735 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-06 12:05:20.735 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-06 12:05:20.743 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-06 12:05:20.744 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-06 12:05:20.750 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-06 12:05:20.750 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-06 12:05:20.758 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-06 12:05:20.758 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-06 12:05:20.767 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-06 12:05:20.767 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-06 12:05:20.778 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-06 12:05:20.779 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-06 12:05:20.784 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Jan-06 12:05:20.784 [main] DEBUG nextflow.Session - Session await
+Jan-06 12:05:20.865 [Actor Thread 9] INFO  nextflow.processor.TaskProcessor - [97/ce3c79] Cached process > combineFastq (7)
+Jan-06 12:05:20.865 [Actor Thread 1] INFO  nextflow.processor.TaskProcessor - [3f/482fbd] Cached process > combineFastq (1)
+Jan-06 12:05:20.865 [Actor Thread 18] INFO  nextflow.processor.TaskProcessor - [bf/7ddfa1] Cached process > combineFastq (16)
+Jan-06 12:05:20.865 [Actor Thread 17] INFO  nextflow.processor.TaskProcessor - [bb/cb5e3f] Cached process > combineFastq (15)
+Jan-06 12:05:20.865 [Actor Thread 12] INFO  nextflow.processor.TaskProcessor - [fc/65cc85] Cached process > combineFastq (10)
+Jan-06 12:05:20.865 [Actor Thread 7] INFO  nextflow.processor.TaskProcessor - [ea/16127e] Cached process > combineFastq (5)
+Jan-06 12:05:20.865 [Actor Thread 4] INFO  nextflow.processor.TaskProcessor - [2e/8939f3] Cached process > combineFastq (2)
+Jan-06 12:05:20.865 [Actor Thread 16] INFO  nextflow.processor.TaskProcessor - [de/6780d3] Cached process > combineFastq (14)
+Jan-06 12:05:20.865 [Actor Thread 6] INFO  nextflow.processor.TaskProcessor - [c5/11c539] Cached process > combineFastq (4)
+Jan-06 12:05:20.865 [Actor Thread 5] INFO  nextflow.processor.TaskProcessor - [0e/2d74c5] Cached process > combineFastq (3)
+Jan-06 12:05:20.865 [Actor Thread 8] INFO  nextflow.processor.TaskProcessor - [f6/88ee86] Cached process > combineFastq (6)
+Jan-06 12:05:20.865 [Actor Thread 15] INFO  nextflow.processor.TaskProcessor - [9f/863934] Cached process > combineFastq (13)
+Jan-06 12:05:20.865 [Actor Thread 13] INFO  nextflow.processor.TaskProcessor - [86/480d26] Cached process > combineFastq (11)
+Jan-06 12:05:20.865 [Actor Thread 10] INFO  nextflow.processor.TaskProcessor - [1d/51eaeb] Cached process > combineFastq (8)
+Jan-06 12:05:20.865 [Actor Thread 11] INFO  nextflow.processor.TaskProcessor - [f3/d3c182] Cached process > combineFastq (9)
+Jan-06 12:05:20.865 [Actor Thread 14] INFO  nextflow.processor.TaskProcessor - [21/f8c840] Cached process > combineFastq (12)
+Jan-06 12:05:20.867 [Actor Thread 20] INFO  nextflow.processor.TaskProcessor - [7f/694394] Cached process > buildIndex (mdr)
+Jan-06 12:05:20.913 [Actor Thread 12] DEBUG n.util.BlockingThreadExecutorFactory - Thread pool name=FileTransfer; maxThreads=48; maxQueueSize=144; keepAlive=1m
+Jan-06 12:05:20.931 [Actor Thread 13] INFO  nextflow.processor.TaskProcessor - [54/34fd95] Cached process > combineFastq (18)
+Jan-06 12:05:20.932 [Actor Thread 8] INFO  nextflow.processor.TaskProcessor - [2e/0a2307] Cached process > combineFastq (20)
+Jan-06 12:05:20.932 [Actor Thread 4] INFO  nextflow.processor.TaskProcessor - [71/1d947a] Cached process > combineFastq (19)
+Jan-06 12:05:20.932 [Actor Thread 10] INFO  nextflow.processor.TaskProcessor - [f4/8dc04f] Cached process > combineFastq (21)
+Jan-06 12:05:20.932 [Actor Thread 14] INFO  nextflow.processor.TaskProcessor - [84/148dfd] Cached process > combineFastq (17)
+Jan-06 12:05:20.934 [Actor Thread 9] INFO  nextflow.processor.TaskProcessor - [98/ef5d20] Cached process > combineFastq (22)
+Jan-06 12:05:20.982 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:05:20.989 [Task submitter] INFO  nextflow.Session - [90/490584] Submitted process > preFastQC (1)
+Jan-06 12:05:20.996 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:05:20.997 [Task submitter] INFO  nextflow.Session - [48/e3f576] Submitted process > trimFastq (9)
+Jan-06 12:05:21.003 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:05:21.003 [Task submitter] INFO  nextflow.Session - [55/8de73f] Submitted process > trimFastq (6)
+Jan-06 12:05:21.010 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:05:21.010 [Task submitter] INFO  nextflow.Session - [c5/b0e063] Submitted process > trimFastq (7)
+Jan-06 12:05:21.016 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:05:21.017 [Task submitter] INFO  nextflow.Session - [a7/087a6d] Submitted process > trimFastq (3)
+Jan-06 12:05:21.023 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:05:21.024 [Task submitter] INFO  nextflow.Session - [50/c4fa9f] Submitted process > preFastQC (4)
+Jan-06 12:05:21.030 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:05:21.030 [Task submitter] INFO  nextflow.Session - [51/4a6f51] Submitted process > preFastQC (8)
+Jan-06 12:05:21.036 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:05:21.037 [Task submitter] INFO  nextflow.Session - [91/0e713b] Submitted process > trimFastq (2)
+Jan-06 12:05:21.043 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:05:21.044 [Task submitter] INFO  nextflow.Session - [81/f9267c] Submitted process > trimFastq (8)
+Jan-06 12:05:21.053 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:05:21.054 [Task submitter] INFO  nextflow.Session - [61/76009b] Submitted process > trimFastq (12)
+Jan-06 12:05:21.065 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:05:21.066 [Task submitter] INFO  nextflow.Session - [87/8bfef7] Submitted process > trimFastq (5)
+Jan-06 12:05:21.074 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:05:21.075 [Task submitter] INFO  nextflow.Session - [68/523356] Submitted process > preFastQC (3)
+Jan-06 12:05:21.082 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:05:21.083 [Task submitter] INFO  nextflow.Session - [b3/ef26c9] Submitted process > trimFastq (4)
+Jan-06 12:05:21.092 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:05:21.092 [Task submitter] INFO  nextflow.Session - [fd/0b3715] Submitted process > trimFastq (1)
+Jan-06 12:05:21.101 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:05:21.103 [Task submitter] INFO  nextflow.Session - [48/0b6c50] Submitted process > preFastQC (2)
+Jan-06 12:05:21.119 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:05:21.126 [Task submitter] INFO  nextflow.Session - [d1/2631c2] Submitted process > trimFastq (13)
+Jan-06 12:05:31.150 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 40; name: trimFastq (13); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/d1/2631c2411656b6bca7b42a987950ed]
+Jan-06 12:05:31.155 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:05:31.157 [Task submitter] INFO  nextflow.Session - [7a/ecc3ba] Submitted process > preFastQC (5)
+Jan-06 12:05:32.035 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 39; name: trimFastq (12); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/61/76009b09be9abeee11e1fe89d8cf1b]
+Jan-06 12:05:32.041 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:05:32.041 [Task submitter] INFO  nextflow.Session - [9d/34339c] Submitted process > trimFastq (11)
+Jan-06 12:05:32.047 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 32; name: trimFastq (8); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/81/f9267cf496b71900baadcfcd4a9e0f]
+Jan-06 12:05:32.053 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:05:32.053 [Task submitter] INFO  nextflow.Session - [48/9966f2] Submitted process > preFastQC (12)
+Jan-06 12:05:32.257 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 31; name: trimFastq (7); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/c5/b0e063947ca9dbfe47298f0877fbcc]
+Jan-06 12:05:32.262 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:05:32.262 [Task submitter] INFO  nextflow.Session - [58/38643f] Submitted process > preFastQC (6)
+Jan-06 12:05:32.584 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 19; name: trimFastq (1); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/fd/0b371546e1d5cc7cb94af6222ad535]
+Jan-06 12:05:32.588 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:05:32.589 [Task submitter] INFO  nextflow.Session - [9c/2debcf] Submitted process > preFastQC (7)
+Jan-06 12:05:33.066 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 25; name: trimFastq (4); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b3/ef26c901199d0f8fda0510c872fd92]
+Jan-06 12:05:33.070 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:05:33.071 [Task submitter] INFO  nextflow.Session - [64/c4c090] Submitted process > trimFastq (10)
+Jan-06 12:05:33.367 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 27; name: trimFastq (6); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/55/8de73fbbe757acad3de2f0d8177fb7]
+Jan-06 12:05:33.372 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:05:33.372 [Task submitter] INFO  nextflow.Session - [80/5fbb98] Submitted process > preFastQC (13)
+Jan-06 12:05:33.922 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 34; name: trimFastq (9); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/48/e3f5764e3867ddfbddcf1e06bda334]
+Jan-06 12:05:33.926 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:05:33.926 [Task submitter] INFO  nextflow.Session - [c0/2631a7] Submitted process > preFastQC (11)
+Jan-06 12:05:33.972 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 20; name: trimFastq (2); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/91/0e713b55f8b856b516b1c0a2996991]
+Jan-06 12:05:33.976 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:05:33.976 [Task submitter] INFO  nextflow.Session - [7e/ef6667] Submitted process > preFastQC (10)
+Jan-06 12:05:34.189 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 26; name: trimFastq (5); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/87/8bfef707def7f27d583ed831586e15]
+Jan-06 12:05:34.194 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:05:34.194 [Task submitter] INFO  nextflow.Session - [08/392401] Submitted process > trimFastq (14)
+Jan-06 12:05:34.553 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 24; name: trimFastq (3); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/a7/087a6de7b6b6ca0439cdd67d785aec]
+Jan-06 12:05:34.556 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:05:34.556 [Task submitter] INFO  nextflow.Session - [f0/cbfad5] Submitted process > preFastQC (9)
+Jan-06 12:05:41.727 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 38; name: trimFastq (11); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/9d/34339c32e4cc4b8947fd065ec1ee83]
+Jan-06 12:05:41.731 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:05:41.732 [Task submitter] INFO  nextflow.Session - [43/0b01a3] Submitted process > preFastQC (14)
+Jan-06 12:05:42.295 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 36; name: trimFastq (10); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/64/c4c0906e814f060f7c9241c8bd7062]
+Jan-06 12:05:42.299 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:05:42.299 [Task submitter] INFO  nextflow.Session - [69/8bb891] Submitted process > preFastQC (15)
+Jan-06 12:05:43.104 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 44; name: trimFastq (14); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/08/392401a125907b189182afc8064f8f]
+Jan-06 12:05:43.109 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:05:43.109 [Task submitter] INFO  nextflow.Session - [17/634b18] Submitted process > trimFastq (15)
+Jan-06 12:06:24.861 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 18; name: preFastQC (1); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/90/490584ffd4a7e6876e376ea8d9d3b2]
+Jan-06 12:06:24.865 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:06:24.865 [Task submitter] INFO  nextflow.Session - [7a/4918cd] Submitted process > trimFastq (16)
+Jan-06 12:06:25.702 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 23; name: preFastQC (4); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/50/c4fa9fe2b81916b2afc53e8c4ef306]
+Jan-06 12:06:25.705 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:06:25.706 [Task submitter] INFO  nextflow.Session - [4a/39e296] Submitted process > preFastQC (16)
+Jan-06 12:06:26.286 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 21; name: preFastQC (2); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/48/0b6c50b6e9d35d1cc6fa547d9ea0eb]
+Jan-06 12:06:26.290 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:06:26.290 [Task submitter] INFO  nextflow.Session - [9b/00204a] Submitted process > trimFastq (17)
+Jan-06 12:06:26.812 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 22; name: preFastQC (3); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/68/52335650c5f57628810897ae7aeab3]
+Jan-06 12:06:26.816 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:06:26.816 [Task submitter] INFO  nextflow.Session - [b4/69f190] Submitted process > preFastQC (17)
+Jan-06 12:06:27.206 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 33; name: preFastQC (8); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/51/4a6f51921006201f5c4bc9f81e10e5]
+Jan-06 12:06:27.209 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:06:27.210 [Task submitter] INFO  nextflow.Session - [4f/4d45cc] Submitted process > trimFastq (18)
+Jan-06 12:06:29.763 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 28; name: preFastQC (5); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/7a/ecc3ba1d9626743c7256b2a4aa6e69]
+Jan-06 12:06:29.767 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:06:29.767 [Task submitter] INFO  nextflow.Session - [d3/6dcbea] Submitted process > trimFastq (19)
+Jan-06 12:06:33.080 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 42; name: preFastQC (12); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/48/9966f205fffc66e09eaf46a6df04ef]
+Jan-06 12:06:33.084 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:06:33.084 [Task submitter] INFO  nextflow.Session - [40/eac39d] Submitted process > trimFastq (20)
+Jan-06 12:06:34.047 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 43; name: preFastQC (13); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/80/5fbb98f6a99714d6df108b1860ecf1]
+Jan-06 12:06:34.051 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:06:34.051 [Task submitter] INFO  nextflow.Session - [a0/3197b1] Submitted process > preFastQC (18)
+Jan-06 12:06:34.096 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 29; name: preFastQC (6); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/58/38643f7d36e8b9b5fda776b383f67b]
+Jan-06 12:06:34.099 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:06:34.099 [Task submitter] INFO  nextflow.Session - [e3/949433] Submitted process > preFastQC (19)
+Jan-06 12:06:34.328 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 30; name: preFastQC (7); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/9c/2debcfa6e22fd39b632dcaad44179c]
+Jan-06 12:06:34.331 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:06:34.332 [Task submitter] INFO  nextflow.Session - [73/10e7ed] Submitted process > trimFastq (21)
+Jan-06 12:06:34.932 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 35; name: preFastQC (9); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f0/cbfad530af5ef262962df3352d797d]
+Jan-06 12:06:34.936 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:06:34.936 [Task submitter] INFO  nextflow.Session - [75/676d64] Submitted process > trimFastq (22)
+Jan-06 12:06:35.112 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 37; name: preFastQC (10); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/7e/ef6667c1b1c967869c61be68ca406d]
+Jan-06 12:06:35.115 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:06:35.115 [Task submitter] INFO  nextflow.Session - [b5/49ea19] Submitted process > preFastQC (20)
+Jan-06 12:06:35.607 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 41; name: preFastQC (11); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/c0/2631a7815a21821a6adb229ede104f]
+Jan-06 12:06:35.611 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:06:35.612 [Task submitter] INFO  nextflow.Session - [d1/739588] Submitted process > preFastQC (21)
+Jan-06 12:06:35.929 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 58; name: trimFastq (18); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/4f/4d45cc2db8cb450530ba38fc8ec9d1]
+Jan-06 12:06:35.932 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:06:35.933 [Task submitter] INFO  nextflow.Session - [d0/00d3ac] Submitted process > preFastQC (22)
+Jan-06 12:06:36.009 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 57; name: trimFastq (17); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/9b/00204ac2df7754573561d6e3f36d98]
+Jan-06 12:06:36.012 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:06:36.012 [Task submitter] INFO  nextflow.Session - [b7/5b1858] Submitted process > postFastQC (1)
+Jan-06 12:06:36.631 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 53; name: trimFastq (15); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/17/634b180005c5a18f8c5c5964166c9d]
+Jan-06 12:06:36.636 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:06:36.636 [Task submitter] INFO  nextflow.Session - [aa/1c333c] Submitted process > alignReads (1)
+Jan-06 12:06:36.940 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 55; name: trimFastq (16); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/7a/4918cd433bdb2903d5e0d367420cf0]
+Jan-06 12:06:36.943 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:06:36.943 [Task submitter] INFO  nextflow.Session - [44/51eeff] Submitted process > postFastQC (2)
+Jan-06 12:06:37.981 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 59; name: trimFastq (19); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/d3/6dcbea4d325347bf48a794b6a847dc]
+Jan-06 12:06:37.987 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:06:37.988 [Task submitter] INFO  nextflow.Session - [44/2a4f1e] Submitted process > alignReads (2)
+Jan-06 12:06:41.840 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 46; name: preFastQC (14); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/43/0b01a33ea72eb6a8b8e9a5d2f587c4]
+Jan-06 12:06:41.843 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:06:41.843 [Task submitter] INFO  nextflow.Session - [6a/0cd4d8] Submitted process > postFastQC (3)
+Jan-06 12:06:42.670 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 60; name: trimFastq (20); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/40/eac39d7ea7b8c102c9fbb1c2c57dee]
+Jan-06 12:06:42.675 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:06:42.675 [Task submitter] INFO  nextflow.Session - [20/3417b0] Submitted process > alignReads (3)
+Jan-06 12:06:43.633 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 68; name: alignReads (1); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/aa/1c333c273b36dd1f99a8ae8a5975d6]
+Jan-06 12:06:43.636 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:06:43.636 [Task submitter] INFO  nextflow.Session - [37/64586a] Submitted process > postFastQC (4)
+Jan-06 12:06:44.879 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 64; name: trimFastq (22); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/75/676d6465003682257b4b2c7ab2f6bf]
+Jan-06 12:06:44.883 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:06:44.883 [Task submitter] INFO  nextflow.Session - [c2/db1e49] Submitted process > alignReads (4)
+Jan-06 12:06:45.211 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 63; name: trimFastq (21); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/73/10e7edcd1bd2f9ba736e5d0c1befdb]
+Jan-06 12:06:45.214 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:06:45.215 [Task submitter] INFO  nextflow.Session - [57/efe0d7] Submitted process > postFastQC (5)
+Jan-06 12:06:46.604 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 71; name: alignReads (2); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/44/2a4f1e767b9c51e66a464732146131]
+Jan-06 12:06:46.608 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:06:46.608 [Task submitter] INFO  nextflow.Session - [80/33c08d] Submitted process > alignReads (5)
+Jan-06 12:06:50.224 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 73; name: alignReads (3); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/20/3417b003dfb57f9bfb1f755f049687]
+Jan-06 12:06:50.227 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:06:50.228 [Task submitter] INFO  nextflow.Session - [c8/942e03] Submitted process > postFastQC (6)
+Jan-06 12:06:51.766 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 75; name: alignReads (4); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/c2/db1e4940d1d14830ae99c0683ae6ad]
+Jan-06 12:06:51.772 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:06:51.773 [Task submitter] INFO  nextflow.Session - [67/c0b306] Submitted process > alignReads (6)
+Jan-06 12:06:54.165 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 77; name: alignReads (5); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/80/33c08dec4a23e1287dde9ced8e4dbb]
+Jan-06 12:06:54.168 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:06:54.168 [Task submitter] INFO  nextflow.Session - [37/d2f568] Submitted process > postFastQC (7)
+Jan-06 12:06:57.605 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 78; name: alignReads (6); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/67/c0b3069265d3f4d4167fc89e34c9fc]
+Jan-06 12:06:57.609 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:06:57.609 [Task submitter] INFO  nextflow.Session - [ca/2f4dc1] Submitted process > alignReads (7)
+Jan-06 12:07:32.532 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 56; name: preFastQC (17); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b4/69f190eaa120f672750451d3acb513]
+Jan-06 12:07:32.536 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:07:32.536 [Task submitter] INFO  nextflow.Session - [9d/5d1907] Submitted process > postFastQC (8)
+Jan-06 12:07:33.381 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 51; name: preFastQC (15); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/69/8bb89145e578e9b7ceb533de625de3]
+Jan-06 12:07:33.385 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:07:33.386 [Task submitter] INFO  nextflow.Session - [a3/4f2840] Submitted process > alignReads (8)
+Jan-06 12:07:33.644 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 54; name: preFastQC (16); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/4a/39e2962b581bd4fdff8b16a9700c7f]
+Jan-06 12:07:33.647 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:07:33.647 [Task submitter] INFO  nextflow.Session - [0f/d360cf] Submitted process > postFastQC (9)
+Jan-06 12:07:37.504 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 62; name: preFastQC (19); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e3/949433cf4fa6a36f0ca2c7e2738b58]
+Jan-06 12:07:37.508 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:07:37.508 [Task submitter] INFO  nextflow.Session - [cf/4621e9] Submitted process > alignReads (9)
+Jan-06 12:07:38.192 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 66; name: preFastQC (21); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/d1/739588c65b415c419a1da5361de64f]
+Jan-06 12:07:38.196 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:07:38.196 [Task submitter] INFO  nextflow.Session - [f1/848788] Submitted process > postFastQC (10)
+Jan-06 12:07:38.292 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 61; name: preFastQC (18); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/a0/3197b1776e9fc19b8b14d2c2a9a93d]
+Jan-06 12:07:38.296 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:07:38.296 [Task submitter] INFO  nextflow.Session - [76/fa91e1] Submitted process > alignReads (10)
+Jan-06 12:07:38.492 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 69; name: postFastQC (1); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b7/5b18584f11f659b7360c422c0f40e3]
+Jan-06 12:07:38.495 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:07:38.495 [Task submitter] INFO  nextflow.Session - [de/4a14a1] Submitted process > postFastQC (11)
+Jan-06 12:07:38.587 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 67; name: preFastQC (22); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/d0/00d3ace416c2aa6b97a01693c80105]
+Jan-06 12:07:38.591 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:07:38.591 [Task submitter] INFO  nextflow.Session - [fa/95bfc2] Submitted process > alignReads (11)
+Jan-06 12:07:38.969 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 70; name: postFastQC (2); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/44/51eefff89ee276f70d4c2ce00224f4]
+Jan-06 12:07:38.972 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:07:38.972 [Task submitter] INFO  nextflow.Session - [aa/a44776] Submitted process > postFastQC (12)
+Jan-06 12:07:38.978 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 65; name: preFastQC (20); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b5/49ea196505f384e107b1a05eae1027]
+Jan-06 12:07:38.981 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:07:38.982 [Task submitter] INFO  nextflow.Session - [38/b4fbe4] Submitted process > alignReads (12)
+Jan-06 12:07:39.830 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 76; name: postFastQC (5); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/57/efe0d7f76900f1c60c592dacf844f7]
+Jan-06 12:07:39.833 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:07:39.833 [Task submitter] INFO  nextflow.Session - [65/93234a] Submitted process > postFastQC (13)
+Jan-06 12:07:40.360 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 72; name: postFastQC (3); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/6a/0cd4d8eb339fcb1c8809037273b6f8]
+Jan-06 12:07:40.364 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:07:40.364 [Task submitter] INFO  nextflow.Session - [6d/865820] Submitted process > alignReads (13)
+Jan-06 12:07:40.890 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 74; name: postFastQC (4); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/37/64586ae97096224c592b4ace1fa370]
+Jan-06 12:07:40.893 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:07:40.893 [Task submitter] INFO  nextflow.Session - [4b/0ee712] Submitted process > postFastQC (14)
+Jan-06 12:07:41.851 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 79; name: postFastQC (6); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/c8/942e03433c5747e01a99288143e8f0]
+Jan-06 12:07:41.855 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:07:41.855 [Task submitter] INFO  nextflow.Session - [b3/882d6e] Submitted process > alignReads (14)
+Jan-06 12:07:42.960 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 81; name: postFastQC (7); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/37/d2f5681358ae61eab3fa47ec936dfb]
+Jan-06 12:07:42.963 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:07:42.963 [Task submitter] INFO  nextflow.Session - [70/111de8] Submitted process > postFastQC (15)
+Jan-06 12:07:48.920 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 85; name: alignReads (9); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/cf/4621e97fb5e1278c21bec32a75832a]
+Jan-06 12:07:48.924 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:07:48.924 [Task submitter] INFO  nextflow.Session - [1d/cf23c7] Submitted process > alignReads (15)
+Jan-06 12:07:48.952 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 95; name: alignReads (14); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b3/882d6e8de8db790a44078e8f6d318e]
+Jan-06 12:07:48.955 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:07:48.956 [Task submitter] INFO  nextflow.Session - [d0/35da18] Submitted process > postFastQC (16)
+Jan-06 12:07:49.701 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 80; name: alignReads (7); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/ca/2f4dc1631291439efb7e3b4e1cb2df]
+Jan-06 12:07:49.705 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:07:49.705 [Task submitter] INFO  nextflow.Session - [17/b9e25f] Submitted process > alignReads (16)
+Jan-06 12:07:50.284 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 93; name: alignReads (13); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/6d/8658203814dab11b75ef3e075df6be]
+Jan-06 12:07:50.288 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:07:50.288 [Task submitter] INFO  nextflow.Session - [00/b52938] Submitted process > postFastQC (17)
+Jan-06 12:07:51.077 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 89; name: alignReads (11); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/fa/95bfc2b7f26eb5a6ff595f1102402b]
+Jan-06 12:07:51.081 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:07:51.081 [Task submitter] INFO  nextflow.Session - [88/47a506] Submitted process > alignReads (17)
+Jan-06 12:07:51.645 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 86; name: alignReads (10); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/76/fa91e14b7a0890b53947b0992182b4]
+Jan-06 12:07:51.648 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:07:51.648 [Task submitter] INFO  nextflow.Session - [ae/865663] Submitted process > postFastQC (18)
+Jan-06 12:07:51.966 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 82; name: alignReads (8); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/a3/4f2840b2146068bf059edaf561b3fc]
+Jan-06 12:07:51.969 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:07:51.969 [Task submitter] INFO  nextflow.Session - [7c/84d0bd] Submitted process > alignReads (18)
+Jan-06 12:07:53.556 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 91; name: alignReads (12); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/38/b4fbe4b6a53d5c4d17132fccbeaa8c]
+Jan-06 12:07:53.560 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:07:53.560 [Task submitter] INFO  nextflow.Session - [04/0d67ad] Submitted process > postFastQC (19)
+Jan-06 12:07:56.145 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 96; name: alignReads (15); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/1d/cf23c705d6b4c9bc18583b6e131629]
+Jan-06 12:07:56.149 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:07:56.149 [Task submitter] INFO  nextflow.Session - [3e/42cdc7] Submitted process > alignReads (19)
+Jan-06 12:07:56.767 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 99; name: alignReads (16); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/17/b9e25fb85e888adb93ecb1b9919c59]
+Jan-06 12:07:56.770 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:07:56.770 [Task submitter] INFO  nextflow.Session - [fe/966799] Submitted process > postFastQC (20)
+Jan-06 12:07:58.164 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 101; name: alignReads (17); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/88/47a5062bd1e19475611ea7ab47cdbe]
+Jan-06 12:07:58.167 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:07:58.168 [Task submitter] INFO  nextflow.Session - [95/ab9f12] Submitted process > alignReads (20)
+Jan-06 12:07:58.572 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 103; name: alignReads (18); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/7c/84d0bd181112ce047a25ff76cfc63e]
+Jan-06 12:07:58.575 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:07:58.575 [Task submitter] INFO  nextflow.Session - [33/e6c5f9] Submitted process > processAlignments (1)
+Jan-06 12:08:01.371 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 108; name: processAlignments (1); status: COMPLETED; exit: 1; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/33/e6c5f96c91ac69901de3fe3abe0451]
+Jan-06 12:08:01.374 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:08:01.374 [Task submitter] INFO  nextflow.Session - [4b/b09d5a] Submitted process > postFastQC (21)
+Jan-06 12:08:01.407 [Task monitor] ERROR nextflow.processor.TaskProcessor - Error executing process > 'processAlignments (1)'
+
+Caused by:
+  Process `processAlignments (1)` terminated with an error exit status (1)
+
+Command executed:
+
+  java -jar /Users/subinpark/Downloads/from_jehoon/picard.jar AddOrReplaceReadGroups -I 19ANBe00D0026PfFxxx0_S6_L001.sam -O 19ANBe00D0026PfFxxx0_S6_L001_SR.bam -SORT_ORDER coordinate --CREATE_INDEX true \
+  -LB ExomeSeq -DS ExomeSeq -PL Illumina -CN AtlantaGenomeCenter -DT 2016-08-24 -PI null -ID 19ANBe00D0026PfFxxx0_S6_L001 \
+  -PG 19ANBe00D0026PfFxxx0_S6_L001 -PM 19ANBe00D0026PfFxxx0_S6_L001 -SM 19ANBe00D0026PfFxxx0_S6_L001 -PU HiSeq2500
+
+Command exit status:
+  1
+
+Command output:
+  (empty)
+
+Command error:
+  Error: Unable to access jarfile /Users/subinpark/Downloads/from_jehoon/picard.jar
+
+Work dir:
+  /Users/subinpark/Downloads/from_jehoon/work/33/e6c5f96c91ac69901de3fe3abe0451
+
+Tip: you can replicate the issue by changing to the process work dir and entering the command `bash .command.run`
+Jan-06 12:08:01.415 [Task monitor] DEBUG nextflow.Session - Session aborted -- Cause: Process `processAlignments (1)` terminated with an error exit status (1)
+Jan-06 12:08:01.447 [Task monitor] DEBUG nextflow.Session - The following nodes are still active:
+[process] processAlignments
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: genome
+  port 2: (cntrl) -     ; channel: $
+
+[process] GenerateVCFSam
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: genome
+  port 2: (cntrl) -     ; channel: $
+
+[process] GenerateVCFHap
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: genome
+  port 2: (value) bound ; channel: gatk
+  port 3: (cntrl) -     ; channel: $
+
+[process] GenerateVCFHFree
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: genome
+  port 2: (value) bound ; channel: gatk
+  port 3: (cntrl) -     ; channel: $
+
+[process] annotate
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (queue) OPEN  ; channel: -
+  port 2: (queue) OPEN  ; channel: -
+  port 3: (cntrl) -     ; channel: $
+
+[process] merge
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (queue) OPEN  ; channel: -
+  port 2: (queue) OPEN  ; channel: -
+  port 3: (queue) OPEN  ; channel: -
+  port 4: (cntrl) -     ; channel: $
+
+[process] vartpype
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] filter
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] extract
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] spread
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] summarize
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+Jan-06 12:08:01.449 [main] DEBUG nextflow.Session - Session await > all process finished
+Jan-06 12:08:01.449 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Jan-06 12:08:01.459 [main] WARN  n.processor.TaskPollingMonitor - Killing pending tasks (16)
+Jan-06 12:08:01.750 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=69; failedCount=1; ignoredCount=0; cachedCount=23; pendingCount=20; submittedCount=1; runningCount=-1; retriesCount=0; abortedCount=16; succeedDuration=38m 37s; failedDuration=2.7s; cachedDuration=2m 1s;loadCpus=-1; loadMemory=0; peakRunning=16; peakCpus=16; peakMemory=0; ]
+Jan-06 12:08:01.763 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+Jan-06 12:08:01.798 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

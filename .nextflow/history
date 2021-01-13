@@ -1,0 +1,37 @@
+2021-01-05 17:05:18	-	deadly_pike	-	23d0157ca8ac2f374ca40ecf9efa36e4	bde1db96-7203-4780-b226-8afd28b85769	nextflow run trim1testVCF8.nf
+2021-01-05 17:14:38	-	crazy_lavoisier	-	23d0157ca8ac2f374ca40ecf9efa36e4	7f6e3819-f3b8-4be7-8cbb-bc1aa0242c4b	nextflow run trim1testVCF8.nf --with-docker
+2021-01-05 17:15:44	-	soggy_shaw	-	2b7071398768f191545763276dd56647	e82b127e-57c3-4740-ba0d-9acb30334b74	nextflow run trim1testVCF8.nf --with-docker
+2021-01-05 17:16:07	-	confident_legentil	-	4250443fd4f2755b37bbe622fc1efcf0	e03562a2-e881-4996-94d3-b5417b07933d	nextflow run trim1testVCF8.nf --with-docker
+2021-01-05 17:16:17	-	trusting_cori	-	a46a69477a76c7a8cad83e4ec10fac0e	0cb0194e-8d51-4585-b29a-a2e59c874903	nextflow run trim1testVCF8.nf --with-docker
+2021-01-05 17:16:40	-	mad_jennings	-	f65012902e13fabf712a97df9c539e7d	ff8e3bfb-0ce6-44a6-916d-8c532e25ea4c	nextflow run trim1testVCF8.nf --with-docker
+2021-01-05 17:17:06	-	drunk_meucci	-	001f475c55279ba7a95db8316d43ea30	94d756c1-7825-446c-8ac4-f416d581cfff	nextflow run trim1testVCF8.nf --with-docker
+2021-01-05 17:17:35	-	evil_jepsen	-	001f475c55279ba7a95db8316d43ea30	c64f1186-bfa2-4028-834f-eade5b66a3af	nextflow run trim1testVCF8.nf --with-docker
+2021-01-05 17:19:12	-	big_yonath	-	2a8cf3c6c46b5bb910159fc035ec931d	e04f3a7e-ebec-45f3-814c-c56e57f32cc2	nextflow run trim1testVCF8.nf --with-docker
+2021-01-05 17:20:21	-	deadly_pesquet	-	2a8cf3c6c46b5bb910159fc035ec931d	50314236-44c7-4008-9866-3bbea7868f8e	nextflow run trim1testVCF8.nf --with-docker
+2021-01-05 17:20:43	-	condescending_hilbert	-	2a8cf3c6c46b5bb910159fc035ec931d	4e8ddc39-0d0c-46c9-8c4d-cf5e7022c9a8	nextflow run trim1testVCF8.nf --with-docker
+2021-01-05 17:21:30	-	nostalgic_nobel	-	2a8cf3c6c46b5bb910159fc035ec931d	ac647951-a13b-4d54-81d8-2ebb16f910e9	nextflow run trim1testVCF8.nf --with-docker
+2021-01-05 17:22:14	-	adoring_cuvier	-	cc343a22863579d78f6ae7221d804a92	8852b198-9688-43b6-82b0-72679f5de4f1	nextflow run trim1testVCF8.nf --with-docker
+2021-01-05 17:24:35	1.6s	agitated_shaw	ERR	cc343a22863579d78f6ae7221d804a92	c6efd1ef-f2ca-4ad0-b517-b14ae747f713	nextflow run trim1testVCF8.nf --with-docker
+2021-01-05 17:25:29	1.9s	nauseous_laplace	ERR	a518fb2b5df3e2dc79bc26dd9667f8e0	093fa604-a3c9-49d5-aae8-6f6b17a40f75	nextflow run trim1testVCF8.nf --with-docker
+2021-01-05 17:26:19	-	crazy_stonebraker	-	d3fb2035586ecf56b0644478fde87542	22157f30-1fde-41c5-bdd7-01cc3651b239	nextflow run trim1testVCF8.nf --with-docker
+2021-01-05 17:28:27	-	crazy_dalembert	-	6fb708783b2acbbf7c3fa20d8e3fbc45	17200199-8777-49e8-9d44-2efcf3597874	nextflow run trim1testVCF8.nf --with-docker
+2021-01-05 17:28:48	-	reverent_pare	-	54d9a8bac765a0846ff90932c135034a	f672e385-9d1c-4957-abf8-78d229042816	nextflow run trim1testVCF8.nf --with-docker
+2021-01-05 17:30:33	-	small_feynman	-	b5be4be13ec1d47d61a8ff7f3aeb632d	bb0c527b-b4bf-4dcd-8a4d-2c794c761d43	nextflow run trim1testVCF8.nf --with-docker
+2021-01-05 17:30:45	2.2s	naughty_laplace	ERR	bdab10c83fed3e994b7a3e9114ecfbdc	4e53cdd7-5e21-4c57-9923-19fd3e1c3277	nextflow run trim1testVCF8.nf --with-docker
+2021-01-06 11:05:57	1.6s	friendly_baekeland	ERR	bdab10c83fed3e994b7a3e9114ecfbdc	b927b6b9-59ad-4154-875c-79de4ad4ec12	nextflow run trim1testVCF8.nf --with-docker tools
+2021-01-06 11:08:01	11.5s	backstabbing_jones	OK	bdab10c83fed3e994b7a3e9114ecfbdc	fcf66518-1992-4117-b0ea-8f170f95b665	nextflow run trim1testVCF8.nf -with-docker 'tools:latest'
+2021-01-06 11:11:55	1.4s	high_galileo	OK	bdab10c83fed3e994b7a3e9114ecfbdc	fcf66518-1992-4117-b0ea-8f170f95b665	nextflow run trim1testVCF8.nf -with-docker 'tools:latest' -resume
+2021-01-06 11:12:40	1.3s	extravagant_gilbert	OK	a30129a49cf5c225b0b54c8d1ae31898	fcf66518-1992-4117-b0ea-8f170f95b665	nextflow run trim1testVCF8.nf -with-docker 'tools:latest' -resume
+2021-01-06 11:15:49	5.3s	ridiculous_solvay	ERR	a30129a49cf5c225b0b54c8d1ae31898	fcf66518-1992-4117-b0ea-8f170f95b665	nextflow run trim1testVCF8.nf -with-docker 'tools:latest' -resume
+2021-01-06 11:19:34	5.9s	evil_hoover	ERR	2a4a2592134d809053e258da4dcff258	fcf66518-1992-4117-b0ea-8f170f95b665	nextflow run trim1testVCF8.nf -with-docker 'tools:latest' -resume
+2021-01-06 12:01:34	-	nice_rosalind	-	55747fadd505f0ad6de692866b6fb2f2	fcf66518-1992-4117-b0ea-8f170f95b665	nextflow run trim1testVCF8.nf -with-docker 'tools:latest' -resume
+2021-01-06 12:02:00	-	focused_galileo	-	19568b73269e06c93261512fc3861784	fcf66518-1992-4117-b0ea-8f170f95b665	nextflow run trim1testVCF8.nf -with-docker 'tools:latest' -resume
+2021-01-06 12:02:09	5.4s	golden_shaw	ERR	9acb809e333f29bbbab095651a1df658	fcf66518-1992-4117-b0ea-8f170f95b665	nextflow run trim1testVCF8.nf -with-docker 'tools:latest' -resume
+2021-01-06 12:03:38	10.5s	pedantic_wozniak	OK	40e5f518e73f96405d8f194d180245bb	fcf66518-1992-4117-b0ea-8f170f95b665	nextflow run trim1testVCF8.nf -with-docker 'tools:latest' -resume
+2021-01-06 12:04:04	7.2s	suspicious_wescoff	ERR	e01f37ace6abca06ef7f96e44f0e8211	fcf66518-1992-4117-b0ea-8f170f95b665	nextflow run trim1testVCF8.nf -with-docker 'tools:latest' -resume
+2021-01-06 12:04:45	9.9s	backstabbing_fourier	ERR	e01f37ace6abca06ef7f96e44f0e8211	fcf66518-1992-4117-b0ea-8f170f95b665	nextflow run trim1testVCF8.nf -with-docker 'tools:latest' -resume
+2021-01-06 12:05:19	2m 43s	elated_engelbart	ERR	ba5de39ac0f5049e2561576a62756af3	fcf66518-1992-4117-b0ea-8f170f95b665	nextflow run trim1testVCF8.nf -with-docker 'tools:latest' -resume
+2021-01-06 12:14:18	11.8s	admiring_gutenberg	ERR	39193f5d6158f1e5806f9c21aeaa9076	fcf66518-1992-4117-b0ea-8f170f95b665	nextflow run trim1testVCF8.nf -with-docker 'tools:latest' -resume
+2021-01-06 12:15:58	9.6s	desperate_lumiere	ERR	0901810da350ac9fa537129711f0fb7b	fcf66518-1992-4117-b0ea-8f170f95b665	nextflow run trim1testVCF8.nf -with-docker 'tools:latest' -resume
+2021-01-06 12:16:20	9m 53s	lonely_mestorf	ERR	0901810da350ac9fa537129711f0fb7b	3f6a9c69-3e8e-4787-aec0-39f2b0a4feb9	nextflow run trim1testVCF8.nf -with-docker container
+2021-01-06 12:40:12	-	backstabbing_brahmagupta	-	0901810da350ac9fa537129711f0fb7b	64dbd3b7-d4b3-4a3f-8280-78ca5dd57a69	nextflow run trim1testVCF8.nf -with-docker container

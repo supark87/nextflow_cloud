@@ -1,0 +1,6 @@
+#File	19ANBe00D0026PfFxxx0_S6_L001_R1.fastq.gz	19ANBe00D0026PfFxxx0_S6_L001_R2.fastq.gz
+#Total	10224
+#Matched	6	0.05869%
+#Name	Reads	ReadsPct
+Nextera_transposase_read1	3	0.02934%
+Nextera_transposase_read2	3	0.02934%

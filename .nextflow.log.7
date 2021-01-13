@@ -1,0 +1,234 @@
+Jan-06 12:04:04.021 [main] DEBUG nextflow.cli.Launcher - $> nextflow run trim1testVCF8.nf -with-docker 'tools:latest' -resume
+Jan-06 12:04:04.142 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 20.07.1
+Jan-06 12:04:04.159 [main] INFO  nextflow.cli.CmdRun - Launching `trim1testVCF8.nf` [suspicious_wescoff] - revision: e01f37ace6
+Jan-06 12:04:04.188 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /Users/subinpark/Downloads/from_jehoon/nextflow.config
+Jan-06 12:04:04.189 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/subinpark/Downloads/from_jehoon/nextflow.config
+Jan-06 12:04:04.211 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Jan-06 12:04:04.597 [main] DEBUG nextflow.config.ConfigBuilder - Enabling execution in Docker container as requested by cli option `-with-docker tools:latest`
+Jan-06 12:04:04.640 [main] DEBUG nextflow.Session - Session uuid: fcf66518-1992-4117-b0ea-8f170f95b665
+Jan-06 12:04:04.640 [main] DEBUG nextflow.Session - Run name: suspicious_wescoff
+Jan-06 12:04:04.640 [main] DEBUG nextflow.Session - Executor pool size: 16
+Jan-06 12:04:04.693 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 20.07.1 build 5412
+  Created: 24-07-2020 15:18 UTC (11:18 EDT)
+  System: Mac OS X 10.15.7
+  Runtime: Groovy 2.5.11 on Java HotSpot(TM) 64-Bit Server VM 11.0.8+10-LTS
+  Encoding: UTF-8 (UTF-8)
+  Process: 72815@adminusers-MBP.attlocal.net [192.168.1.116]
+  CPUs: 16 - Mem: 32 GB (11.5 GB) - Swap: 27 GB (1007.8 MB)
+Jan-06 12:04:04.721 [main] DEBUG nextflow.Session - Work-dir: /Users/subinpark/Downloads/from_jehoon/work [Mac OS X]
+Jan-06 12:04:04.721 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/subinpark/Downloads/from_jehoon/bin
+Jan-06 12:04:04.766 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
+Jan-06 12:04:04.768 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jan-06 12:04:04.958 [main] DEBUG nextflow.Session - Session start invoked
+Jan-06 12:04:05.412 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jan-06 12:04:05.420 [main] DEBUG nextflow.Session - Workflow process names [dsl1]: GenerateVCFHap, combineFastq, postFastQC, annotate, trimFastq, GenerateVCFSam, vartpype, alignReads, spread, processAlignments, GenerateVCFHFree, filter, extract, merge, buildIndex, summarize, preFastQC
+Jan-06 12:04:05.468 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: fq/; pattern: **{R1,R2}*.fastq.gz; options: [:]
+Jan-06 12:04:05.612 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-06 12:04:05.612 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-06 12:04:05.617 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Jan-06 12:04:05.624 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=16; memory=32 GB; capacity=16; pollInterval=100ms; dumpInterval=5m
+Jan-06 12:04:05.751 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-06 12:04:05.751 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-06 12:04:05.767 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-06 12:04:05.767 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-06 12:04:05.783 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-06 12:04:05.783 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-06 12:04:05.794 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-06 12:04:05.794 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-06 12:04:05.809 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-06 12:04:05.809 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-06 12:04:05.824 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-06 12:04:05.824 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-06 12:04:05.839 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-06 12:04:05.840 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-06 12:04:05.849 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-06 12:04:05.849 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-06 12:04:05.860 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-06 12:04:05.861 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-06 12:04:05.872 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-06 12:04:05.872 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-06 12:04:05.884 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-06 12:04:05.884 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-06 12:04:05.891 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-06 12:04:05.891 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-06 12:04:05.896 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-06 12:04:05.896 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-06 12:04:05.902 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-06 12:04:05.902 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-06 12:04:05.908 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-06 12:04:05.908 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-06 12:04:05.918 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-06 12:04:05.918 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-06 12:04:05.921 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Jan-06 12:04:05.921 [main] DEBUG nextflow.Session - Session await
+Jan-06 12:04:05.971 [Actor Thread 1] INFO  nextflow.processor.TaskProcessor - [3f/482fbd] Cached process > combineFastq (1)
+Jan-06 12:04:05.971 [Actor Thread 12] INFO  nextflow.processor.TaskProcessor - [fc/65cc85] Cached process > combineFastq (10)
+Jan-06 12:04:05.971 [Actor Thread 10] INFO  nextflow.processor.TaskProcessor - [1d/51eaeb] Cached process > combineFastq (8)
+Jan-06 12:04:05.971 [Actor Thread 9] INFO  nextflow.processor.TaskProcessor - [97/ce3c79] Cached process > combineFastq (7)
+Jan-06 12:04:05.971 [Actor Thread 7] INFO  nextflow.processor.TaskProcessor - [ea/16127e] Cached process > combineFastq (5)
+Jan-06 12:04:05.971 [Actor Thread 5] INFO  nextflow.processor.TaskProcessor - [0e/2d74c5] Cached process > combineFastq (3)
+Jan-06 12:04:05.971 [Actor Thread 18] INFO  nextflow.processor.TaskProcessor - [bf/7ddfa1] Cached process > combineFastq (16)
+Jan-06 12:04:05.971 [Actor Thread 6] INFO  nextflow.processor.TaskProcessor - [c5/11c539] Cached process > combineFastq (4)
+Jan-06 12:04:05.971 [Actor Thread 4] INFO  nextflow.processor.TaskProcessor - [2e/8939f3] Cached process > combineFastq (2)
+Jan-06 12:04:05.971 [Actor Thread 8] INFO  nextflow.processor.TaskProcessor - [f6/88ee86] Cached process > combineFastq (6)
+Jan-06 12:04:05.971 [Actor Thread 16] INFO  nextflow.processor.TaskProcessor - [de/6780d3] Cached process > combineFastq (14)
+Jan-06 12:04:05.971 [Actor Thread 13] INFO  nextflow.processor.TaskProcessor - [86/480d26] Cached process > combineFastq (11)
+Jan-06 12:04:05.971 [Actor Thread 14] INFO  nextflow.processor.TaskProcessor - [21/f8c840] Cached process > combineFastq (12)
+Jan-06 12:04:05.971 [Actor Thread 15] INFO  nextflow.processor.TaskProcessor - [9f/863934] Cached process > combineFastq (13)
+Jan-06 12:04:05.971 [Actor Thread 17] INFO  nextflow.processor.TaskProcessor - [bb/cb5e3f] Cached process > combineFastq (15)
+Jan-06 12:04:05.971 [Actor Thread 11] INFO  nextflow.processor.TaskProcessor - [f3/d3c182] Cached process > combineFastq (9)
+Jan-06 12:04:05.976 [Actor Thread 20] INFO  nextflow.processor.TaskProcessor - [7f/694394] Cached process > buildIndex (mdr)
+Jan-06 12:04:06.012 [Actor Thread 20] DEBUG n.util.BlockingThreadExecutorFactory - Thread pool name=FileTransfer; maxThreads=48; maxQueueSize=144; keepAlive=1m
+Jan-06 12:04:06.026 [Actor Thread 8] INFO  nextflow.processor.TaskProcessor - [71/1d947a] Cached process > combineFastq (19)
+Jan-06 12:04:06.026 [Actor Thread 15] INFO  nextflow.processor.TaskProcessor - [2e/0a2307] Cached process > combineFastq (20)
+Jan-06 12:04:06.026 [Actor Thread 12] INFO  nextflow.processor.TaskProcessor - [98/ef5d20] Cached process > combineFastq (22)
+Jan-06 12:04:06.026 [Actor Thread 16] INFO  nextflow.processor.TaskProcessor - [54/34fd95] Cached process > combineFastq (18)
+Jan-06 12:04:06.026 [Actor Thread 5] INFO  nextflow.processor.TaskProcessor - [84/148dfd] Cached process > combineFastq (17)
+Jan-06 12:04:06.026 [Actor Thread 40] INFO  nextflow.processor.TaskProcessor - [f4/8dc04f] Cached process > combineFastq (21)
+Jan-06 12:04:06.062 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:04:06.066 [Task submitter] INFO  nextflow.Session - [21/17608a] Submitted process > trimFastq (13)
+Jan-06 12:04:06.073 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:04:06.074 [Task submitter] INFO  nextflow.Session - [db/44797c] Submitted process > trimFastq (8)
+Jan-06 12:04:06.079 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:04:06.080 [Task submitter] INFO  nextflow.Session - [b6/0f1262] Submitted process > preFastQC (8)
+Jan-06 12:04:06.086 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:04:06.086 [Task submitter] INFO  nextflow.Session - [a5/12db38] Submitted process > preFastQC (12)
+Jan-06 12:04:06.092 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:04:06.092 [Task submitter] INFO  nextflow.Session - [ab/f43981] Submitted process > preFastQC (9)
+Jan-06 12:04:06.097 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:04:06.098 [Task submitter] INFO  nextflow.Session - [82/7d0eb9] Submitted process > preFastQC (5)
+Jan-06 12:04:06.105 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:04:06.105 [Task submitter] INFO  nextflow.Session - [0c/b61810] Submitted process > trimFastq (10)
+Jan-06 12:04:06.111 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:04:06.111 [Task submitter] INFO  nextflow.Session - [87/2448c5] Submitted process > trimFastq (7)
+Jan-06 12:04:06.117 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:04:06.118 [Task submitter] INFO  nextflow.Session - [c7/aeb0b2] Submitted process > trimFastq (1)
+Jan-06 12:04:06.123 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:04:06.123 [Task submitter] INFO  nextflow.Session - [96/416f23] Submitted process > preFastQC (3)
+Jan-06 12:04:06.129 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:04:06.130 [Task submitter] INFO  nextflow.Session - [a1/64d750] Submitted process > trimFastq (6)
+Jan-06 12:04:06.135 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:04:06.136 [Task submitter] INFO  nextflow.Session - [c4/70783c] Submitted process > preFastQC (14)
+Jan-06 12:04:06.142 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:04:06.142 [Task submitter] INFO  nextflow.Session - [30/3bd21e] Submitted process > trimFastq (11)
+Jan-06 12:04:06.149 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:04:06.149 [Task submitter] INFO  nextflow.Session - [b7/e45548] Submitted process > trimFastq (2)
+Jan-06 12:04:06.155 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:04:06.155 [Task submitter] INFO  nextflow.Session - [f4/982909] Submitted process > trimFastq (9)
+Jan-06 12:04:06.163 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:04:06.164 [Task submitter] INFO  nextflow.Session - [4f/de57d0] Submitted process > trimFastq (4)
+Jan-06 12:04:10.674 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 21; name: trimFastq (2); status: COMPLETED; exit: 127; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b7/e45548e72c10cc8b3abf83e40399c8]
+Jan-06 12:04:10.678 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:04:10.678 [Task submitter] INFO  nextflow.Session - [fb/5b19f0] Submitted process > preFastQC (15)
+Jan-06 12:04:10.701 [Task monitor] ERROR nextflow.processor.TaskProcessor - Error executing process > 'trimFastq (2)'
+
+Caused by:
+  Process `trimFastq (2)` terminated with an error exit status (127)
+
+Command executed:
+
+  /Users/subinpark/Downloads/from_jehoon/bbduk.sh -Xmx1g k=27 hdist=1 edist=1 ktrim=l in=19ANBe00D0009PfFxxx0_S1_L001_R1.fastq.gz in2=19ANBe00D0009PfFxxx0_S1_L001_R2.fastq.gz \
+  out=19ANBe00D0009PfFxxx0_S1_L001_trimmed_R1.fastq ref=adapters.fa \
+  qtrim=rl minlength=100 \
+  out2=19ANBe00D0009PfFxxx0_S1_L001_trimmed_R2.fastq stats=19ANBe00D0009PfFxxx0_S1_L001_stats.txt
+
+Command exit status:
+  127
+
+Command output:
+  (empty)
+
+Command error:
+  .command.sh: line 2: /Users/subinpark/Downloads/from_jehoon/bbduk.sh: No such file or directory
+
+Work dir:
+  /Users/subinpark/Downloads/from_jehoon/work/b7/e45548e72c10cc8b3abf83e40399c8
+
+Tip: you can replicate the issue by changing to the process work dir and entering the command `bash .command.run`
+Jan-06 12:04:10.709 [Task monitor] DEBUG nextflow.Session - Session aborted -- Cause: Process `trimFastq (2)` terminated with an error exit status (127)
+Jan-06 12:04:10.764 [Task monitor] DEBUG nextflow.Session - The following nodes are still active:
+[process] postFastQC
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] alignReads
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: index
+  port 2: (value) bound ; channel: genome
+  port 3: (cntrl) -     ; channel: $
+
+[process] processAlignments
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: genome
+  port 2: (cntrl) -     ; channel: $
+
+[process] GenerateVCFSam
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: genome
+  port 2: (cntrl) -     ; channel: $
+
+[process] GenerateVCFHap
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: genome
+  port 2: (value) bound ; channel: gatk
+  port 3: (cntrl) -     ; channel: $
+
+[process] GenerateVCFHFree
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: genome
+  port 2: (value) bound ; channel: gatk
+  port 3: (cntrl) -     ; channel: $
+
+[process] annotate
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (queue) OPEN  ; channel: -
+  port 2: (queue) OPEN  ; channel: -
+  port 3: (cntrl) -     ; channel: $
+
+[process] merge
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (queue) OPEN  ; channel: -
+  port 2: (queue) OPEN  ; channel: -
+  port 3: (queue) OPEN  ; channel: -
+  port 4: (cntrl) -     ; channel: $
+
+[process] vartpype
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] filter
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] extract
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] spread
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] summarize
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+Jan-06 12:04:10.766 [main] DEBUG nextflow.Session - Session await > all process finished
+Jan-06 12:04:10.766 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Jan-06 12:04:10.773 [main] WARN  n.processor.TaskPollingMonitor - Killing pending tasks (16)
+Jan-06 12:04:11.143 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=1; ignoredCount=0; cachedCount=23; pendingCount=27; submittedCount=1; runningCount=-1; retriesCount=0; abortedCount=16; succeedDuration=0ms; failedDuration=4.4s; cachedDuration=2m 1s;loadCpus=-1; loadMemory=0; peakRunning=16; peakCpus=16; peakMemory=0; ]
+Jan-06 12:04:11.158 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+Jan-06 12:04:11.191 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

@@ -1,0 +1,1182 @@
+Jan-06 12:40:11.752 [main] DEBUG nextflow.cli.Launcher - $> nextflow run trim1testVCF8.nf -with-docker container
+Jan-06 12:40:11.885 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 20.07.1
+Jan-06 12:40:11.914 [main] INFO  nextflow.cli.CmdRun - Launching `trim1testVCF8.nf` [backstabbing_brahmagupta] - revision: 0901810da3
+Jan-06 12:40:11.943 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /Users/subinpark/Downloads/from_jehoon/nextflow.config
+Jan-06 12:40:11.944 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/subinpark/Downloads/from_jehoon/nextflow.config
+Jan-06 12:40:11.977 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Jan-06 12:40:12.503 [main] DEBUG nextflow.config.ConfigBuilder - Enabling execution in Docker container as requested by cli option `-with-docker container`
+Jan-06 12:40:12.607 [main] DEBUG nextflow.Session - Session uuid: 64dbd3b7-d4b3-4a3f-8280-78ca5dd57a69
+Jan-06 12:40:12.608 [main] DEBUG nextflow.Session - Run name: backstabbing_brahmagupta
+Jan-06 12:40:12.609 [main] DEBUG nextflow.Session - Executor pool size: 16
+Jan-06 12:40:12.683 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 20.07.1 build 5412
+  Created: 24-07-2020 15:18 UTC (11:18 EDT)
+  System: Mac OS X 10.15.7
+  Runtime: Groovy 2.5.11 on Java HotSpot(TM) 64-Bit Server VM 11.0.8+10-LTS
+  Encoding: UTF-8 (UTF-8)
+  Process: 87376@adminusers-MBP.attlocal.net [192.168.1.116]
+  CPUs: 16 - Mem: 32 GB (40.4 MB) - Swap: 14 GB (1.4 GB)
+Jan-06 12:40:12.701 [main] DEBUG nextflow.Session - Work-dir: /Users/subinpark/Downloads/from_jehoon/work [Mac OS X]
+Jan-06 12:40:12.701 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/subinpark/Downloads/from_jehoon/bin
+Jan-06 12:40:12.744 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
+Jan-06 12:40:12.746 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jan-06 12:40:12.937 [main] DEBUG nextflow.Session - Session start invoked
+Jan-06 12:40:13.371 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jan-06 12:40:13.379 [main] DEBUG nextflow.Session - Workflow process names [dsl1]: GenerateVCFHap, combineFastq, postFastQC, annotate, trimFastq, GenerateVCFSam, vartpype, alignReads, spread, processAlignments, GenerateVCFHFree, filter, extract, merge, buildIndex, summarize, preFastQC
+Jan-06 12:40:13.427 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: fq/; pattern: **{R1,R2}*.fastq.gz; options: [:]
+Jan-06 12:40:13.573 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-06 12:40:13.573 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-06 12:40:13.578 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Jan-06 12:40:13.585 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=16; memory=32 GB; capacity=16; pollInterval=100ms; dumpInterval=5m
+Jan-06 12:40:13.700 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-06 12:40:13.701 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-06 12:40:13.714 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-06 12:40:13.714 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-06 12:40:13.733 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-06 12:40:13.733 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-06 12:40:13.738 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-06 12:40:13.738 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-06 12:40:13.751 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-06 12:40:13.751 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-06 12:40:13.764 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-06 12:40:13.764 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-06 12:40:13.780 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-06 12:40:13.780 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-06 12:40:13.790 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-06 12:40:13.791 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-06 12:40:13.800 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-06 12:40:13.800 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-06 12:40:13.811 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-06 12:40:13.812 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-06 12:40:13.821 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-06 12:40:13.821 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-06 12:40:13.825 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-06 12:40:13.825 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-06 12:40:13.828 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-06 12:40:13.828 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-06 12:40:13.832 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-06 12:40:13.832 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-06 12:40:13.837 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-06 12:40:13.837 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-06 12:40:13.844 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-06 12:40:13.844 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-06 12:40:13.847 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Jan-06 12:40:13.847 [main] DEBUG nextflow.Session - Session await
+Jan-06 12:40:13.868 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:13.873 [Task submitter] INFO  nextflow.Session - [b9/116527] Submitted process > combineFastq (3)
+Jan-06 12:40:13.880 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:13.880 [Task submitter] INFO  nextflow.Session - [a7/80cc0d] Submitted process > combineFastq (6)
+Jan-06 12:40:13.884 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:13.884 [Task submitter] INFO  nextflow.Session - [1e/7cfe3b] Submitted process > combineFastq (8)
+Jan-06 12:40:13.889 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:13.889 [Task submitter] INFO  nextflow.Session - [b1/ed78dd] Submitted process > combineFastq (9)
+Jan-06 12:40:13.894 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:13.894 [Task submitter] INFO  nextflow.Session - [b9/5cbf19] Submitted process > combineFastq (13)
+Jan-06 12:40:13.898 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:13.899 [Task submitter] INFO  nextflow.Session - [cb/c62940] Submitted process > combineFastq (14)
+Jan-06 12:40:13.904 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:13.904 [Task submitter] INFO  nextflow.Session - [39/69c24e] Submitted process > combineFastq (12)
+Jan-06 12:40:13.912 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:13.912 [Task submitter] INFO  nextflow.Session - [ea/ac1281] Submitted process > combineFastq (16)
+Jan-06 12:40:13.918 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:13.918 [Task submitter] INFO  nextflow.Session - [c6/34c78b] Submitted process > combineFastq (10)
+Jan-06 12:40:13.924 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:13.924 [Task submitter] INFO  nextflow.Session - [26/e38125] Submitted process > combineFastq (2)
+Jan-06 12:40:13.931 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:13.931 [Task submitter] INFO  nextflow.Session - [7c/a7fb5d] Submitted process > combineFastq (4)
+Jan-06 12:40:13.937 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:13.938 [Task submitter] INFO  nextflow.Session - [ff/9e0587] Submitted process > combineFastq (15)
+Jan-06 12:40:13.944 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:13.944 [Task submitter] INFO  nextflow.Session - [5f/002c59] Submitted process > buildIndex (mdr)
+Jan-06 12:40:13.950 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:13.951 [Task submitter] INFO  nextflow.Session - [71/c6d65c] Submitted process > combineFastq (11)
+Jan-06 12:40:13.956 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:13.957 [Task submitter] INFO  nextflow.Session - [76/b3256c] Submitted process > combineFastq (7)
+Jan-06 12:40:13.969 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:13.971 [Task submitter] INFO  nextflow.Session - [ac/42dae5] Submitted process > combineFastq (1)
+Jan-06 12:40:16.001 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 14; name: combineFastq (14); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/cb/c62940e3a3f6468b09dd507a306506]
+Jan-06 12:40:16.006 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:16.007 [Task submitter] INFO  nextflow.Session - [74/515c3e] Submitted process > combineFastq (5)
+Jan-06 12:40:16.037 [Task monitor] DEBUG n.util.BlockingThreadExecutorFactory - Thread pool name=FileTransfer; maxThreads=48; maxQueueSize=144; keepAlive=1m
+Jan-06 12:40:16.163 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 8; name: combineFastq (8); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/1e/7cfe3b15a8116c66bc90d9bc77beb5]
+Jan-06 12:40:16.167 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:16.168 [Task submitter] INFO  nextflow.Session - [67/e641a1] Submitted process > combineFastq (18)
+Jan-06 12:40:16.218 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: combineFastq (4); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/7c/a7fb5d3fd5709d1be1a883431b7670]
+Jan-06 12:40:16.222 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:16.222 [Task submitter] INFO  nextflow.Session - [2b/639a7e] Submitted process > combineFastq (17)
+Jan-06 12:40:16.245 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: combineFastq (3); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b9/116527346c1c47d96fb6562bfd8cdc]
+Jan-06 12:40:16.250 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:16.250 [Task submitter] INFO  nextflow.Session - [92/a3e7c5] Submitted process > combineFastq (19)
+Jan-06 12:40:16.319 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: combineFastq (6); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/a7/80cc0d5b5772902fb72aef5126ab51]
+Jan-06 12:40:16.324 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:16.324 [Task submitter] INFO  nextflow.Session - [2f/dc3a58] Submitted process > combineFastq (20)
+Jan-06 12:40:16.501 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 13; name: combineFastq (13); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b9/5cbf1990b2c4b031aeca2d51a49cb3]
+Jan-06 12:40:16.506 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:16.506 [Task submitter] INFO  nextflow.Session - [92/f2ba2c] Submitted process > combineFastq (21)
+Jan-06 12:40:16.731 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 16; name: combineFastq (16); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/ea/ac12812de2d46875b4e073eb079420]
+Jan-06 12:40:16.735 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:16.736 [Task submitter] INFO  nextflow.Session - [c2/168f3b] Submitted process > combineFastq (22)
+Jan-06 12:40:17.074 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 12; name: combineFastq (12); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/39/69c24e8bf7b0b0439486ae35efd670]
+Jan-06 12:40:17.079 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:17.079 [Task submitter] INFO  nextflow.Session - [79/d5f55d] Submitted process > trimFastq (1)
+Jan-06 12:40:17.180 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 10; name: combineFastq (10); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/c6/34c78bf006fbbc8e9bdde8274e7532]
+Jan-06 12:40:17.183 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:17.184 [Task submitter] INFO  nextflow.Session - [7f/c19089] Submitted process > preFastQC (1)
+Jan-06 12:40:17.237 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: combineFastq (7); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/76/b3256ca019b0dfbe32580bab2129bf]
+Jan-06 12:40:17.242 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:17.243 [Task submitter] INFO  nextflow.Session - [89/a52439] Submitted process > preFastQC (2)
+Jan-06 12:40:17.426 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 15; name: combineFastq (15); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/ff/9e058791ce4738c9ad1f5e6268bb09]
+Jan-06 12:40:17.430 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:17.431 [Task submitter] INFO  nextflow.Session - [0b/df1b1b] Submitted process > trimFastq (2)
+Jan-06 12:40:17.979 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: combineFastq (1); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/ac/42dae53c35f6d2ba904d80bc04b4bd]
+Jan-06 12:40:17.983 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:17.983 [Task submitter] INFO  nextflow.Session - [62/0c65fb] Submitted process > preFastQC (3)
+Jan-06 12:40:18.226 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 11; name: combineFastq (11); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/71/c6d65c4714ba17377353b71747c475]
+Jan-06 12:40:18.230 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:18.230 [Task submitter] INFO  nextflow.Session - [38/9265b6] Submitted process > trimFastq (3)
+Jan-06 12:40:18.346 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: combineFastq (2); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/26/e3812539121b1316d388a726d9d506]
+Jan-06 12:40:18.352 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:18.353 [Task submitter] INFO  nextflow.Session - [86/2b474e] Submitted process > preFastQC (4)
+Jan-06 12:40:18.494 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 9; name: combineFastq (9); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b1/ed78ddfc2693bf14a327c0445bc7b4]
+Jan-06 12:40:18.498 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:18.498 [Task submitter] INFO  nextflow.Session - [5a/12dd91] Submitted process > trimFastq (4)
+Jan-06 12:40:18.632 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: combineFastq (5); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/74/515c3e9039facfa57476af0496c480]
+Jan-06 12:40:18.636 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:18.636 [Task submitter] INFO  nextflow.Session - [87/119ed2] Submitted process > preFastQC (5)
+Jan-06 12:40:18.653 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 19; name: combineFastq (18); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/67/e641a104b4328fc01fde869c3209f3]
+Jan-06 12:40:18.656 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:18.657 [Task submitter] INFO  nextflow.Session - [eb/5e7de1] Submitted process > trimFastq (5)
+Jan-06 12:40:18.793 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 20; name: combineFastq (19); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/92/a3e7c58086da381074f5c62fc1974e]
+Jan-06 12:40:18.797 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:18.797 [Task submitter] INFO  nextflow.Session - [42/0c3358] Submitted process > trimFastq (6)
+Jan-06 12:40:18.988 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 21; name: combineFastq (20); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/2f/dc3a580fb4ffc9e493958bc6d8f218]
+Jan-06 12:40:18.991 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:18.991 [Task submitter] INFO  nextflow.Session - [7e/86c6f3] Submitted process > preFastQC (6)
+Jan-06 12:40:19.025 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 17; name: buildIndex (mdr); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/5f/002c598690a2db21151b7a03e99fa8]
+Jan-06 12:40:19.028 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:19.028 [Task submitter] INFO  nextflow.Session - [8e/3aeedf] Submitted process > preFastQC (7)
+Jan-06 12:40:19.076 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 22; name: combineFastq (21); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/92/f2ba2c3bcae8965b4825bab1f1b8d6]
+Jan-06 12:40:19.080 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:19.081 [Task submitter] INFO  nextflow.Session - [2c/8b5af6] Submitted process > trimFastq (7)
+Jan-06 12:40:19.125 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 18; name: combineFastq (17); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/2b/639a7e4d579091b71e07526e256484]
+Jan-06 12:40:19.129 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:19.129 [Task submitter] INFO  nextflow.Session - [2d/8394b0] Submitted process > preFastQC (8)
+Jan-06 12:40:19.429 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 23; name: combineFastq (22); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/c2/168f3bbd0a73ac3d44749ef5b352d0]
+Jan-06 12:40:19.434 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:19.435 [Task submitter] INFO  nextflow.Session - [cf/b87361] Submitted process > trimFastq (8)
+Jan-06 12:40:22.982 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 25; name: trimFastq (1); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/79/d5f55d8fd4f8657dbdee1c74b8ff8d]
+Jan-06 12:40:22.986 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:22.986 [Task submitter] INFO  nextflow.Session - [1b/ba37b0] Submitted process > preFastQC (9)
+Jan-06 12:40:23.929 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 29; name: trimFastq (3); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/38/9265b670a1cc44a2212b6b95d9bbe1]
+Jan-06 12:40:23.934 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:23.934 [Task submitter] INFO  nextflow.Session - [c7/be1b0f] Submitted process > trimFastq (9)
+Jan-06 12:40:24.020 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 26; name: trimFastq (2); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/df1b1b6fc4c759a3f3751ce23af90b]
+Jan-06 12:40:24.023 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:24.024 [Task submitter] INFO  nextflow.Session - [fd/3754c8] Submitted process > preFastQC (10)
+Jan-06 12:40:24.416 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 32; name: trimFastq (5); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/eb/5e7de15b8ec05cd0a650cd1188d3b0]
+Jan-06 12:40:24.420 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:24.420 [Task submitter] INFO  nextflow.Session - [a9/555652] Submitted process > trimFastq (10)
+Jan-06 12:40:24.838 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 34; name: trimFastq (6); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/42/0c335806cc755b36b4e37f128bd2a7]
+Jan-06 12:40:24.842 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:24.842 [Task submitter] INFO  nextflow.Session - [29/7235cf] Submitted process > preFastQC (11)
+Jan-06 12:40:24.892 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 31; name: trimFastq (4); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/5a/12dd9194adbb101e97e5cdfc2086ea]
+Jan-06 12:40:24.896 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:24.896 [Task submitter] INFO  nextflow.Session - [48/e41809] Submitted process > trimFastq (11)
+Jan-06 12:40:25.305 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 36; name: trimFastq (7); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/2c/8b5af6ac18a5aa8c6f231fe1724765]
+Jan-06 12:40:25.308 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:25.308 [Task submitter] INFO  nextflow.Session - [e8/302d87] Submitted process > preFastQC (12)
+Jan-06 12:40:25.577 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 39; name: trimFastq (8); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/cf/b87361bed79c0e04ee324947fec92d]
+Jan-06 12:40:25.581 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:25.582 [Task submitter] INFO  nextflow.Session - [fd/4b4133] Submitted process > trimFastq (12)
+Jan-06 12:40:29.441 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 41; name: trimFastq (9); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/c7/be1b0f800a31ac8db71fbe007680a4]
+Jan-06 12:40:29.445 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:29.446 [Task submitter] INFO  nextflow.Session - [ee/781c83] Submitted process > trimFastq (13)
+Jan-06 12:40:30.555 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 43; name: trimFastq (10); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/a9/55565224daf22fd4ad001591ceb622]
+Jan-06 12:40:30.559 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:30.559 [Task submitter] INFO  nextflow.Session - [10/e5c291] Submitted process > preFastQC (13)
+Jan-06 12:40:31.290 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 47; name: trimFastq (12); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/fd/4b41334d26bdbb0177caa35cd3cc29]
+Jan-06 12:40:31.294 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:31.294 [Task submitter] INFO  nextflow.Session - [55/3023b0] Submitted process > trimFastq (14)
+Jan-06 12:40:31.483 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 45; name: trimFastq (11); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/48/e41809fa281752118e815021988be5]
+Jan-06 12:40:31.486 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:31.487 [Task submitter] INFO  nextflow.Session - [2c/65b9c8] Submitted process > preFastQC (14)
+Jan-06 12:40:34.420 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 49; name: trimFastq (13); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/ee/781c83edf67d7559f2bcb7fd381682]
+Jan-06 12:40:34.423 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:34.423 [Task submitter] INFO  nextflow.Session - [26/59f9dc] Submitted process > preFastQC (15)
+Jan-06 12:40:35.463 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 51; name: trimFastq (14); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/55/3023b0b87f76e8ae107075f9c4b1ab]
+Jan-06 12:40:35.467 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:35.468 [Task submitter] INFO  nextflow.Session - [4f/73e06a] Submitted process > trimFastq (15)
+Jan-06 12:40:40.159 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 53; name: trimFastq (15); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/4f/73e06a229afaaf4c5433b530472e76]
+Jan-06 12:40:40.162 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:40.163 [Task submitter] INFO  nextflow.Session - [59/104650] Submitted process > preFastQC (16)
+Jan-06 12:40:55.590 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 24; name: preFastQC (1); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/7f/c1908922e5b9def1b97147da2473a8]
+Jan-06 12:40:55.674 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:55.675 [Task submitter] INFO  nextflow.Session - [0b/df2752] Submitted process > trimFastq (16)
+Jan-06 12:40:55.677 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 27; name: preFastQC (2); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/89/a52439d21b47650ae2a761a17af141]
+Jan-06 12:40:55.683 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:55.683 [Task submitter] INFO  nextflow.Session - [2d/257117] Submitted process > postFastQC (8)
+Jan-06 12:40:56.453 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 35; name: preFastQC (6); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/7e/86c6f367e81d4281400f1bdf757fca]
+Jan-06 12:40:56.457 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:56.458 [Task submitter] INFO  nextflow.Session - [c7/040d9d] Submitted process > trimFastq (17)
+Jan-06 12:40:56.740 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 28; name: preFastQC (3); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/62/0c65fba65eacdeace44ae216cf8623]
+Jan-06 12:40:56.744 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:56.744 [Task submitter] INFO  nextflow.Session - [e0/690f73] Submitted process > preFastQC (17)
+Jan-06 12:40:56.798 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 37; name: preFastQC (7); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/8e/3aeedf4e60ccdbedc6eb82094b2c9b]
+Jan-06 12:40:56.804 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:56.804 [Task submitter] INFO  nextflow.Session - [0b/257b49] Submitted process > preFastQC (18)
+Jan-06 12:40:56.873 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 30; name: preFastQC (4); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/86/2b474ee8cb7176da6afa5d96857acb]
+Jan-06 12:40:56.877 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:56.877 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 33; name: preFastQC (5); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/87/119ed236afa36ae934ccc145bb0be3]
+Jan-06 12:40:56.878 [Task submitter] INFO  nextflow.Session - [7e/b4ddb1] Submitted process > trimFastq (18)
+Jan-06 12:40:56.884 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:56.885 [Task submitter] INFO  nextflow.Session - [b8/9b3d49] Submitted process > preFastQC (19)
+Jan-06 12:40:57.483 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 40; name: preFastQC (9); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/1b/ba37b00bf28407dbdf750ff1b94bdf]
+Jan-06 12:40:57.488 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:57.489 [Task submitter] INFO  nextflow.Session - [b0/a4361f] Submitted process > trimFastq (19)
+Jan-06 12:40:57.881 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 38; name: preFastQC (8); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/2d/8394b06dc6e23f257b4642d688b18c]
+Jan-06 12:40:57.884 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:57.884 [Task submitter] INFO  nextflow.Session - [0b/1af6a8] Submitted process > preFastQC (20)
+Jan-06 12:40:59.703 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 42; name: preFastQC (10); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/fd/3754c893dae571c6c10a90b1bcc140]
+Jan-06 12:40:59.707 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:59.707 [Task submitter] INFO  nextflow.Session - [4c/ec7d42] Submitted process > trimFastq (20)
+Jan-06 12:40:59.766 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 44; name: preFastQC (11); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/29/7235cfacbcca38d88bcfb9845a01ed]
+Jan-06 12:40:59.770 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:40:59.770 [Task submitter] INFO  nextflow.Session - [75/a2085b] Submitted process > trimFastq (21)
+Jan-06 12:41:00.069 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 46; name: preFastQC (12); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e8/302d87276b483c4cf9d971dfddd99b]
+Jan-06 12:41:00.074 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:41:00.074 [Task submitter] INFO  nextflow.Session - [28/c4ef11] Submitted process > preFastQC (21)
+Jan-06 12:41:01.879 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 55; name: trimFastq (16); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/df2752289aa9734fd0842e408a985c]
+Jan-06 12:41:01.884 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:41:01.884 [Task submitter] INFO  nextflow.Session - [fb/cf30c7] Submitted process > trimFastq (22)
+Jan-06 12:41:01.893 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 56; name: trimFastq (17); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/c7/040d9d5c73399cb150b6bfd1bb47ee]
+Jan-06 12:41:01.898 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:41:01.898 [Task submitter] INFO  nextflow.Session - [65/ce7dc4] Submitted process > preFastQC (22)
+Jan-06 12:41:02.443 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 61; name: trimFastq (19); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b0/a4361fecb0fa3e16dd921d203689c2]
+Jan-06 12:41:02.447 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:41:02.448 [Task submitter] INFO  nextflow.Session - [b9/4ca2f4] Submitted process > postFastQC (1)
+Jan-06 12:41:02.613 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 58; name: trimFastq (18); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/7e/b4ddb1c9cfa2a817c7078e006e6179]
+Jan-06 12:41:02.618 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:41:02.618 [Task submitter] INFO  nextflow.Session - [8a/28d37a] Submitted process > alignReads (1)
+Jan-06 12:41:04.374 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 48; name: preFastQC (13); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/10/e5c291a268311b6a599e3f91419bd3]
+Jan-06 12:41:04.379 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:41:04.379 [Task submitter] INFO  nextflow.Session - [3b/cd7f6b] Submitted process > postFastQC (2)
+Jan-06 12:41:04.921 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 63; name: trimFastq (20); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/4c/ec7d4211969e1550292ce78faf521b]
+Jan-06 12:41:04.928 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:41:04.928 [Task submitter] INFO  nextflow.Session - [b8/8db0d4] Submitted process > alignReads (2)
+Jan-06 12:41:05.419 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 50; name: preFastQC (14); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/2c/65b9c827494db7d1c261a67beff085]
+Jan-06 12:41:05.424 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:41:05.424 [Task submitter] INFO  nextflow.Session - [87/38fa31] Submitted process > postFastQC (3)
+Jan-06 12:41:05.614 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 64; name: trimFastq (21); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/75/a2085b5bf8731b1a74f75a40d74720]
+Jan-06 12:41:05.681 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:41:05.681 [Task submitter] INFO  nextflow.Session - [f9/0b0f0c] Submitted process > alignReads (3)
+Jan-06 12:41:08.690 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 67; name: trimFastq (22); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/fb/cf30c7bfb976ca1a645cddda538a7b]
+Jan-06 12:41:08.695 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:41:08.695 [Task submitter] INFO  nextflow.Session - [92/b66875] Submitted process > postFastQC (4)
+Jan-06 12:41:10.246 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 69; name: alignReads (1); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/8a/28d37aa64d8e6ba3548cc61f0e117f]
+Jan-06 12:41:10.252 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:41:10.253 [Task submitter] INFO  nextflow.Session - [00/bd2e80] Submitted process > alignReads (4)
+Jan-06 12:41:10.752 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 71; name: alignReads (2); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b8/8db0d4589bba32e54d5809acf80e8e]
+Jan-06 12:41:10.757 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:41:10.757 [Task submitter] INFO  nextflow.Session - [dc/00efe5] Submitted process > postFastQC (5)
+Jan-06 12:41:10.948 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 52; name: preFastQC (15); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/26/59f9dc91703bcaeaaa54a230275aff]
+Jan-06 12:41:10.954 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:41:10.955 [Task submitter] INFO  nextflow.Session - [1a/1616d3] Submitted process > alignReads (5)
+Jan-06 12:41:13.878 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 73; name: alignReads (3); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f9/0b0f0c4b17d5bca1f9afc037088dea]
+Jan-06 12:41:13.884 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:41:13.884 [Task submitter] INFO  nextflow.Session - [fc/e8dbd9] Submitted process > postFastQC (6)
+Jan-06 12:41:14.395 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 74; name: alignReads (4); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/00/bd2e80613d8ba31b97a218d1582be6]
+Jan-06 12:41:14.401 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:41:14.402 [Task submitter] INFO  nextflow.Session - [40/9ecc1e] Submitted process > alignReads (6)
+Jan-06 12:41:14.925 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 77; name: alignReads (5); status: COMPLETED; exit: 0; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/1a/1616d3a256b7cbc569e9c4bf99e727]
+Jan-06 12:41:14.930 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-06 12:41:14.931 [Task submitter] INFO  nextflow.Session - [98/52eab4] Submitted process > postFastQC (7)
+Jan-06 12:45:13.783 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 16 -- submitted tasks are shown below
+~> TaskHandler[id: 54; name: preFastQC (16); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/59/104650bd31ce963df5d42e0006fcc1]
+~> TaskHandler[id: 82; name: postFastQC (8); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/2d/25711738a3ffc0991220cf34e35efa]
+~> TaskHandler[id: 57; name: preFastQC (17); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e0/690f735f09c9ea568ffbfcdabfa448]
+~> TaskHandler[id: 59; name: preFastQC (18); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/257b49724c87df3256e9819451b88c]
+~> TaskHandler[id: 60; name: preFastQC (19); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b8/9b3d49dd1711e20f7c94a94d84096f]
+~> TaskHandler[id: 62; name: preFastQC (20); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/1af6a87d51f7f1f3ff085fda494ccd]
+~> TaskHandler[id: 65; name: preFastQC (21); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/28/c4ef11fc25807d7b3a990b3ef114cf]
+~> TaskHandler[id: 66; name: preFastQC (22); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/65/ce7dc47fc9b5f7f970f8dd6f1b2950]
+~> TaskHandler[id: 68; name: postFastQC (1); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b9/4ca2f477245c8487b93d15f71883a7]
+~> TaskHandler[id: 70; name: postFastQC (2); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3b/cd7f6b73b48878cf0fb250df6fb76b]
+.. remaining tasks omitted.
+Jan-06 12:45:14.444 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 35 -- tasks to be submitted are shown below
+~> TaskHandler[id: 80; name: alignReads (7); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e1/8da7c43ae66e733d8362245f1eb345]
+~> TaskHandler[id: 83; name: alignReads (8); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/24/7efc0df38f312293f32c91dc3a8b4e]
+~> TaskHandler[id: 85; name: postFastQC (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/fc/74f3c94e0f24c7f9045783fe6f69b0]
+~> TaskHandler[id: 84; name: alignReads (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/ae/32fad97cf404ec890263521670c9e3]
+~> TaskHandler[id: 86; name: postFastQC (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/40/9afc7f3f8e437dcbbbfbbf150b5fae]
+~> TaskHandler[id: 87; name: alignReads (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/bf/8b145f96e3baa65e0d8f6a4f35c1ca]
+~> TaskHandler[id: 88; name: postFastQC (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f6/0518c2b28c73941feabb5dc8b71254]
+~> TaskHandler[id: 89; name: alignReads (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f2/1ff7ec762c43bb996f6ae4ecbaf6a0]
+~> TaskHandler[id: 90; name: postFastQC (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3e/2140240a456fc7eb459e9081aef1f7]
+~> TaskHandler[id: 91; name: alignReads (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/81/e0bcb6f4a49a486e6c9b468c2e1702]
+.. remaining tasks omitted.
+Jan-06 12:50:13.778 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 16 -- submitted tasks are shown below
+~> TaskHandler[id: 54; name: preFastQC (16); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/59/104650bd31ce963df5d42e0006fcc1]
+~> TaskHandler[id: 82; name: postFastQC (8); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/2d/25711738a3ffc0991220cf34e35efa]
+~> TaskHandler[id: 57; name: preFastQC (17); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e0/690f735f09c9ea568ffbfcdabfa448]
+~> TaskHandler[id: 59; name: preFastQC (18); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/257b49724c87df3256e9819451b88c]
+~> TaskHandler[id: 60; name: preFastQC (19); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b8/9b3d49dd1711e20f7c94a94d84096f]
+~> TaskHandler[id: 62; name: preFastQC (20); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/1af6a87d51f7f1f3ff085fda494ccd]
+~> TaskHandler[id: 65; name: preFastQC (21); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/28/c4ef11fc25807d7b3a990b3ef114cf]
+~> TaskHandler[id: 66; name: preFastQC (22); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/65/ce7dc47fc9b5f7f970f8dd6f1b2950]
+~> TaskHandler[id: 68; name: postFastQC (1); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b9/4ca2f477245c8487b93d15f71883a7]
+~> TaskHandler[id: 70; name: postFastQC (2); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3b/cd7f6b73b48878cf0fb250df6fb76b]
+.. remaining tasks omitted.
+Jan-06 12:50:14.560 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 35 -- tasks to be submitted are shown below
+~> TaskHandler[id: 80; name: alignReads (7); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e1/8da7c43ae66e733d8362245f1eb345]
+~> TaskHandler[id: 83; name: alignReads (8); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/24/7efc0df38f312293f32c91dc3a8b4e]
+~> TaskHandler[id: 85; name: postFastQC (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/fc/74f3c94e0f24c7f9045783fe6f69b0]
+~> TaskHandler[id: 84; name: alignReads (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/ae/32fad97cf404ec890263521670c9e3]
+~> TaskHandler[id: 86; name: postFastQC (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/40/9afc7f3f8e437dcbbbfbbf150b5fae]
+~> TaskHandler[id: 87; name: alignReads (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/bf/8b145f96e3baa65e0d8f6a4f35c1ca]
+~> TaskHandler[id: 88; name: postFastQC (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f6/0518c2b28c73941feabb5dc8b71254]
+~> TaskHandler[id: 89; name: alignReads (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f2/1ff7ec762c43bb996f6ae4ecbaf6a0]
+~> TaskHandler[id: 90; name: postFastQC (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3e/2140240a456fc7eb459e9081aef1f7]
+~> TaskHandler[id: 91; name: alignReads (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/81/e0bcb6f4a49a486e6c9b468c2e1702]
+.. remaining tasks omitted.
+Jan-06 12:57:58.803 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 35 -- tasks to be submitted are shown below
+~> TaskHandler[id: 80; name: alignReads (7); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e1/8da7c43ae66e733d8362245f1eb345]
+~> TaskHandler[id: 83; name: alignReads (8); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/24/7efc0df38f312293f32c91dc3a8b4e]
+~> TaskHandler[id: 85; name: postFastQC (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/fc/74f3c94e0f24c7f9045783fe6f69b0]
+~> TaskHandler[id: 84; name: alignReads (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/ae/32fad97cf404ec890263521670c9e3]
+~> TaskHandler[id: 86; name: postFastQC (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/40/9afc7f3f8e437dcbbbfbbf150b5fae]
+~> TaskHandler[id: 87; name: alignReads (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/bf/8b145f96e3baa65e0d8f6a4f35c1ca]
+~> TaskHandler[id: 88; name: postFastQC (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f6/0518c2b28c73941feabb5dc8b71254]
+~> TaskHandler[id: 89; name: alignReads (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f2/1ff7ec762c43bb996f6ae4ecbaf6a0]
+~> TaskHandler[id: 90; name: postFastQC (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3e/2140240a456fc7eb459e9081aef1f7]
+~> TaskHandler[id: 91; name: alignReads (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/81/e0bcb6f4a49a486e6c9b468c2e1702]
+.. remaining tasks omitted.
+Jan-06 12:57:58.829 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 16 -- submitted tasks are shown below
+~> TaskHandler[id: 54; name: preFastQC (16); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/59/104650bd31ce963df5d42e0006fcc1]
+~> TaskHandler[id: 82; name: postFastQC (8); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/2d/25711738a3ffc0991220cf34e35efa]
+~> TaskHandler[id: 57; name: preFastQC (17); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e0/690f735f09c9ea568ffbfcdabfa448]
+~> TaskHandler[id: 59; name: preFastQC (18); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/257b49724c87df3256e9819451b88c]
+~> TaskHandler[id: 60; name: preFastQC (19); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b8/9b3d49dd1711e20f7c94a94d84096f]
+~> TaskHandler[id: 62; name: preFastQC (20); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/1af6a87d51f7f1f3ff085fda494ccd]
+~> TaskHandler[id: 65; name: preFastQC (21); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/28/c4ef11fc25807d7b3a990b3ef114cf]
+~> TaskHandler[id: 66; name: preFastQC (22); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/65/ce7dc47fc9b5f7f970f8dd6f1b2950]
+~> TaskHandler[id: 68; name: postFastQC (1); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b9/4ca2f477245c8487b93d15f71883a7]
+~> TaskHandler[id: 70; name: postFastQC (2); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3b/cd7f6b73b48878cf0fb250df6fb76b]
+.. remaining tasks omitted.
+Jan-06 13:02:58.827 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 16 -- submitted tasks are shown below
+~> TaskHandler[id: 54; name: preFastQC (16); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/59/104650bd31ce963df5d42e0006fcc1]
+~> TaskHandler[id: 82; name: postFastQC (8); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/2d/25711738a3ffc0991220cf34e35efa]
+~> TaskHandler[id: 57; name: preFastQC (17); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e0/690f735f09c9ea568ffbfcdabfa448]
+~> TaskHandler[id: 59; name: preFastQC (18); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/257b49724c87df3256e9819451b88c]
+~> TaskHandler[id: 60; name: preFastQC (19); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b8/9b3d49dd1711e20f7c94a94d84096f]
+~> TaskHandler[id: 62; name: preFastQC (20); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/1af6a87d51f7f1f3ff085fda494ccd]
+~> TaskHandler[id: 65; name: preFastQC (21); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/28/c4ef11fc25807d7b3a990b3ef114cf]
+~> TaskHandler[id: 66; name: preFastQC (22); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/65/ce7dc47fc9b5f7f970f8dd6f1b2950]
+~> TaskHandler[id: 68; name: postFastQC (1); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b9/4ca2f477245c8487b93d15f71883a7]
+~> TaskHandler[id: 70; name: postFastQC (2); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3b/cd7f6b73b48878cf0fb250df6fb76b]
+.. remaining tasks omitted.
+Jan-06 13:02:59.599 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 35 -- tasks to be submitted are shown below
+~> TaskHandler[id: 80; name: alignReads (7); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e1/8da7c43ae66e733d8362245f1eb345]
+~> TaskHandler[id: 83; name: alignReads (8); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/24/7efc0df38f312293f32c91dc3a8b4e]
+~> TaskHandler[id: 85; name: postFastQC (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/fc/74f3c94e0f24c7f9045783fe6f69b0]
+~> TaskHandler[id: 84; name: alignReads (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/ae/32fad97cf404ec890263521670c9e3]
+~> TaskHandler[id: 86; name: postFastQC (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/40/9afc7f3f8e437dcbbbfbbf150b5fae]
+~> TaskHandler[id: 87; name: alignReads (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/bf/8b145f96e3baa65e0d8f6a4f35c1ca]
+~> TaskHandler[id: 88; name: postFastQC (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f6/0518c2b28c73941feabb5dc8b71254]
+~> TaskHandler[id: 89; name: alignReads (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f2/1ff7ec762c43bb996f6ae4ecbaf6a0]
+~> TaskHandler[id: 90; name: postFastQC (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3e/2140240a456fc7eb459e9081aef1f7]
+~> TaskHandler[id: 91; name: alignReads (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/81/e0bcb6f4a49a486e6c9b468c2e1702]
+.. remaining tasks omitted.
+Jan-06 13:07:58.891 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 16 -- submitted tasks are shown below
+~> TaskHandler[id: 54; name: preFastQC (16); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/59/104650bd31ce963df5d42e0006fcc1]
+~> TaskHandler[id: 82; name: postFastQC (8); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/2d/25711738a3ffc0991220cf34e35efa]
+~> TaskHandler[id: 57; name: preFastQC (17); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e0/690f735f09c9ea568ffbfcdabfa448]
+~> TaskHandler[id: 59; name: preFastQC (18); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/257b49724c87df3256e9819451b88c]
+~> TaskHandler[id: 60; name: preFastQC (19); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b8/9b3d49dd1711e20f7c94a94d84096f]
+~> TaskHandler[id: 62; name: preFastQC (20); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/1af6a87d51f7f1f3ff085fda494ccd]
+~> TaskHandler[id: 65; name: preFastQC (21); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/28/c4ef11fc25807d7b3a990b3ef114cf]
+~> TaskHandler[id: 66; name: preFastQC (22); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/65/ce7dc47fc9b5f7f970f8dd6f1b2950]
+~> TaskHandler[id: 68; name: postFastQC (1); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b9/4ca2f477245c8487b93d15f71883a7]
+~> TaskHandler[id: 70; name: postFastQC (2); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3b/cd7f6b73b48878cf0fb250df6fb76b]
+.. remaining tasks omitted.
+Jan-06 13:07:59.928 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 35 -- tasks to be submitted are shown below
+~> TaskHandler[id: 80; name: alignReads (7); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e1/8da7c43ae66e733d8362245f1eb345]
+~> TaskHandler[id: 83; name: alignReads (8); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/24/7efc0df38f312293f32c91dc3a8b4e]
+~> TaskHandler[id: 85; name: postFastQC (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/fc/74f3c94e0f24c7f9045783fe6f69b0]
+~> TaskHandler[id: 84; name: alignReads (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/ae/32fad97cf404ec890263521670c9e3]
+~> TaskHandler[id: 86; name: postFastQC (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/40/9afc7f3f8e437dcbbbfbbf150b5fae]
+~> TaskHandler[id: 87; name: alignReads (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/bf/8b145f96e3baa65e0d8f6a4f35c1ca]
+~> TaskHandler[id: 88; name: postFastQC (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f6/0518c2b28c73941feabb5dc8b71254]
+~> TaskHandler[id: 89; name: alignReads (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f2/1ff7ec762c43bb996f6ae4ecbaf6a0]
+~> TaskHandler[id: 90; name: postFastQC (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3e/2140240a456fc7eb459e9081aef1f7]
+~> TaskHandler[id: 91; name: alignReads (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/81/e0bcb6f4a49a486e6c9b468c2e1702]
+.. remaining tasks omitted.
+Jan-06 13:21:16.990 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 35 -- tasks to be submitted are shown below
+~> TaskHandler[id: 80; name: alignReads (7); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e1/8da7c43ae66e733d8362245f1eb345]
+~> TaskHandler[id: 83; name: alignReads (8); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/24/7efc0df38f312293f32c91dc3a8b4e]
+~> TaskHandler[id: 85; name: postFastQC (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/fc/74f3c94e0f24c7f9045783fe6f69b0]
+~> TaskHandler[id: 84; name: alignReads (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/ae/32fad97cf404ec890263521670c9e3]
+~> TaskHandler[id: 86; name: postFastQC (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/40/9afc7f3f8e437dcbbbfbbf150b5fae]
+~> TaskHandler[id: 87; name: alignReads (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/bf/8b145f96e3baa65e0d8f6a4f35c1ca]
+~> TaskHandler[id: 88; name: postFastQC (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f6/0518c2b28c73941feabb5dc8b71254]
+~> TaskHandler[id: 89; name: alignReads (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f2/1ff7ec762c43bb996f6ae4ecbaf6a0]
+~> TaskHandler[id: 90; name: postFastQC (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3e/2140240a456fc7eb459e9081aef1f7]
+~> TaskHandler[id: 91; name: alignReads (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/81/e0bcb6f4a49a486e6c9b468c2e1702]
+.. remaining tasks omitted.
+Jan-06 13:21:17.028 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 16 -- submitted tasks are shown below
+~> TaskHandler[id: 54; name: preFastQC (16); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/59/104650bd31ce963df5d42e0006fcc1]
+~> TaskHandler[id: 82; name: postFastQC (8); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/2d/25711738a3ffc0991220cf34e35efa]
+~> TaskHandler[id: 57; name: preFastQC (17); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e0/690f735f09c9ea568ffbfcdabfa448]
+~> TaskHandler[id: 59; name: preFastQC (18); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/257b49724c87df3256e9819451b88c]
+~> TaskHandler[id: 60; name: preFastQC (19); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b8/9b3d49dd1711e20f7c94a94d84096f]
+~> TaskHandler[id: 62; name: preFastQC (20); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/1af6a87d51f7f1f3ff085fda494ccd]
+~> TaskHandler[id: 65; name: preFastQC (21); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/28/c4ef11fc25807d7b3a990b3ef114cf]
+~> TaskHandler[id: 66; name: preFastQC (22); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/65/ce7dc47fc9b5f7f970f8dd6f1b2950]
+~> TaskHandler[id: 68; name: postFastQC (1); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b9/4ca2f477245c8487b93d15f71883a7]
+~> TaskHandler[id: 70; name: postFastQC (2); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3b/cd7f6b73b48878cf0fb250df6fb76b]
+.. remaining tasks omitted.
+Jan-06 13:26:17.037 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 16 -- submitted tasks are shown below
+~> TaskHandler[id: 54; name: preFastQC (16); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/59/104650bd31ce963df5d42e0006fcc1]
+~> TaskHandler[id: 82; name: postFastQC (8); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/2d/25711738a3ffc0991220cf34e35efa]
+~> TaskHandler[id: 57; name: preFastQC (17); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e0/690f735f09c9ea568ffbfcdabfa448]
+~> TaskHandler[id: 59; name: preFastQC (18); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/257b49724c87df3256e9819451b88c]
+~> TaskHandler[id: 60; name: preFastQC (19); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b8/9b3d49dd1711e20f7c94a94d84096f]
+~> TaskHandler[id: 62; name: preFastQC (20); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/1af6a87d51f7f1f3ff085fda494ccd]
+~> TaskHandler[id: 65; name: preFastQC (21); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/28/c4ef11fc25807d7b3a990b3ef114cf]
+~> TaskHandler[id: 66; name: preFastQC (22); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/65/ce7dc47fc9b5f7f970f8dd6f1b2950]
+~> TaskHandler[id: 68; name: postFastQC (1); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b9/4ca2f477245c8487b93d15f71883a7]
+~> TaskHandler[id: 70; name: postFastQC (2); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3b/cd7f6b73b48878cf0fb250df6fb76b]
+.. remaining tasks omitted.
+Jan-06 13:26:17.579 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 35 -- tasks to be submitted are shown below
+~> TaskHandler[id: 80; name: alignReads (7); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e1/8da7c43ae66e733d8362245f1eb345]
+~> TaskHandler[id: 83; name: alignReads (8); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/24/7efc0df38f312293f32c91dc3a8b4e]
+~> TaskHandler[id: 85; name: postFastQC (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/fc/74f3c94e0f24c7f9045783fe6f69b0]
+~> TaskHandler[id: 84; name: alignReads (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/ae/32fad97cf404ec890263521670c9e3]
+~> TaskHandler[id: 86; name: postFastQC (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/40/9afc7f3f8e437dcbbbfbbf150b5fae]
+~> TaskHandler[id: 87; name: alignReads (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/bf/8b145f96e3baa65e0d8f6a4f35c1ca]
+~> TaskHandler[id: 88; name: postFastQC (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f6/0518c2b28c73941feabb5dc8b71254]
+~> TaskHandler[id: 89; name: alignReads (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f2/1ff7ec762c43bb996f6ae4ecbaf6a0]
+~> TaskHandler[id: 90; name: postFastQC (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3e/2140240a456fc7eb459e9081aef1f7]
+~> TaskHandler[id: 91; name: alignReads (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/81/e0bcb6f4a49a486e6c9b468c2e1702]
+.. remaining tasks omitted.
+Jan-06 13:31:17.110 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 16 -- submitted tasks are shown below
+~> TaskHandler[id: 54; name: preFastQC (16); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/59/104650bd31ce963df5d42e0006fcc1]
+~> TaskHandler[id: 82; name: postFastQC (8); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/2d/25711738a3ffc0991220cf34e35efa]
+~> TaskHandler[id: 57; name: preFastQC (17); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e0/690f735f09c9ea568ffbfcdabfa448]
+~> TaskHandler[id: 59; name: preFastQC (18); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/257b49724c87df3256e9819451b88c]
+~> TaskHandler[id: 60; name: preFastQC (19); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b8/9b3d49dd1711e20f7c94a94d84096f]
+~> TaskHandler[id: 62; name: preFastQC (20); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/1af6a87d51f7f1f3ff085fda494ccd]
+~> TaskHandler[id: 65; name: preFastQC (21); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/28/c4ef11fc25807d7b3a990b3ef114cf]
+~> TaskHandler[id: 66; name: preFastQC (22); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/65/ce7dc47fc9b5f7f970f8dd6f1b2950]
+~> TaskHandler[id: 68; name: postFastQC (1); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b9/4ca2f477245c8487b93d15f71883a7]
+~> TaskHandler[id: 70; name: postFastQC (2); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3b/cd7f6b73b48878cf0fb250df6fb76b]
+.. remaining tasks omitted.
+Jan-06 13:31:18.348 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 35 -- tasks to be submitted are shown below
+~> TaskHandler[id: 80; name: alignReads (7); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e1/8da7c43ae66e733d8362245f1eb345]
+~> TaskHandler[id: 83; name: alignReads (8); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/24/7efc0df38f312293f32c91dc3a8b4e]
+~> TaskHandler[id: 85; name: postFastQC (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/fc/74f3c94e0f24c7f9045783fe6f69b0]
+~> TaskHandler[id: 84; name: alignReads (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/ae/32fad97cf404ec890263521670c9e3]
+~> TaskHandler[id: 86; name: postFastQC (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/40/9afc7f3f8e437dcbbbfbbf150b5fae]
+~> TaskHandler[id: 87; name: alignReads (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/bf/8b145f96e3baa65e0d8f6a4f35c1ca]
+~> TaskHandler[id: 88; name: postFastQC (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f6/0518c2b28c73941feabb5dc8b71254]
+~> TaskHandler[id: 89; name: alignReads (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f2/1ff7ec762c43bb996f6ae4ecbaf6a0]
+~> TaskHandler[id: 90; name: postFastQC (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3e/2140240a456fc7eb459e9081aef1f7]
+~> TaskHandler[id: 91; name: alignReads (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/81/e0bcb6f4a49a486e6c9b468c2e1702]
+.. remaining tasks omitted.
+Jan-06 13:36:17.130 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 16 -- submitted tasks are shown below
+~> TaskHandler[id: 54; name: preFastQC (16); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/59/104650bd31ce963df5d42e0006fcc1]
+~> TaskHandler[id: 82; name: postFastQC (8); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/2d/25711738a3ffc0991220cf34e35efa]
+~> TaskHandler[id: 57; name: preFastQC (17); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e0/690f735f09c9ea568ffbfcdabfa448]
+~> TaskHandler[id: 59; name: preFastQC (18); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/257b49724c87df3256e9819451b88c]
+~> TaskHandler[id: 60; name: preFastQC (19); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b8/9b3d49dd1711e20f7c94a94d84096f]
+~> TaskHandler[id: 62; name: preFastQC (20); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/1af6a87d51f7f1f3ff085fda494ccd]
+~> TaskHandler[id: 65; name: preFastQC (21); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/28/c4ef11fc25807d7b3a990b3ef114cf]
+~> TaskHandler[id: 66; name: preFastQC (22); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/65/ce7dc47fc9b5f7f970f8dd6f1b2950]
+~> TaskHandler[id: 68; name: postFastQC (1); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b9/4ca2f477245c8487b93d15f71883a7]
+~> TaskHandler[id: 70; name: postFastQC (2); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3b/cd7f6b73b48878cf0fb250df6fb76b]
+.. remaining tasks omitted.
+Jan-06 13:36:19.156 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 35 -- tasks to be submitted are shown below
+~> TaskHandler[id: 80; name: alignReads (7); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e1/8da7c43ae66e733d8362245f1eb345]
+~> TaskHandler[id: 83; name: alignReads (8); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/24/7efc0df38f312293f32c91dc3a8b4e]
+~> TaskHandler[id: 85; name: postFastQC (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/fc/74f3c94e0f24c7f9045783fe6f69b0]
+~> TaskHandler[id: 84; name: alignReads (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/ae/32fad97cf404ec890263521670c9e3]
+~> TaskHandler[id: 86; name: postFastQC (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/40/9afc7f3f8e437dcbbbfbbf150b5fae]
+~> TaskHandler[id: 87; name: alignReads (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/bf/8b145f96e3baa65e0d8f6a4f35c1ca]
+~> TaskHandler[id: 88; name: postFastQC (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f6/0518c2b28c73941feabb5dc8b71254]
+~> TaskHandler[id: 89; name: alignReads (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f2/1ff7ec762c43bb996f6ae4ecbaf6a0]
+~> TaskHandler[id: 90; name: postFastQC (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3e/2140240a456fc7eb459e9081aef1f7]
+~> TaskHandler[id: 91; name: alignReads (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/81/e0bcb6f4a49a486e6c9b468c2e1702]
+.. remaining tasks omitted.
+Jan-06 13:41:17.222 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 16 -- submitted tasks are shown below
+~> TaskHandler[id: 54; name: preFastQC (16); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/59/104650bd31ce963df5d42e0006fcc1]
+~> TaskHandler[id: 82; name: postFastQC (8); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/2d/25711738a3ffc0991220cf34e35efa]
+~> TaskHandler[id: 57; name: preFastQC (17); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e0/690f735f09c9ea568ffbfcdabfa448]
+~> TaskHandler[id: 59; name: preFastQC (18); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/257b49724c87df3256e9819451b88c]
+~> TaskHandler[id: 60; name: preFastQC (19); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b8/9b3d49dd1711e20f7c94a94d84096f]
+~> TaskHandler[id: 62; name: preFastQC (20); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/1af6a87d51f7f1f3ff085fda494ccd]
+~> TaskHandler[id: 65; name: preFastQC (21); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/28/c4ef11fc25807d7b3a990b3ef114cf]
+~> TaskHandler[id: 66; name: preFastQC (22); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/65/ce7dc47fc9b5f7f970f8dd6f1b2950]
+~> TaskHandler[id: 68; name: postFastQC (1); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b9/4ca2f477245c8487b93d15f71883a7]
+~> TaskHandler[id: 70; name: postFastQC (2); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3b/cd7f6b73b48878cf0fb250df6fb76b]
+.. remaining tasks omitted.
+Jan-06 13:41:19.702 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 35 -- tasks to be submitted are shown below
+~> TaskHandler[id: 80; name: alignReads (7); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e1/8da7c43ae66e733d8362245f1eb345]
+~> TaskHandler[id: 83; name: alignReads (8); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/24/7efc0df38f312293f32c91dc3a8b4e]
+~> TaskHandler[id: 85; name: postFastQC (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/fc/74f3c94e0f24c7f9045783fe6f69b0]
+~> TaskHandler[id: 84; name: alignReads (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/ae/32fad97cf404ec890263521670c9e3]
+~> TaskHandler[id: 86; name: postFastQC (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/40/9afc7f3f8e437dcbbbfbbf150b5fae]
+~> TaskHandler[id: 87; name: alignReads (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/bf/8b145f96e3baa65e0d8f6a4f35c1ca]
+~> TaskHandler[id: 88; name: postFastQC (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f6/0518c2b28c73941feabb5dc8b71254]
+~> TaskHandler[id: 89; name: alignReads (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f2/1ff7ec762c43bb996f6ae4ecbaf6a0]
+~> TaskHandler[id: 90; name: postFastQC (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3e/2140240a456fc7eb459e9081aef1f7]
+~> TaskHandler[id: 91; name: alignReads (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/81/e0bcb6f4a49a486e6c9b468c2e1702]
+.. remaining tasks omitted.
+Jan-06 13:46:17.305 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 16 -- submitted tasks are shown below
+~> TaskHandler[id: 54; name: preFastQC (16); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/59/104650bd31ce963df5d42e0006fcc1]
+~> TaskHandler[id: 82; name: postFastQC (8); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/2d/25711738a3ffc0991220cf34e35efa]
+~> TaskHandler[id: 57; name: preFastQC (17); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e0/690f735f09c9ea568ffbfcdabfa448]
+~> TaskHandler[id: 59; name: preFastQC (18); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/257b49724c87df3256e9819451b88c]
+~> TaskHandler[id: 60; name: preFastQC (19); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b8/9b3d49dd1711e20f7c94a94d84096f]
+~> TaskHandler[id: 62; name: preFastQC (20); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/1af6a87d51f7f1f3ff085fda494ccd]
+~> TaskHandler[id: 65; name: preFastQC (21); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/28/c4ef11fc25807d7b3a990b3ef114cf]
+~> TaskHandler[id: 66; name: preFastQC (22); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/65/ce7dc47fc9b5f7f970f8dd6f1b2950]
+~> TaskHandler[id: 68; name: postFastQC (1); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b9/4ca2f477245c8487b93d15f71883a7]
+~> TaskHandler[id: 70; name: postFastQC (2); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3b/cd7f6b73b48878cf0fb250df6fb76b]
+.. remaining tasks omitted.
+Jan-06 13:46:20.443 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 35 -- tasks to be submitted are shown below
+~> TaskHandler[id: 80; name: alignReads (7); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e1/8da7c43ae66e733d8362245f1eb345]
+~> TaskHandler[id: 83; name: alignReads (8); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/24/7efc0df38f312293f32c91dc3a8b4e]
+~> TaskHandler[id: 85; name: postFastQC (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/fc/74f3c94e0f24c7f9045783fe6f69b0]
+~> TaskHandler[id: 84; name: alignReads (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/ae/32fad97cf404ec890263521670c9e3]
+~> TaskHandler[id: 86; name: postFastQC (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/40/9afc7f3f8e437dcbbbfbbf150b5fae]
+~> TaskHandler[id: 87; name: alignReads (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/bf/8b145f96e3baa65e0d8f6a4f35c1ca]
+~> TaskHandler[id: 88; name: postFastQC (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f6/0518c2b28c73941feabb5dc8b71254]
+~> TaskHandler[id: 89; name: alignReads (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f2/1ff7ec762c43bb996f6ae4ecbaf6a0]
+~> TaskHandler[id: 90; name: postFastQC (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3e/2140240a456fc7eb459e9081aef1f7]
+~> TaskHandler[id: 91; name: alignReads (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/81/e0bcb6f4a49a486e6c9b468c2e1702]
+.. remaining tasks omitted.
+Jan-06 13:51:17.314 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 16 -- submitted tasks are shown below
+~> TaskHandler[id: 54; name: preFastQC (16); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/59/104650bd31ce963df5d42e0006fcc1]
+~> TaskHandler[id: 82; name: postFastQC (8); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/2d/25711738a3ffc0991220cf34e35efa]
+~> TaskHandler[id: 57; name: preFastQC (17); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e0/690f735f09c9ea568ffbfcdabfa448]
+~> TaskHandler[id: 59; name: preFastQC (18); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/257b49724c87df3256e9819451b88c]
+~> TaskHandler[id: 60; name: preFastQC (19); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b8/9b3d49dd1711e20f7c94a94d84096f]
+~> TaskHandler[id: 62; name: preFastQC (20); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/1af6a87d51f7f1f3ff085fda494ccd]
+~> TaskHandler[id: 65; name: preFastQC (21); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/28/c4ef11fc25807d7b3a990b3ef114cf]
+~> TaskHandler[id: 66; name: preFastQC (22); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/65/ce7dc47fc9b5f7f970f8dd6f1b2950]
+~> TaskHandler[id: 68; name: postFastQC (1); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b9/4ca2f477245c8487b93d15f71883a7]
+~> TaskHandler[id: 70; name: postFastQC (2); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3b/cd7f6b73b48878cf0fb250df6fb76b]
+.. remaining tasks omitted.
+Jan-06 13:51:21.436 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 35 -- tasks to be submitted are shown below
+~> TaskHandler[id: 80; name: alignReads (7); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e1/8da7c43ae66e733d8362245f1eb345]
+~> TaskHandler[id: 83; name: alignReads (8); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/24/7efc0df38f312293f32c91dc3a8b4e]
+~> TaskHandler[id: 85; name: postFastQC (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/fc/74f3c94e0f24c7f9045783fe6f69b0]
+~> TaskHandler[id: 84; name: alignReads (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/ae/32fad97cf404ec890263521670c9e3]
+~> TaskHandler[id: 86; name: postFastQC (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/40/9afc7f3f8e437dcbbbfbbf150b5fae]
+~> TaskHandler[id: 87; name: alignReads (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/bf/8b145f96e3baa65e0d8f6a4f35c1ca]
+~> TaskHandler[id: 88; name: postFastQC (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f6/0518c2b28c73941feabb5dc8b71254]
+~> TaskHandler[id: 89; name: alignReads (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f2/1ff7ec762c43bb996f6ae4ecbaf6a0]
+~> TaskHandler[id: 90; name: postFastQC (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3e/2140240a456fc7eb459e9081aef1f7]
+~> TaskHandler[id: 91; name: alignReads (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/81/e0bcb6f4a49a486e6c9b468c2e1702]
+.. remaining tasks omitted.
+Jan-06 13:56:17.394 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 16 -- submitted tasks are shown below
+~> TaskHandler[id: 54; name: preFastQC (16); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/59/104650bd31ce963df5d42e0006fcc1]
+~> TaskHandler[id: 82; name: postFastQC (8); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/2d/25711738a3ffc0991220cf34e35efa]
+~> TaskHandler[id: 57; name: preFastQC (17); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e0/690f735f09c9ea568ffbfcdabfa448]
+~> TaskHandler[id: 59; name: preFastQC (18); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/257b49724c87df3256e9819451b88c]
+~> TaskHandler[id: 60; name: preFastQC (19); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b8/9b3d49dd1711e20f7c94a94d84096f]
+~> TaskHandler[id: 62; name: preFastQC (20); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/1af6a87d51f7f1f3ff085fda494ccd]
+~> TaskHandler[id: 65; name: preFastQC (21); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/28/c4ef11fc25807d7b3a990b3ef114cf]
+~> TaskHandler[id: 66; name: preFastQC (22); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/65/ce7dc47fc9b5f7f970f8dd6f1b2950]
+~> TaskHandler[id: 68; name: postFastQC (1); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b9/4ca2f477245c8487b93d15f71883a7]
+~> TaskHandler[id: 70; name: postFastQC (2); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3b/cd7f6b73b48878cf0fb250df6fb76b]
+.. remaining tasks omitted.
+Jan-06 13:56:21.935 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 35 -- tasks to be submitted are shown below
+~> TaskHandler[id: 80; name: alignReads (7); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e1/8da7c43ae66e733d8362245f1eb345]
+~> TaskHandler[id: 83; name: alignReads (8); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/24/7efc0df38f312293f32c91dc3a8b4e]
+~> TaskHandler[id: 85; name: postFastQC (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/fc/74f3c94e0f24c7f9045783fe6f69b0]
+~> TaskHandler[id: 84; name: alignReads (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/ae/32fad97cf404ec890263521670c9e3]
+~> TaskHandler[id: 86; name: postFastQC (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/40/9afc7f3f8e437dcbbbfbbf150b5fae]
+~> TaskHandler[id: 87; name: alignReads (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/bf/8b145f96e3baa65e0d8f6a4f35c1ca]
+~> TaskHandler[id: 88; name: postFastQC (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f6/0518c2b28c73941feabb5dc8b71254]
+~> TaskHandler[id: 89; name: alignReads (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f2/1ff7ec762c43bb996f6ae4ecbaf6a0]
+~> TaskHandler[id: 90; name: postFastQC (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3e/2140240a456fc7eb459e9081aef1f7]
+~> TaskHandler[id: 91; name: alignReads (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/81/e0bcb6f4a49a486e6c9b468c2e1702]
+.. remaining tasks omitted.
+Jan-06 14:01:17.442 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 16 -- submitted tasks are shown below
+~> TaskHandler[id: 54; name: preFastQC (16); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/59/104650bd31ce963df5d42e0006fcc1]
+~> TaskHandler[id: 82; name: postFastQC (8); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/2d/25711738a3ffc0991220cf34e35efa]
+~> TaskHandler[id: 57; name: preFastQC (17); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e0/690f735f09c9ea568ffbfcdabfa448]
+~> TaskHandler[id: 59; name: preFastQC (18); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/257b49724c87df3256e9819451b88c]
+~> TaskHandler[id: 60; name: preFastQC (19); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b8/9b3d49dd1711e20f7c94a94d84096f]
+~> TaskHandler[id: 62; name: preFastQC (20); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/1af6a87d51f7f1f3ff085fda494ccd]
+~> TaskHandler[id: 65; name: preFastQC (21); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/28/c4ef11fc25807d7b3a990b3ef114cf]
+~> TaskHandler[id: 66; name: preFastQC (22); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/65/ce7dc47fc9b5f7f970f8dd6f1b2950]
+~> TaskHandler[id: 68; name: postFastQC (1); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b9/4ca2f477245c8487b93d15f71883a7]
+~> TaskHandler[id: 70; name: postFastQC (2); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3b/cd7f6b73b48878cf0fb250df6fb76b]
+.. remaining tasks omitted.
+Jan-06 14:01:22.525 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 35 -- tasks to be submitted are shown below
+~> TaskHandler[id: 80; name: alignReads (7); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e1/8da7c43ae66e733d8362245f1eb345]
+~> TaskHandler[id: 83; name: alignReads (8); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/24/7efc0df38f312293f32c91dc3a8b4e]
+~> TaskHandler[id: 85; name: postFastQC (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/fc/74f3c94e0f24c7f9045783fe6f69b0]
+~> TaskHandler[id: 84; name: alignReads (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/ae/32fad97cf404ec890263521670c9e3]
+~> TaskHandler[id: 86; name: postFastQC (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/40/9afc7f3f8e437dcbbbfbbf150b5fae]
+~> TaskHandler[id: 87; name: alignReads (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/bf/8b145f96e3baa65e0d8f6a4f35c1ca]
+~> TaskHandler[id: 88; name: postFastQC (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f6/0518c2b28c73941feabb5dc8b71254]
+~> TaskHandler[id: 89; name: alignReads (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f2/1ff7ec762c43bb996f6ae4ecbaf6a0]
+~> TaskHandler[id: 90; name: postFastQC (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3e/2140240a456fc7eb459e9081aef1f7]
+~> TaskHandler[id: 91; name: alignReads (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/81/e0bcb6f4a49a486e6c9b468c2e1702]
+.. remaining tasks omitted.
+Jan-06 14:06:17.465 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 16 -- submitted tasks are shown below
+~> TaskHandler[id: 54; name: preFastQC (16); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/59/104650bd31ce963df5d42e0006fcc1]
+~> TaskHandler[id: 82; name: postFastQC (8); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/2d/25711738a3ffc0991220cf34e35efa]
+~> TaskHandler[id: 57; name: preFastQC (17); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e0/690f735f09c9ea568ffbfcdabfa448]
+~> TaskHandler[id: 59; name: preFastQC (18); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/257b49724c87df3256e9819451b88c]
+~> TaskHandler[id: 60; name: preFastQC (19); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b8/9b3d49dd1711e20f7c94a94d84096f]
+~> TaskHandler[id: 62; name: preFastQC (20); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/1af6a87d51f7f1f3ff085fda494ccd]
+~> TaskHandler[id: 65; name: preFastQC (21); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/28/c4ef11fc25807d7b3a990b3ef114cf]
+~> TaskHandler[id: 66; name: preFastQC (22); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/65/ce7dc47fc9b5f7f970f8dd6f1b2950]
+~> TaskHandler[id: 68; name: postFastQC (1); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b9/4ca2f477245c8487b93d15f71883a7]
+~> TaskHandler[id: 70; name: postFastQC (2); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3b/cd7f6b73b48878cf0fb250df6fb76b]
+.. remaining tasks omitted.
+Jan-06 14:06:23.040 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 35 -- tasks to be submitted are shown below
+~> TaskHandler[id: 80; name: alignReads (7); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e1/8da7c43ae66e733d8362245f1eb345]
+~> TaskHandler[id: 83; name: alignReads (8); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/24/7efc0df38f312293f32c91dc3a8b4e]
+~> TaskHandler[id: 85; name: postFastQC (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/fc/74f3c94e0f24c7f9045783fe6f69b0]
+~> TaskHandler[id: 84; name: alignReads (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/ae/32fad97cf404ec890263521670c9e3]
+~> TaskHandler[id: 86; name: postFastQC (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/40/9afc7f3f8e437dcbbbfbbf150b5fae]
+~> TaskHandler[id: 87; name: alignReads (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/bf/8b145f96e3baa65e0d8f6a4f35c1ca]
+~> TaskHandler[id: 88; name: postFastQC (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f6/0518c2b28c73941feabb5dc8b71254]
+~> TaskHandler[id: 89; name: alignReads (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f2/1ff7ec762c43bb996f6ae4ecbaf6a0]
+~> TaskHandler[id: 90; name: postFastQC (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3e/2140240a456fc7eb459e9081aef1f7]
+~> TaskHandler[id: 91; name: alignReads (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/81/e0bcb6f4a49a486e6c9b468c2e1702]
+.. remaining tasks omitted.
+Jan-06 14:11:17.576 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 16 -- submitted tasks are shown below
+~> TaskHandler[id: 54; name: preFastQC (16); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/59/104650bd31ce963df5d42e0006fcc1]
+~> TaskHandler[id: 82; name: postFastQC (8); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/2d/25711738a3ffc0991220cf34e35efa]
+~> TaskHandler[id: 57; name: preFastQC (17); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e0/690f735f09c9ea568ffbfcdabfa448]
+~> TaskHandler[id: 59; name: preFastQC (18); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/257b49724c87df3256e9819451b88c]
+~> TaskHandler[id: 60; name: preFastQC (19); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b8/9b3d49dd1711e20f7c94a94d84096f]
+~> TaskHandler[id: 62; name: preFastQC (20); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/1af6a87d51f7f1f3ff085fda494ccd]
+~> TaskHandler[id: 65; name: preFastQC (21); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/28/c4ef11fc25807d7b3a990b3ef114cf]
+~> TaskHandler[id: 66; name: preFastQC (22); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/65/ce7dc47fc9b5f7f970f8dd6f1b2950]
+~> TaskHandler[id: 68; name: postFastQC (1); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b9/4ca2f477245c8487b93d15f71883a7]
+~> TaskHandler[id: 70; name: postFastQC (2); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3b/cd7f6b73b48878cf0fb250df6fb76b]
+.. remaining tasks omitted.
+Jan-06 14:11:23.666 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 35 -- tasks to be submitted are shown below
+~> TaskHandler[id: 80; name: alignReads (7); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e1/8da7c43ae66e733d8362245f1eb345]
+~> TaskHandler[id: 83; name: alignReads (8); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/24/7efc0df38f312293f32c91dc3a8b4e]
+~> TaskHandler[id: 85; name: postFastQC (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/fc/74f3c94e0f24c7f9045783fe6f69b0]
+~> TaskHandler[id: 84; name: alignReads (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/ae/32fad97cf404ec890263521670c9e3]
+~> TaskHandler[id: 86; name: postFastQC (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/40/9afc7f3f8e437dcbbbfbbf150b5fae]
+~> TaskHandler[id: 87; name: alignReads (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/bf/8b145f96e3baa65e0d8f6a4f35c1ca]
+~> TaskHandler[id: 88; name: postFastQC (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f6/0518c2b28c73941feabb5dc8b71254]
+~> TaskHandler[id: 89; name: alignReads (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f2/1ff7ec762c43bb996f6ae4ecbaf6a0]
+~> TaskHandler[id: 90; name: postFastQC (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3e/2140240a456fc7eb459e9081aef1f7]
+~> TaskHandler[id: 91; name: alignReads (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/81/e0bcb6f4a49a486e6c9b468c2e1702]
+.. remaining tasks omitted.
+Jan-06 14:16:17.559 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 16 -- submitted tasks are shown below
+~> TaskHandler[id: 54; name: preFastQC (16); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/59/104650bd31ce963df5d42e0006fcc1]
+~> TaskHandler[id: 82; name: postFastQC (8); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/2d/25711738a3ffc0991220cf34e35efa]
+~> TaskHandler[id: 57; name: preFastQC (17); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e0/690f735f09c9ea568ffbfcdabfa448]
+~> TaskHandler[id: 59; name: preFastQC (18); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/257b49724c87df3256e9819451b88c]
+~> TaskHandler[id: 60; name: preFastQC (19); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b8/9b3d49dd1711e20f7c94a94d84096f]
+~> TaskHandler[id: 62; name: preFastQC (20); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/1af6a87d51f7f1f3ff085fda494ccd]
+~> TaskHandler[id: 65; name: preFastQC (21); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/28/c4ef11fc25807d7b3a990b3ef114cf]
+~> TaskHandler[id: 66; name: preFastQC (22); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/65/ce7dc47fc9b5f7f970f8dd6f1b2950]
+~> TaskHandler[id: 68; name: postFastQC (1); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b9/4ca2f477245c8487b93d15f71883a7]
+~> TaskHandler[id: 70; name: postFastQC (2); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3b/cd7f6b73b48878cf0fb250df6fb76b]
+.. remaining tasks omitted.
+Jan-06 14:16:24.203 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 35 -- tasks to be submitted are shown below
+~> TaskHandler[id: 80; name: alignReads (7); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e1/8da7c43ae66e733d8362245f1eb345]
+~> TaskHandler[id: 83; name: alignReads (8); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/24/7efc0df38f312293f32c91dc3a8b4e]
+~> TaskHandler[id: 85; name: postFastQC (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/fc/74f3c94e0f24c7f9045783fe6f69b0]
+~> TaskHandler[id: 84; name: alignReads (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/ae/32fad97cf404ec890263521670c9e3]
+~> TaskHandler[id: 86; name: postFastQC (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/40/9afc7f3f8e437dcbbbfbbf150b5fae]
+~> TaskHandler[id: 87; name: alignReads (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/bf/8b145f96e3baa65e0d8f6a4f35c1ca]
+~> TaskHandler[id: 88; name: postFastQC (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f6/0518c2b28c73941feabb5dc8b71254]
+~> TaskHandler[id: 89; name: alignReads (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f2/1ff7ec762c43bb996f6ae4ecbaf6a0]
+~> TaskHandler[id: 90; name: postFastQC (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3e/2140240a456fc7eb459e9081aef1f7]
+~> TaskHandler[id: 91; name: alignReads (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/81/e0bcb6f4a49a486e6c9b468c2e1702]
+.. remaining tasks omitted.
+Jan-06 14:21:17.635 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 16 -- submitted tasks are shown below
+~> TaskHandler[id: 54; name: preFastQC (16); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/59/104650bd31ce963df5d42e0006fcc1]
+~> TaskHandler[id: 82; name: postFastQC (8); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/2d/25711738a3ffc0991220cf34e35efa]
+~> TaskHandler[id: 57; name: preFastQC (17); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e0/690f735f09c9ea568ffbfcdabfa448]
+~> TaskHandler[id: 59; name: preFastQC (18); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/257b49724c87df3256e9819451b88c]
+~> TaskHandler[id: 60; name: preFastQC (19); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b8/9b3d49dd1711e20f7c94a94d84096f]
+~> TaskHandler[id: 62; name: preFastQC (20); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/1af6a87d51f7f1f3ff085fda494ccd]
+~> TaskHandler[id: 65; name: preFastQC (21); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/28/c4ef11fc25807d7b3a990b3ef114cf]
+~> TaskHandler[id: 66; name: preFastQC (22); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/65/ce7dc47fc9b5f7f970f8dd6f1b2950]
+~> TaskHandler[id: 68; name: postFastQC (1); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b9/4ca2f477245c8487b93d15f71883a7]
+~> TaskHandler[id: 70; name: postFastQC (2); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3b/cd7f6b73b48878cf0fb250df6fb76b]
+.. remaining tasks omitted.
+Jan-06 14:21:24.740 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 35 -- tasks to be submitted are shown below
+~> TaskHandler[id: 80; name: alignReads (7); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e1/8da7c43ae66e733d8362245f1eb345]
+~> TaskHandler[id: 83; name: alignReads (8); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/24/7efc0df38f312293f32c91dc3a8b4e]
+~> TaskHandler[id: 85; name: postFastQC (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/fc/74f3c94e0f24c7f9045783fe6f69b0]
+~> TaskHandler[id: 84; name: alignReads (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/ae/32fad97cf404ec890263521670c9e3]
+~> TaskHandler[id: 86; name: postFastQC (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/40/9afc7f3f8e437dcbbbfbbf150b5fae]
+~> TaskHandler[id: 87; name: alignReads (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/bf/8b145f96e3baa65e0d8f6a4f35c1ca]
+~> TaskHandler[id: 88; name: postFastQC (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f6/0518c2b28c73941feabb5dc8b71254]
+~> TaskHandler[id: 89; name: alignReads (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f2/1ff7ec762c43bb996f6ae4ecbaf6a0]
+~> TaskHandler[id: 90; name: postFastQC (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3e/2140240a456fc7eb459e9081aef1f7]
+~> TaskHandler[id: 91; name: alignReads (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/81/e0bcb6f4a49a486e6c9b468c2e1702]
+.. remaining tasks omitted.
+Jan-06 14:26:17.689 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 16 -- submitted tasks are shown below
+~> TaskHandler[id: 54; name: preFastQC (16); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/59/104650bd31ce963df5d42e0006fcc1]
+~> TaskHandler[id: 82; name: postFastQC (8); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/2d/25711738a3ffc0991220cf34e35efa]
+~> TaskHandler[id: 57; name: preFastQC (17); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e0/690f735f09c9ea568ffbfcdabfa448]
+~> TaskHandler[id: 59; name: preFastQC (18); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/257b49724c87df3256e9819451b88c]
+~> TaskHandler[id: 60; name: preFastQC (19); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b8/9b3d49dd1711e20f7c94a94d84096f]
+~> TaskHandler[id: 62; name: preFastQC (20); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/1af6a87d51f7f1f3ff085fda494ccd]
+~> TaskHandler[id: 65; name: preFastQC (21); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/28/c4ef11fc25807d7b3a990b3ef114cf]
+~> TaskHandler[id: 66; name: preFastQC (22); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/65/ce7dc47fc9b5f7f970f8dd6f1b2950]
+~> TaskHandler[id: 68; name: postFastQC (1); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b9/4ca2f477245c8487b93d15f71883a7]
+~> TaskHandler[id: 70; name: postFastQC (2); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3b/cd7f6b73b48878cf0fb250df6fb76b]
+.. remaining tasks omitted.
+Jan-06 14:26:25.303 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 35 -- tasks to be submitted are shown below
+~> TaskHandler[id: 80; name: alignReads (7); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e1/8da7c43ae66e733d8362245f1eb345]
+~> TaskHandler[id: 83; name: alignReads (8); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/24/7efc0df38f312293f32c91dc3a8b4e]
+~> TaskHandler[id: 85; name: postFastQC (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/fc/74f3c94e0f24c7f9045783fe6f69b0]
+~> TaskHandler[id: 84; name: alignReads (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/ae/32fad97cf404ec890263521670c9e3]
+~> TaskHandler[id: 86; name: postFastQC (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/40/9afc7f3f8e437dcbbbfbbf150b5fae]
+~> TaskHandler[id: 87; name: alignReads (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/bf/8b145f96e3baa65e0d8f6a4f35c1ca]
+~> TaskHandler[id: 88; name: postFastQC (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f6/0518c2b28c73941feabb5dc8b71254]
+~> TaskHandler[id: 89; name: alignReads (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f2/1ff7ec762c43bb996f6ae4ecbaf6a0]
+~> TaskHandler[id: 90; name: postFastQC (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3e/2140240a456fc7eb459e9081aef1f7]
+~> TaskHandler[id: 91; name: alignReads (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/81/e0bcb6f4a49a486e6c9b468c2e1702]
+.. remaining tasks omitted.
+Jan-06 14:31:17.779 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 16 -- submitted tasks are shown below
+~> TaskHandler[id: 54; name: preFastQC (16); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/59/104650bd31ce963df5d42e0006fcc1]
+~> TaskHandler[id: 82; name: postFastQC (8); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/2d/25711738a3ffc0991220cf34e35efa]
+~> TaskHandler[id: 57; name: preFastQC (17); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e0/690f735f09c9ea568ffbfcdabfa448]
+~> TaskHandler[id: 59; name: preFastQC (18); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/257b49724c87df3256e9819451b88c]
+~> TaskHandler[id: 60; name: preFastQC (19); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b8/9b3d49dd1711e20f7c94a94d84096f]
+~> TaskHandler[id: 62; name: preFastQC (20); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/1af6a87d51f7f1f3ff085fda494ccd]
+~> TaskHandler[id: 65; name: preFastQC (21); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/28/c4ef11fc25807d7b3a990b3ef114cf]
+~> TaskHandler[id: 66; name: preFastQC (22); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/65/ce7dc47fc9b5f7f970f8dd6f1b2950]
+~> TaskHandler[id: 68; name: postFastQC (1); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b9/4ca2f477245c8487b93d15f71883a7]
+~> TaskHandler[id: 70; name: postFastQC (2); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3b/cd7f6b73b48878cf0fb250df6fb76b]
+.. remaining tasks omitted.
+Jan-06 14:31:26.022 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 35 -- tasks to be submitted are shown below
+~> TaskHandler[id: 80; name: alignReads (7); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e1/8da7c43ae66e733d8362245f1eb345]
+~> TaskHandler[id: 83; name: alignReads (8); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/24/7efc0df38f312293f32c91dc3a8b4e]
+~> TaskHandler[id: 85; name: postFastQC (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/fc/74f3c94e0f24c7f9045783fe6f69b0]
+~> TaskHandler[id: 84; name: alignReads (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/ae/32fad97cf404ec890263521670c9e3]
+~> TaskHandler[id: 86; name: postFastQC (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/40/9afc7f3f8e437dcbbbfbbf150b5fae]
+~> TaskHandler[id: 87; name: alignReads (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/bf/8b145f96e3baa65e0d8f6a4f35c1ca]
+~> TaskHandler[id: 88; name: postFastQC (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f6/0518c2b28c73941feabb5dc8b71254]
+~> TaskHandler[id: 89; name: alignReads (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f2/1ff7ec762c43bb996f6ae4ecbaf6a0]
+~> TaskHandler[id: 90; name: postFastQC (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3e/2140240a456fc7eb459e9081aef1f7]
+~> TaskHandler[id: 91; name: alignReads (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/81/e0bcb6f4a49a486e6c9b468c2e1702]
+.. remaining tasks omitted.
+Jan-06 14:36:17.809 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 16 -- submitted tasks are shown below
+~> TaskHandler[id: 54; name: preFastQC (16); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/59/104650bd31ce963df5d42e0006fcc1]
+~> TaskHandler[id: 82; name: postFastQC (8); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/2d/25711738a3ffc0991220cf34e35efa]
+~> TaskHandler[id: 57; name: preFastQC (17); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e0/690f735f09c9ea568ffbfcdabfa448]
+~> TaskHandler[id: 59; name: preFastQC (18); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/257b49724c87df3256e9819451b88c]
+~> TaskHandler[id: 60; name: preFastQC (19); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b8/9b3d49dd1711e20f7c94a94d84096f]
+~> TaskHandler[id: 62; name: preFastQC (20); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/1af6a87d51f7f1f3ff085fda494ccd]
+~> TaskHandler[id: 65; name: preFastQC (21); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/28/c4ef11fc25807d7b3a990b3ef114cf]
+~> TaskHandler[id: 66; name: preFastQC (22); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/65/ce7dc47fc9b5f7f970f8dd6f1b2950]
+~> TaskHandler[id: 68; name: postFastQC (1); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b9/4ca2f477245c8487b93d15f71883a7]
+~> TaskHandler[id: 70; name: postFastQC (2); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3b/cd7f6b73b48878cf0fb250df6fb76b]
+.. remaining tasks omitted.
+Jan-06 14:36:26.947 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 35 -- tasks to be submitted are shown below
+~> TaskHandler[id: 80; name: alignReads (7); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e1/8da7c43ae66e733d8362245f1eb345]
+~> TaskHandler[id: 83; name: alignReads (8); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/24/7efc0df38f312293f32c91dc3a8b4e]
+~> TaskHandler[id: 85; name: postFastQC (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/fc/74f3c94e0f24c7f9045783fe6f69b0]
+~> TaskHandler[id: 84; name: alignReads (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/ae/32fad97cf404ec890263521670c9e3]
+~> TaskHandler[id: 86; name: postFastQC (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/40/9afc7f3f8e437dcbbbfbbf150b5fae]
+~> TaskHandler[id: 87; name: alignReads (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/bf/8b145f96e3baa65e0d8f6a4f35c1ca]
+~> TaskHandler[id: 88; name: postFastQC (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f6/0518c2b28c73941feabb5dc8b71254]
+~> TaskHandler[id: 89; name: alignReads (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f2/1ff7ec762c43bb996f6ae4ecbaf6a0]
+~> TaskHandler[id: 90; name: postFastQC (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3e/2140240a456fc7eb459e9081aef1f7]
+~> TaskHandler[id: 91; name: alignReads (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/81/e0bcb6f4a49a486e6c9b468c2e1702]
+.. remaining tasks omitted.
+Jan-06 14:41:17.855 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 16 -- submitted tasks are shown below
+~> TaskHandler[id: 54; name: preFastQC (16); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/59/104650bd31ce963df5d42e0006fcc1]
+~> TaskHandler[id: 82; name: postFastQC (8); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/2d/25711738a3ffc0991220cf34e35efa]
+~> TaskHandler[id: 57; name: preFastQC (17); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e0/690f735f09c9ea568ffbfcdabfa448]
+~> TaskHandler[id: 59; name: preFastQC (18); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/257b49724c87df3256e9819451b88c]
+~> TaskHandler[id: 60; name: preFastQC (19); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b8/9b3d49dd1711e20f7c94a94d84096f]
+~> TaskHandler[id: 62; name: preFastQC (20); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/1af6a87d51f7f1f3ff085fda494ccd]
+~> TaskHandler[id: 65; name: preFastQC (21); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/28/c4ef11fc25807d7b3a990b3ef114cf]
+~> TaskHandler[id: 66; name: preFastQC (22); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/65/ce7dc47fc9b5f7f970f8dd6f1b2950]
+~> TaskHandler[id: 68; name: postFastQC (1); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b9/4ca2f477245c8487b93d15f71883a7]
+~> TaskHandler[id: 70; name: postFastQC (2); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3b/cd7f6b73b48878cf0fb250df6fb76b]
+.. remaining tasks omitted.
+Jan-06 14:41:27.866 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 35 -- tasks to be submitted are shown below
+~> TaskHandler[id: 80; name: alignReads (7); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e1/8da7c43ae66e733d8362245f1eb345]
+~> TaskHandler[id: 83; name: alignReads (8); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/24/7efc0df38f312293f32c91dc3a8b4e]
+~> TaskHandler[id: 85; name: postFastQC (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/fc/74f3c94e0f24c7f9045783fe6f69b0]
+~> TaskHandler[id: 84; name: alignReads (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/ae/32fad97cf404ec890263521670c9e3]
+~> TaskHandler[id: 86; name: postFastQC (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/40/9afc7f3f8e437dcbbbfbbf150b5fae]
+~> TaskHandler[id: 87; name: alignReads (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/bf/8b145f96e3baa65e0d8f6a4f35c1ca]
+~> TaskHandler[id: 88; name: postFastQC (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f6/0518c2b28c73941feabb5dc8b71254]
+~> TaskHandler[id: 89; name: alignReads (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f2/1ff7ec762c43bb996f6ae4ecbaf6a0]
+~> TaskHandler[id: 90; name: postFastQC (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3e/2140240a456fc7eb459e9081aef1f7]
+~> TaskHandler[id: 91; name: alignReads (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/81/e0bcb6f4a49a486e6c9b468c2e1702]
+.. remaining tasks omitted.
+Jan-06 14:46:17.883 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 16 -- submitted tasks are shown below
+~> TaskHandler[id: 54; name: preFastQC (16); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/59/104650bd31ce963df5d42e0006fcc1]
+~> TaskHandler[id: 82; name: postFastQC (8); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/2d/25711738a3ffc0991220cf34e35efa]
+~> TaskHandler[id: 57; name: preFastQC (17); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e0/690f735f09c9ea568ffbfcdabfa448]
+~> TaskHandler[id: 59; name: preFastQC (18); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/257b49724c87df3256e9819451b88c]
+~> TaskHandler[id: 60; name: preFastQC (19); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b8/9b3d49dd1711e20f7c94a94d84096f]
+~> TaskHandler[id: 62; name: preFastQC (20); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/1af6a87d51f7f1f3ff085fda494ccd]
+~> TaskHandler[id: 65; name: preFastQC (21); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/28/c4ef11fc25807d7b3a990b3ef114cf]
+~> TaskHandler[id: 66; name: preFastQC (22); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/65/ce7dc47fc9b5f7f970f8dd6f1b2950]
+~> TaskHandler[id: 68; name: postFastQC (1); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b9/4ca2f477245c8487b93d15f71883a7]
+~> TaskHandler[id: 70; name: postFastQC (2); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3b/cd7f6b73b48878cf0fb250df6fb76b]
+.. remaining tasks omitted.
+Jan-06 14:46:28.594 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 35 -- tasks to be submitted are shown below
+~> TaskHandler[id: 80; name: alignReads (7); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e1/8da7c43ae66e733d8362245f1eb345]
+~> TaskHandler[id: 83; name: alignReads (8); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/24/7efc0df38f312293f32c91dc3a8b4e]
+~> TaskHandler[id: 85; name: postFastQC (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/fc/74f3c94e0f24c7f9045783fe6f69b0]
+~> TaskHandler[id: 84; name: alignReads (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/ae/32fad97cf404ec890263521670c9e3]
+~> TaskHandler[id: 86; name: postFastQC (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/40/9afc7f3f8e437dcbbbfbbf150b5fae]
+~> TaskHandler[id: 87; name: alignReads (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/bf/8b145f96e3baa65e0d8f6a4f35c1ca]
+~> TaskHandler[id: 88; name: postFastQC (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f6/0518c2b28c73941feabb5dc8b71254]
+~> TaskHandler[id: 89; name: alignReads (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f2/1ff7ec762c43bb996f6ae4ecbaf6a0]
+~> TaskHandler[id: 90; name: postFastQC (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3e/2140240a456fc7eb459e9081aef1f7]
+~> TaskHandler[id: 91; name: alignReads (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/81/e0bcb6f4a49a486e6c9b468c2e1702]
+.. remaining tasks omitted.
+Jan-06 14:51:17.946 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 16 -- submitted tasks are shown below
+~> TaskHandler[id: 54; name: preFastQC (16); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/59/104650bd31ce963df5d42e0006fcc1]
+~> TaskHandler[id: 82; name: postFastQC (8); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/2d/25711738a3ffc0991220cf34e35efa]
+~> TaskHandler[id: 57; name: preFastQC (17); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e0/690f735f09c9ea568ffbfcdabfa448]
+~> TaskHandler[id: 59; name: preFastQC (18); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/257b49724c87df3256e9819451b88c]
+~> TaskHandler[id: 60; name: preFastQC (19); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b8/9b3d49dd1711e20f7c94a94d84096f]
+~> TaskHandler[id: 62; name: preFastQC (20); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/1af6a87d51f7f1f3ff085fda494ccd]
+~> TaskHandler[id: 65; name: preFastQC (21); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/28/c4ef11fc25807d7b3a990b3ef114cf]
+~> TaskHandler[id: 66; name: preFastQC (22); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/65/ce7dc47fc9b5f7f970f8dd6f1b2950]
+~> TaskHandler[id: 68; name: postFastQC (1); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b9/4ca2f477245c8487b93d15f71883a7]
+~> TaskHandler[id: 70; name: postFastQC (2); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3b/cd7f6b73b48878cf0fb250df6fb76b]
+.. remaining tasks omitted.
+Jan-06 14:51:29.418 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 35 -- tasks to be submitted are shown below
+~> TaskHandler[id: 80; name: alignReads (7); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e1/8da7c43ae66e733d8362245f1eb345]
+~> TaskHandler[id: 83; name: alignReads (8); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/24/7efc0df38f312293f32c91dc3a8b4e]
+~> TaskHandler[id: 85; name: postFastQC (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/fc/74f3c94e0f24c7f9045783fe6f69b0]
+~> TaskHandler[id: 84; name: alignReads (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/ae/32fad97cf404ec890263521670c9e3]
+~> TaskHandler[id: 86; name: postFastQC (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/40/9afc7f3f8e437dcbbbfbbf150b5fae]
+~> TaskHandler[id: 87; name: alignReads (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/bf/8b145f96e3baa65e0d8f6a4f35c1ca]
+~> TaskHandler[id: 88; name: postFastQC (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f6/0518c2b28c73941feabb5dc8b71254]
+~> TaskHandler[id: 89; name: alignReads (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f2/1ff7ec762c43bb996f6ae4ecbaf6a0]
+~> TaskHandler[id: 90; name: postFastQC (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3e/2140240a456fc7eb459e9081aef1f7]
+~> TaskHandler[id: 91; name: alignReads (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/81/e0bcb6f4a49a486e6c9b468c2e1702]
+.. remaining tasks omitted.
+Jan-06 14:56:17.951 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 16 -- submitted tasks are shown below
+~> TaskHandler[id: 54; name: preFastQC (16); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/59/104650bd31ce963df5d42e0006fcc1]
+~> TaskHandler[id: 82; name: postFastQC (8); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/2d/25711738a3ffc0991220cf34e35efa]
+~> TaskHandler[id: 57; name: preFastQC (17); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e0/690f735f09c9ea568ffbfcdabfa448]
+~> TaskHandler[id: 59; name: preFastQC (18); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/257b49724c87df3256e9819451b88c]
+~> TaskHandler[id: 60; name: preFastQC (19); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b8/9b3d49dd1711e20f7c94a94d84096f]
+~> TaskHandler[id: 62; name: preFastQC (20); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/1af6a87d51f7f1f3ff085fda494ccd]
+~> TaskHandler[id: 65; name: preFastQC (21); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/28/c4ef11fc25807d7b3a990b3ef114cf]
+~> TaskHandler[id: 66; name: preFastQC (22); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/65/ce7dc47fc9b5f7f970f8dd6f1b2950]
+~> TaskHandler[id: 68; name: postFastQC (1); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b9/4ca2f477245c8487b93d15f71883a7]
+~> TaskHandler[id: 70; name: postFastQC (2); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3b/cd7f6b73b48878cf0fb250df6fb76b]
+.. remaining tasks omitted.
+Jan-06 14:56:29.856 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 35 -- tasks to be submitted are shown below
+~> TaskHandler[id: 80; name: alignReads (7); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e1/8da7c43ae66e733d8362245f1eb345]
+~> TaskHandler[id: 83; name: alignReads (8); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/24/7efc0df38f312293f32c91dc3a8b4e]
+~> TaskHandler[id: 85; name: postFastQC (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/fc/74f3c94e0f24c7f9045783fe6f69b0]
+~> TaskHandler[id: 84; name: alignReads (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/ae/32fad97cf404ec890263521670c9e3]
+~> TaskHandler[id: 86; name: postFastQC (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/40/9afc7f3f8e437dcbbbfbbf150b5fae]
+~> TaskHandler[id: 87; name: alignReads (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/bf/8b145f96e3baa65e0d8f6a4f35c1ca]
+~> TaskHandler[id: 88; name: postFastQC (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f6/0518c2b28c73941feabb5dc8b71254]
+~> TaskHandler[id: 89; name: alignReads (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f2/1ff7ec762c43bb996f6ae4ecbaf6a0]
+~> TaskHandler[id: 90; name: postFastQC (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3e/2140240a456fc7eb459e9081aef1f7]
+~> TaskHandler[id: 91; name: alignReads (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/81/e0bcb6f4a49a486e6c9b468c2e1702]
+.. remaining tasks omitted.
+Jan-06 15:01:17.969 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 16 -- submitted tasks are shown below
+~> TaskHandler[id: 54; name: preFastQC (16); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/59/104650bd31ce963df5d42e0006fcc1]
+~> TaskHandler[id: 82; name: postFastQC (8); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/2d/25711738a3ffc0991220cf34e35efa]
+~> TaskHandler[id: 57; name: preFastQC (17); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e0/690f735f09c9ea568ffbfcdabfa448]
+~> TaskHandler[id: 59; name: preFastQC (18); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/257b49724c87df3256e9819451b88c]
+~> TaskHandler[id: 60; name: preFastQC (19); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b8/9b3d49dd1711e20f7c94a94d84096f]
+~> TaskHandler[id: 62; name: preFastQC (20); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/1af6a87d51f7f1f3ff085fda494ccd]
+~> TaskHandler[id: 65; name: preFastQC (21); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/28/c4ef11fc25807d7b3a990b3ef114cf]
+~> TaskHandler[id: 66; name: preFastQC (22); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/65/ce7dc47fc9b5f7f970f8dd6f1b2950]
+~> TaskHandler[id: 68; name: postFastQC (1); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b9/4ca2f477245c8487b93d15f71883a7]
+~> TaskHandler[id: 70; name: postFastQC (2); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3b/cd7f6b73b48878cf0fb250df6fb76b]
+.. remaining tasks omitted.
+Jan-06 15:01:30.822 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 35 -- tasks to be submitted are shown below
+~> TaskHandler[id: 80; name: alignReads (7); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e1/8da7c43ae66e733d8362245f1eb345]
+~> TaskHandler[id: 83; name: alignReads (8); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/24/7efc0df38f312293f32c91dc3a8b4e]
+~> TaskHandler[id: 85; name: postFastQC (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/fc/74f3c94e0f24c7f9045783fe6f69b0]
+~> TaskHandler[id: 84; name: alignReads (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/ae/32fad97cf404ec890263521670c9e3]
+~> TaskHandler[id: 86; name: postFastQC (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/40/9afc7f3f8e437dcbbbfbbf150b5fae]
+~> TaskHandler[id: 87; name: alignReads (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/bf/8b145f96e3baa65e0d8f6a4f35c1ca]
+~> TaskHandler[id: 88; name: postFastQC (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f6/0518c2b28c73941feabb5dc8b71254]
+~> TaskHandler[id: 89; name: alignReads (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f2/1ff7ec762c43bb996f6ae4ecbaf6a0]
+~> TaskHandler[id: 90; name: postFastQC (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3e/2140240a456fc7eb459e9081aef1f7]
+~> TaskHandler[id: 91; name: alignReads (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/81/e0bcb6f4a49a486e6c9b468c2e1702]
+.. remaining tasks omitted.
+Jan-06 15:06:18.071 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 16 -- submitted tasks are shown below
+~> TaskHandler[id: 54; name: preFastQC (16); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/59/104650bd31ce963df5d42e0006fcc1]
+~> TaskHandler[id: 82; name: postFastQC (8); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/2d/25711738a3ffc0991220cf34e35efa]
+~> TaskHandler[id: 57; name: preFastQC (17); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e0/690f735f09c9ea568ffbfcdabfa448]
+~> TaskHandler[id: 59; name: preFastQC (18); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/257b49724c87df3256e9819451b88c]
+~> TaskHandler[id: 60; name: preFastQC (19); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b8/9b3d49dd1711e20f7c94a94d84096f]
+~> TaskHandler[id: 62; name: preFastQC (20); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/1af6a87d51f7f1f3ff085fda494ccd]
+~> TaskHandler[id: 65; name: preFastQC (21); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/28/c4ef11fc25807d7b3a990b3ef114cf]
+~> TaskHandler[id: 66; name: preFastQC (22); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/65/ce7dc47fc9b5f7f970f8dd6f1b2950]
+~> TaskHandler[id: 68; name: postFastQC (1); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b9/4ca2f477245c8487b93d15f71883a7]
+~> TaskHandler[id: 70; name: postFastQC (2); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3b/cd7f6b73b48878cf0fb250df6fb76b]
+.. remaining tasks omitted.
+Jan-06 15:06:31.817 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 35 -- tasks to be submitted are shown below
+~> TaskHandler[id: 80; name: alignReads (7); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e1/8da7c43ae66e733d8362245f1eb345]
+~> TaskHandler[id: 83; name: alignReads (8); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/24/7efc0df38f312293f32c91dc3a8b4e]
+~> TaskHandler[id: 85; name: postFastQC (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/fc/74f3c94e0f24c7f9045783fe6f69b0]
+~> TaskHandler[id: 84; name: alignReads (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/ae/32fad97cf404ec890263521670c9e3]
+~> TaskHandler[id: 86; name: postFastQC (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/40/9afc7f3f8e437dcbbbfbbf150b5fae]
+~> TaskHandler[id: 87; name: alignReads (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/bf/8b145f96e3baa65e0d8f6a4f35c1ca]
+~> TaskHandler[id: 88; name: postFastQC (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f6/0518c2b28c73941feabb5dc8b71254]
+~> TaskHandler[id: 89; name: alignReads (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f2/1ff7ec762c43bb996f6ae4ecbaf6a0]
+~> TaskHandler[id: 90; name: postFastQC (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3e/2140240a456fc7eb459e9081aef1f7]
+~> TaskHandler[id: 91; name: alignReads (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/81/e0bcb6f4a49a486e6c9b468c2e1702]
+.. remaining tasks omitted.
+Jan-06 15:11:18.102 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 16 -- submitted tasks are shown below
+~> TaskHandler[id: 54; name: preFastQC (16); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/59/104650bd31ce963df5d42e0006fcc1]
+~> TaskHandler[id: 82; name: postFastQC (8); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/2d/25711738a3ffc0991220cf34e35efa]
+~> TaskHandler[id: 57; name: preFastQC (17); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e0/690f735f09c9ea568ffbfcdabfa448]
+~> TaskHandler[id: 59; name: preFastQC (18); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/257b49724c87df3256e9819451b88c]
+~> TaskHandler[id: 60; name: preFastQC (19); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b8/9b3d49dd1711e20f7c94a94d84096f]
+~> TaskHandler[id: 62; name: preFastQC (20); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/1af6a87d51f7f1f3ff085fda494ccd]
+~> TaskHandler[id: 65; name: preFastQC (21); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/28/c4ef11fc25807d7b3a990b3ef114cf]
+~> TaskHandler[id: 66; name: preFastQC (22); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/65/ce7dc47fc9b5f7f970f8dd6f1b2950]
+~> TaskHandler[id: 68; name: postFastQC (1); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b9/4ca2f477245c8487b93d15f71883a7]
+~> TaskHandler[id: 70; name: postFastQC (2); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3b/cd7f6b73b48878cf0fb250df6fb76b]
+.. remaining tasks omitted.
+Jan-06 15:11:32.765 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 35 -- tasks to be submitted are shown below
+~> TaskHandler[id: 80; name: alignReads (7); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e1/8da7c43ae66e733d8362245f1eb345]
+~> TaskHandler[id: 83; name: alignReads (8); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/24/7efc0df38f312293f32c91dc3a8b4e]
+~> TaskHandler[id: 85; name: postFastQC (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/fc/74f3c94e0f24c7f9045783fe6f69b0]
+~> TaskHandler[id: 84; name: alignReads (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/ae/32fad97cf404ec890263521670c9e3]
+~> TaskHandler[id: 86; name: postFastQC (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/40/9afc7f3f8e437dcbbbfbbf150b5fae]
+~> TaskHandler[id: 87; name: alignReads (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/bf/8b145f96e3baa65e0d8f6a4f35c1ca]
+~> TaskHandler[id: 88; name: postFastQC (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f6/0518c2b28c73941feabb5dc8b71254]
+~> TaskHandler[id: 89; name: alignReads (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f2/1ff7ec762c43bb996f6ae4ecbaf6a0]
+~> TaskHandler[id: 90; name: postFastQC (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3e/2140240a456fc7eb459e9081aef1f7]
+~> TaskHandler[id: 91; name: alignReads (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/81/e0bcb6f4a49a486e6c9b468c2e1702]
+.. remaining tasks omitted.
+Jan-06 15:16:18.174 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 16 -- submitted tasks are shown below
+~> TaskHandler[id: 54; name: preFastQC (16); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/59/104650bd31ce963df5d42e0006fcc1]
+~> TaskHandler[id: 82; name: postFastQC (8); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/2d/25711738a3ffc0991220cf34e35efa]
+~> TaskHandler[id: 57; name: preFastQC (17); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e0/690f735f09c9ea568ffbfcdabfa448]
+~> TaskHandler[id: 59; name: preFastQC (18); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/257b49724c87df3256e9819451b88c]
+~> TaskHandler[id: 60; name: preFastQC (19); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b8/9b3d49dd1711e20f7c94a94d84096f]
+~> TaskHandler[id: 62; name: preFastQC (20); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/1af6a87d51f7f1f3ff085fda494ccd]
+~> TaskHandler[id: 65; name: preFastQC (21); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/28/c4ef11fc25807d7b3a990b3ef114cf]
+~> TaskHandler[id: 66; name: preFastQC (22); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/65/ce7dc47fc9b5f7f970f8dd6f1b2950]
+~> TaskHandler[id: 68; name: postFastQC (1); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b9/4ca2f477245c8487b93d15f71883a7]
+~> TaskHandler[id: 70; name: postFastQC (2); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3b/cd7f6b73b48878cf0fb250df6fb76b]
+.. remaining tasks omitted.
+Jan-06 15:16:33.751 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 35 -- tasks to be submitted are shown below
+~> TaskHandler[id: 80; name: alignReads (7); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e1/8da7c43ae66e733d8362245f1eb345]
+~> TaskHandler[id: 83; name: alignReads (8); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/24/7efc0df38f312293f32c91dc3a8b4e]
+~> TaskHandler[id: 85; name: postFastQC (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/fc/74f3c94e0f24c7f9045783fe6f69b0]
+~> TaskHandler[id: 84; name: alignReads (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/ae/32fad97cf404ec890263521670c9e3]
+~> TaskHandler[id: 86; name: postFastQC (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/40/9afc7f3f8e437dcbbbfbbf150b5fae]
+~> TaskHandler[id: 87; name: alignReads (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/bf/8b145f96e3baa65e0d8f6a4f35c1ca]
+~> TaskHandler[id: 88; name: postFastQC (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f6/0518c2b28c73941feabb5dc8b71254]
+~> TaskHandler[id: 89; name: alignReads (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f2/1ff7ec762c43bb996f6ae4ecbaf6a0]
+~> TaskHandler[id: 90; name: postFastQC (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3e/2140240a456fc7eb459e9081aef1f7]
+~> TaskHandler[id: 91; name: alignReads (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/81/e0bcb6f4a49a486e6c9b468c2e1702]
+.. remaining tasks omitted.
+Jan-06 15:21:18.225 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 16 -- submitted tasks are shown below
+~> TaskHandler[id: 54; name: preFastQC (16); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/59/104650bd31ce963df5d42e0006fcc1]
+~> TaskHandler[id: 82; name: postFastQC (8); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/2d/25711738a3ffc0991220cf34e35efa]
+~> TaskHandler[id: 57; name: preFastQC (17); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e0/690f735f09c9ea568ffbfcdabfa448]
+~> TaskHandler[id: 59; name: preFastQC (18); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/257b49724c87df3256e9819451b88c]
+~> TaskHandler[id: 60; name: preFastQC (19); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b8/9b3d49dd1711e20f7c94a94d84096f]
+~> TaskHandler[id: 62; name: preFastQC (20); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/1af6a87d51f7f1f3ff085fda494ccd]
+~> TaskHandler[id: 65; name: preFastQC (21); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/28/c4ef11fc25807d7b3a990b3ef114cf]
+~> TaskHandler[id: 66; name: preFastQC (22); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/65/ce7dc47fc9b5f7f970f8dd6f1b2950]
+~> TaskHandler[id: 68; name: postFastQC (1); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b9/4ca2f477245c8487b93d15f71883a7]
+~> TaskHandler[id: 70; name: postFastQC (2); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3b/cd7f6b73b48878cf0fb250df6fb76b]
+.. remaining tasks omitted.
+Jan-06 15:21:34.713 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 35 -- tasks to be submitted are shown below
+~> TaskHandler[id: 80; name: alignReads (7); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e1/8da7c43ae66e733d8362245f1eb345]
+~> TaskHandler[id: 83; name: alignReads (8); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/24/7efc0df38f312293f32c91dc3a8b4e]
+~> TaskHandler[id: 85; name: postFastQC (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/fc/74f3c94e0f24c7f9045783fe6f69b0]
+~> TaskHandler[id: 84; name: alignReads (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/ae/32fad97cf404ec890263521670c9e3]
+~> TaskHandler[id: 86; name: postFastQC (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/40/9afc7f3f8e437dcbbbfbbf150b5fae]
+~> TaskHandler[id: 87; name: alignReads (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/bf/8b145f96e3baa65e0d8f6a4f35c1ca]
+~> TaskHandler[id: 88; name: postFastQC (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f6/0518c2b28c73941feabb5dc8b71254]
+~> TaskHandler[id: 89; name: alignReads (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f2/1ff7ec762c43bb996f6ae4ecbaf6a0]
+~> TaskHandler[id: 90; name: postFastQC (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3e/2140240a456fc7eb459e9081aef1f7]
+~> TaskHandler[id: 91; name: alignReads (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/81/e0bcb6f4a49a486e6c9b468c2e1702]
+.. remaining tasks omitted.
+Jan-06 15:26:18.264 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 16 -- submitted tasks are shown below
+~> TaskHandler[id: 54; name: preFastQC (16); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/59/104650bd31ce963df5d42e0006fcc1]
+~> TaskHandler[id: 82; name: postFastQC (8); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/2d/25711738a3ffc0991220cf34e35efa]
+~> TaskHandler[id: 57; name: preFastQC (17); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e0/690f735f09c9ea568ffbfcdabfa448]
+~> TaskHandler[id: 59; name: preFastQC (18); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/257b49724c87df3256e9819451b88c]
+~> TaskHandler[id: 60; name: preFastQC (19); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b8/9b3d49dd1711e20f7c94a94d84096f]
+~> TaskHandler[id: 62; name: preFastQC (20); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/1af6a87d51f7f1f3ff085fda494ccd]
+~> TaskHandler[id: 65; name: preFastQC (21); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/28/c4ef11fc25807d7b3a990b3ef114cf]
+~> TaskHandler[id: 66; name: preFastQC (22); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/65/ce7dc47fc9b5f7f970f8dd6f1b2950]
+~> TaskHandler[id: 68; name: postFastQC (1); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b9/4ca2f477245c8487b93d15f71883a7]
+~> TaskHandler[id: 70; name: postFastQC (2); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3b/cd7f6b73b48878cf0fb250df6fb76b]
+.. remaining tasks omitted.
+Jan-06 15:26:35.689 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 35 -- tasks to be submitted are shown below
+~> TaskHandler[id: 80; name: alignReads (7); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e1/8da7c43ae66e733d8362245f1eb345]
+~> TaskHandler[id: 83; name: alignReads (8); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/24/7efc0df38f312293f32c91dc3a8b4e]
+~> TaskHandler[id: 85; name: postFastQC (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/fc/74f3c94e0f24c7f9045783fe6f69b0]
+~> TaskHandler[id: 84; name: alignReads (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/ae/32fad97cf404ec890263521670c9e3]
+~> TaskHandler[id: 86; name: postFastQC (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/40/9afc7f3f8e437dcbbbfbbf150b5fae]
+~> TaskHandler[id: 87; name: alignReads (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/bf/8b145f96e3baa65e0d8f6a4f35c1ca]
+~> TaskHandler[id: 88; name: postFastQC (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f6/0518c2b28c73941feabb5dc8b71254]
+~> TaskHandler[id: 89; name: alignReads (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f2/1ff7ec762c43bb996f6ae4ecbaf6a0]
+~> TaskHandler[id: 90; name: postFastQC (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3e/2140240a456fc7eb459e9081aef1f7]
+~> TaskHandler[id: 91; name: alignReads (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/81/e0bcb6f4a49a486e6c9b468c2e1702]
+.. remaining tasks omitted.
+Jan-06 15:31:18.276 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 16 -- submitted tasks are shown below
+~> TaskHandler[id: 54; name: preFastQC (16); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/59/104650bd31ce963df5d42e0006fcc1]
+~> TaskHandler[id: 82; name: postFastQC (8); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/2d/25711738a3ffc0991220cf34e35efa]
+~> TaskHandler[id: 57; name: preFastQC (17); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e0/690f735f09c9ea568ffbfcdabfa448]
+~> TaskHandler[id: 59; name: preFastQC (18); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/257b49724c87df3256e9819451b88c]
+~> TaskHandler[id: 60; name: preFastQC (19); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b8/9b3d49dd1711e20f7c94a94d84096f]
+~> TaskHandler[id: 62; name: preFastQC (20); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/1af6a87d51f7f1f3ff085fda494ccd]
+~> TaskHandler[id: 65; name: preFastQC (21); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/28/c4ef11fc25807d7b3a990b3ef114cf]
+~> TaskHandler[id: 66; name: preFastQC (22); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/65/ce7dc47fc9b5f7f970f8dd6f1b2950]
+~> TaskHandler[id: 68; name: postFastQC (1); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b9/4ca2f477245c8487b93d15f71883a7]
+~> TaskHandler[id: 70; name: postFastQC (2); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3b/cd7f6b73b48878cf0fb250df6fb76b]
+.. remaining tasks omitted.
+Jan-06 15:31:35.738 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 35 -- tasks to be submitted are shown below
+~> TaskHandler[id: 80; name: alignReads (7); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e1/8da7c43ae66e733d8362245f1eb345]
+~> TaskHandler[id: 83; name: alignReads (8); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/24/7efc0df38f312293f32c91dc3a8b4e]
+~> TaskHandler[id: 85; name: postFastQC (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/fc/74f3c94e0f24c7f9045783fe6f69b0]
+~> TaskHandler[id: 84; name: alignReads (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/ae/32fad97cf404ec890263521670c9e3]
+~> TaskHandler[id: 86; name: postFastQC (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/40/9afc7f3f8e437dcbbbfbbf150b5fae]
+~> TaskHandler[id: 87; name: alignReads (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/bf/8b145f96e3baa65e0d8f6a4f35c1ca]
+~> TaskHandler[id: 88; name: postFastQC (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f6/0518c2b28c73941feabb5dc8b71254]
+~> TaskHandler[id: 89; name: alignReads (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f2/1ff7ec762c43bb996f6ae4ecbaf6a0]
+~> TaskHandler[id: 90; name: postFastQC (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3e/2140240a456fc7eb459e9081aef1f7]
+~> TaskHandler[id: 91; name: alignReads (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/81/e0bcb6f4a49a486e6c9b468c2e1702]
+.. remaining tasks omitted.
+Jan-06 15:36:18.373 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 16 -- submitted tasks are shown below
+~> TaskHandler[id: 54; name: preFastQC (16); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/59/104650bd31ce963df5d42e0006fcc1]
+~> TaskHandler[id: 82; name: postFastQC (8); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/2d/25711738a3ffc0991220cf34e35efa]
+~> TaskHandler[id: 57; name: preFastQC (17); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e0/690f735f09c9ea568ffbfcdabfa448]
+~> TaskHandler[id: 59; name: preFastQC (18); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/257b49724c87df3256e9819451b88c]
+~> TaskHandler[id: 60; name: preFastQC (19); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b8/9b3d49dd1711e20f7c94a94d84096f]
+~> TaskHandler[id: 62; name: preFastQC (20); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/1af6a87d51f7f1f3ff085fda494ccd]
+~> TaskHandler[id: 65; name: preFastQC (21); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/28/c4ef11fc25807d7b3a990b3ef114cf]
+~> TaskHandler[id: 66; name: preFastQC (22); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/65/ce7dc47fc9b5f7f970f8dd6f1b2950]
+~> TaskHandler[id: 68; name: postFastQC (1); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b9/4ca2f477245c8487b93d15f71883a7]
+~> TaskHandler[id: 70; name: postFastQC (2); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3b/cd7f6b73b48878cf0fb250df6fb76b]
+.. remaining tasks omitted.
+Jan-06 15:36:36.432 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 35 -- tasks to be submitted are shown below
+~> TaskHandler[id: 80; name: alignReads (7); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e1/8da7c43ae66e733d8362245f1eb345]
+~> TaskHandler[id: 83; name: alignReads (8); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/24/7efc0df38f312293f32c91dc3a8b4e]
+~> TaskHandler[id: 85; name: postFastQC (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/fc/74f3c94e0f24c7f9045783fe6f69b0]
+~> TaskHandler[id: 84; name: alignReads (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/ae/32fad97cf404ec890263521670c9e3]
+~> TaskHandler[id: 86; name: postFastQC (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/40/9afc7f3f8e437dcbbbfbbf150b5fae]
+~> TaskHandler[id: 87; name: alignReads (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/bf/8b145f96e3baa65e0d8f6a4f35c1ca]
+~> TaskHandler[id: 88; name: postFastQC (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f6/0518c2b28c73941feabb5dc8b71254]
+~> TaskHandler[id: 89; name: alignReads (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f2/1ff7ec762c43bb996f6ae4ecbaf6a0]
+~> TaskHandler[id: 90; name: postFastQC (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3e/2140240a456fc7eb459e9081aef1f7]
+~> TaskHandler[id: 91; name: alignReads (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/81/e0bcb6f4a49a486e6c9b468c2e1702]
+.. remaining tasks omitted.
+Jan-06 15:41:18.429 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 16 -- submitted tasks are shown below
+~> TaskHandler[id: 54; name: preFastQC (16); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/59/104650bd31ce963df5d42e0006fcc1]
+~> TaskHandler[id: 82; name: postFastQC (8); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/2d/25711738a3ffc0991220cf34e35efa]
+~> TaskHandler[id: 57; name: preFastQC (17); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e0/690f735f09c9ea568ffbfcdabfa448]
+~> TaskHandler[id: 59; name: preFastQC (18); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/257b49724c87df3256e9819451b88c]
+~> TaskHandler[id: 60; name: preFastQC (19); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b8/9b3d49dd1711e20f7c94a94d84096f]
+~> TaskHandler[id: 62; name: preFastQC (20); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/1af6a87d51f7f1f3ff085fda494ccd]
+~> TaskHandler[id: 65; name: preFastQC (21); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/28/c4ef11fc25807d7b3a990b3ef114cf]
+~> TaskHandler[id: 66; name: preFastQC (22); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/65/ce7dc47fc9b5f7f970f8dd6f1b2950]
+~> TaskHandler[id: 68; name: postFastQC (1); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b9/4ca2f477245c8487b93d15f71883a7]
+~> TaskHandler[id: 70; name: postFastQC (2); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3b/cd7f6b73b48878cf0fb250df6fb76b]
+.. remaining tasks omitted.
+Jan-06 15:41:37.278 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 35 -- tasks to be submitted are shown below
+~> TaskHandler[id: 80; name: alignReads (7); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e1/8da7c43ae66e733d8362245f1eb345]
+~> TaskHandler[id: 83; name: alignReads (8); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/24/7efc0df38f312293f32c91dc3a8b4e]
+~> TaskHandler[id: 85; name: postFastQC (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/fc/74f3c94e0f24c7f9045783fe6f69b0]
+~> TaskHandler[id: 84; name: alignReads (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/ae/32fad97cf404ec890263521670c9e3]
+~> TaskHandler[id: 86; name: postFastQC (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/40/9afc7f3f8e437dcbbbfbbf150b5fae]
+~> TaskHandler[id: 87; name: alignReads (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/bf/8b145f96e3baa65e0d8f6a4f35c1ca]
+~> TaskHandler[id: 88; name: postFastQC (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f6/0518c2b28c73941feabb5dc8b71254]
+~> TaskHandler[id: 89; name: alignReads (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f2/1ff7ec762c43bb996f6ae4ecbaf6a0]
+~> TaskHandler[id: 90; name: postFastQC (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3e/2140240a456fc7eb459e9081aef1f7]
+~> TaskHandler[id: 91; name: alignReads (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/81/e0bcb6f4a49a486e6c9b468c2e1702]
+.. remaining tasks omitted.
+Jan-06 15:46:18.511 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 16 -- submitted tasks are shown below
+~> TaskHandler[id: 54; name: preFastQC (16); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/59/104650bd31ce963df5d42e0006fcc1]
+~> TaskHandler[id: 82; name: postFastQC (8); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/2d/25711738a3ffc0991220cf34e35efa]
+~> TaskHandler[id: 57; name: preFastQC (17); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e0/690f735f09c9ea568ffbfcdabfa448]
+~> TaskHandler[id: 59; name: preFastQC (18); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/257b49724c87df3256e9819451b88c]
+~> TaskHandler[id: 60; name: preFastQC (19); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b8/9b3d49dd1711e20f7c94a94d84096f]
+~> TaskHandler[id: 62; name: preFastQC (20); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/1af6a87d51f7f1f3ff085fda494ccd]
+~> TaskHandler[id: 65; name: preFastQC (21); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/28/c4ef11fc25807d7b3a990b3ef114cf]
+~> TaskHandler[id: 66; name: preFastQC (22); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/65/ce7dc47fc9b5f7f970f8dd6f1b2950]
+~> TaskHandler[id: 68; name: postFastQC (1); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b9/4ca2f477245c8487b93d15f71883a7]
+~> TaskHandler[id: 70; name: postFastQC (2); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3b/cd7f6b73b48878cf0fb250df6fb76b]
+.. remaining tasks omitted.
+Jan-06 15:46:37.813 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 35 -- tasks to be submitted are shown below
+~> TaskHandler[id: 80; name: alignReads (7); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e1/8da7c43ae66e733d8362245f1eb345]
+~> TaskHandler[id: 83; name: alignReads (8); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/24/7efc0df38f312293f32c91dc3a8b4e]
+~> TaskHandler[id: 85; name: postFastQC (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/fc/74f3c94e0f24c7f9045783fe6f69b0]
+~> TaskHandler[id: 84; name: alignReads (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/ae/32fad97cf404ec890263521670c9e3]
+~> TaskHandler[id: 86; name: postFastQC (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/40/9afc7f3f8e437dcbbbfbbf150b5fae]
+~> TaskHandler[id: 87; name: alignReads (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/bf/8b145f96e3baa65e0d8f6a4f35c1ca]
+~> TaskHandler[id: 88; name: postFastQC (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f6/0518c2b28c73941feabb5dc8b71254]
+~> TaskHandler[id: 89; name: alignReads (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f2/1ff7ec762c43bb996f6ae4ecbaf6a0]
+~> TaskHandler[id: 90; name: postFastQC (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3e/2140240a456fc7eb459e9081aef1f7]
+~> TaskHandler[id: 91; name: alignReads (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/81/e0bcb6f4a49a486e6c9b468c2e1702]
+.. remaining tasks omitted.
+Jan-06 15:51:18.564 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 16 -- submitted tasks are shown below
+~> TaskHandler[id: 54; name: preFastQC (16); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/59/104650bd31ce963df5d42e0006fcc1]
+~> TaskHandler[id: 82; name: postFastQC (8); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/2d/25711738a3ffc0991220cf34e35efa]
+~> TaskHandler[id: 57; name: preFastQC (17); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e0/690f735f09c9ea568ffbfcdabfa448]
+~> TaskHandler[id: 59; name: preFastQC (18); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/257b49724c87df3256e9819451b88c]
+~> TaskHandler[id: 60; name: preFastQC (19); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b8/9b3d49dd1711e20f7c94a94d84096f]
+~> TaskHandler[id: 62; name: preFastQC (20); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/1af6a87d51f7f1f3ff085fda494ccd]
+~> TaskHandler[id: 65; name: preFastQC (21); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/28/c4ef11fc25807d7b3a990b3ef114cf]
+~> TaskHandler[id: 66; name: preFastQC (22); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/65/ce7dc47fc9b5f7f970f8dd6f1b2950]
+~> TaskHandler[id: 68; name: postFastQC (1); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b9/4ca2f477245c8487b93d15f71883a7]
+~> TaskHandler[id: 70; name: postFastQC (2); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3b/cd7f6b73b48878cf0fb250df6fb76b]
+.. remaining tasks omitted.
+Jan-06 15:51:38.477 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 35 -- tasks to be submitted are shown below
+~> TaskHandler[id: 80; name: alignReads (7); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e1/8da7c43ae66e733d8362245f1eb345]
+~> TaskHandler[id: 83; name: alignReads (8); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/24/7efc0df38f312293f32c91dc3a8b4e]
+~> TaskHandler[id: 85; name: postFastQC (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/fc/74f3c94e0f24c7f9045783fe6f69b0]
+~> TaskHandler[id: 84; name: alignReads (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/ae/32fad97cf404ec890263521670c9e3]
+~> TaskHandler[id: 86; name: postFastQC (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/40/9afc7f3f8e437dcbbbfbbf150b5fae]
+~> TaskHandler[id: 87; name: alignReads (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/bf/8b145f96e3baa65e0d8f6a4f35c1ca]
+~> TaskHandler[id: 88; name: postFastQC (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f6/0518c2b28c73941feabb5dc8b71254]
+~> TaskHandler[id: 89; name: alignReads (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f2/1ff7ec762c43bb996f6ae4ecbaf6a0]
+~> TaskHandler[id: 90; name: postFastQC (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3e/2140240a456fc7eb459e9081aef1f7]
+~> TaskHandler[id: 91; name: alignReads (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/81/e0bcb6f4a49a486e6c9b468c2e1702]
+.. remaining tasks omitted.
+Jan-06 15:56:18.607 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 16 -- submitted tasks are shown below
+~> TaskHandler[id: 54; name: preFastQC (16); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/59/104650bd31ce963df5d42e0006fcc1]
+~> TaskHandler[id: 82; name: postFastQC (8); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/2d/25711738a3ffc0991220cf34e35efa]
+~> TaskHandler[id: 57; name: preFastQC (17); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e0/690f735f09c9ea568ffbfcdabfa448]
+~> TaskHandler[id: 59; name: preFastQC (18); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/257b49724c87df3256e9819451b88c]
+~> TaskHandler[id: 60; name: preFastQC (19); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b8/9b3d49dd1711e20f7c94a94d84096f]
+~> TaskHandler[id: 62; name: preFastQC (20); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/0b/1af6a87d51f7f1f3ff085fda494ccd]
+~> TaskHandler[id: 65; name: preFastQC (21); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/28/c4ef11fc25807d7b3a990b3ef114cf]
+~> TaskHandler[id: 66; name: preFastQC (22); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/65/ce7dc47fc9b5f7f970f8dd6f1b2950]
+~> TaskHandler[id: 68; name: postFastQC (1); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/b9/4ca2f477245c8487b93d15f71883a7]
+~> TaskHandler[id: 70; name: postFastQC (2); status: RUNNING; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3b/cd7f6b73b48878cf0fb250df6fb76b]
+.. remaining tasks omitted.
+Jan-06 15:56:39.168 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 35 -- tasks to be submitted are shown below
+~> TaskHandler[id: 80; name: alignReads (7); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/e1/8da7c43ae66e733d8362245f1eb345]
+~> TaskHandler[id: 83; name: alignReads (8); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/24/7efc0df38f312293f32c91dc3a8b4e]
+~> TaskHandler[id: 85; name: postFastQC (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/fc/74f3c94e0f24c7f9045783fe6f69b0]
+~> TaskHandler[id: 84; name: alignReads (9); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/ae/32fad97cf404ec890263521670c9e3]
+~> TaskHandler[id: 86; name: postFastQC (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/40/9afc7f3f8e437dcbbbfbbf150b5fae]
+~> TaskHandler[id: 87; name: alignReads (10); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/bf/8b145f96e3baa65e0d8f6a4f35c1ca]
+~> TaskHandler[id: 88; name: postFastQC (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f6/0518c2b28c73941feabb5dc8b71254]
+~> TaskHandler[id: 89; name: alignReads (11); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/f2/1ff7ec762c43bb996f6ae4ecbaf6a0]
+~> TaskHandler[id: 90; name: postFastQC (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/3e/2140240a456fc7eb459e9081aef1f7]
+~> TaskHandler[id: 91; name: alignReads (12); status: NEW; exit: -; error: -; workDir: /Users/subinpark/Downloads/from_jehoon/work/81/e0bcb6f4a49a486e6c9b468c2e1702]
+.. remaining tasks omitted.
+Jan-06 15:59:18.127 [SIGINT handler] INFO  nextflow.Session - Adieu
+Jan-06 15:59:18.359 [SIGINT handler] INFO  nextflow.Session - Adieu

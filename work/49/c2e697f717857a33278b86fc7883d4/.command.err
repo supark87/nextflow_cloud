@@ -1,0 +1,2 @@
+docker: Error response from daemon: dial unix docker.raw.sock: connect: connection refused.
+See 'docker run --help'.
