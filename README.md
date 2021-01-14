@@ -8,3 +8,5 @@
 
 ` nextflow run trim1testVCF_SP_untilannotate.nf -with-docker container `
 
+### You might want to change 6genes2.dict file path
+
