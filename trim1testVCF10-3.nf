@@ -114,6 +114,8 @@ process buildIndex {
 
 
 process alignReads {
+    container 'tools:latest'
+
     publishDir "$params.output.folder/alignedReads/${sample}", pattern: "*.sam", mode : "copy"
     publishDir "$params.output.folder/alignedReads/${sample}/Stats", pattern: "*.txt", mode : "copy"
     input:
@@ -147,6 +149,8 @@ process alignReads {
 }
 
 process processAlignments {
+    container 'broadinstitute/picard'
+
     publishDir "$params.output.folder/alignedReads/${sample}", pattern: "*.ba*", mode : "copy"
     input:
         set val(sample), path(sam_path), path(align_met) from align_out
@@ -168,6 +172,7 @@ process processAlignments {
 }
 
 process GenerateVCF {
+    container 'gatk_sam_bcf:latest'
     publishDir "$params.output.folder/GenerateVCFSam/${sample}", pattern: "*.vcf", mode : "copy"
     input:
         set val(sample), path(bam_path) from postal_out
@@ -241,6 +246,7 @@ process GenerateVCFHFree {
 
 
 process annotate {
+    container 'snpeff'
     publishDir "$params.output.folder/annotate/${sample}", mode : "copy"
 
     input:
@@ -258,49 +264,9 @@ process annotate {
 
 }
 
-/*process vartpype {
-    publishDir "$params.output.folder/vartype/${sample}", mode : "copy"
-
-    input:
-        set val(sample), path(vcf_path1) from anno_out1
-        set val(sample), path(vcf_path2) from anno_out2
-        set val(sample), path(vcf_path3) from anno_out3
-
-    output:
-        tuple val(sample), path("${sample}_1.vartype.vcf") into vartype_out1
-        tuple val(sample), path("${sample}_2.vartype.vcf") into vartype_out2
-        tuple val(sample), path("${sample}_3.vartype.vcf") into vartype_out3
-
-    script:
-        """
-        java -jar $baseDir/snpEFF/SnpSift.jar varType ${vcf_path1} > ${sample}_1.vartype.vcf
-        java -jar $baseDir/snpEFF/SnpSift.jar varType ${vcf_path2} > ${sample}_2.vartype.vcf
-        java -jar $baseDir/snpEFF/SnpSift.jar varType ${vcf_path3} > ${sample}_3.vartype.vcf
-        """
-}*/
-
-/* process extract2 {
-    publishDir "$params.output.folder/extract/${sample}", mode : "copy"
-
-    input:
-        set val(sample), path(vcf_path1) from anno_out1
-        set val(sample), path(vcf_path2) from anno_out2
-        set val(sample), path(vcf_path3) from anno_out3
-
-    output:
-        tuple val(sample), path("final_${vcf_path1}ext.vcf") into extract_out1
-        tuple val(sample), path("final_${vcf_path2}ext.vcf") into extract_out2
-        tuple val(sample), path("final_${vcf_path3}ext.vcf") into extract_out3
-
-    script:
-    """
-    java -jar $baseDir/snpEFF/SnpSift.jar extractFields ${vcf_path1} CHROM POS REF ALT varType "ANN[*].EFFECT" > final_${vcf_path1}ext.vcf
-    java -jar $baseDir/snpEFF/SnpSift.jar extractFields ${vcf_path2} CHROM POS REF ALT varType "ANN[*].EFFECT" > final_${vcf_path2}ext.vcf 
-    java -jar $baseDir/snpEFF/SnpSift.jar extractFields ${vcf_path3} CHROM POS REF ALT varType "ANN[*].EFFECT" > final_${vcf_path3}ext.vcf
-    """
-} */
 
 process merge {
+    container 'tools:latest'
     publishDir "$params.output.folder/final_vcf/${sample}", mode : "copy"
 
     input:
@@ -318,6 +284,7 @@ process merge {
 }
 
 process vartpype {
+    container 'snpeff'
     publishDir "$params.output.folder/vartype/${sample}", mode : "copy"
 
     input:
@@ -333,6 +300,7 @@ process vartpype {
 }
 
 process filter {
+    container 'snpeff'
     publishDir "$params.output.folder/filter/${sample}", mode : "copy"
 
     input:
@@ -348,6 +316,7 @@ process filter {
 }
 
 process extract {
+    container 'snpeff'
     publishDir "$params.output.folder/extract/${sample}", mode : "copy"
 
     input:
@@ -363,6 +332,7 @@ process extract {
 }
 
 process spread {
+    container 'tools:latest'
     publishDir "$params.output.folder/spread/${sample}", mode : "copy"
 
     input:
