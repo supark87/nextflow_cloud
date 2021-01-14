@@ -6,5 +6,5 @@
 
 ` git clone https://github.com/supark87/nextflow_cloud.git`
 
-` nextflow run trim1testVCF_SP.nf -with-docker container `
+` nextflow run trim1testVCF_SP_untilannotate.nf -with-docker container `
 
