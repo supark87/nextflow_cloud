@@ -4,6 +4,8 @@
 
 ` docker pull supark87/tools2`
 
+` docker pull broadinstitute/picard`
+
 ` git clone https://github.com/supark87/nextflow_cloud.git`
 
 ` nextflow run trim1testVCF_SP_untilannotate.nf -with-docker container `
