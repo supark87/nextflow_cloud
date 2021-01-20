@@ -1,0 +1,143 @@
+# 6 Genes we are reporting through NeST
+
+
+
+-pfCRT(chloroquine resistance transporter)
+ 
+Localized within the membrane of the digestive vacuole of Pf. It import toxic effect as chloroquine accumulates high. Mutations reduce chloroquine accumulation in this organelle.
+ 
+CVIET: SouthEastAsia/Africa
+SVMNT: South Africa
+Codons 72-76 (K76T in Angola 2019)
+ 
+-cytb(cytochrome b)
+Atovaquone related : Atovaquone-proguanil is recommend for chemoprophylaxix for travelers.
+ 
+-pfDHFR(dihydrofolate reductase) -SP(anti-folate) related
+ in the folate synthesis pathway
+(-> time) S108N, N51I, C59R, I164L(absolute mutation)
+Asia -> Africa (triple mutation gets to Africa)
+C50R, N51I, S108V (South America genotype, C50R is exclusively in South America)
+N51L, S108N, I164L (differ region to region, more in Peru)
+A581G(Tanzania, psf47 pregnant), A437G, K540E : East Africa
+ 
+-pfDHPS(dihydropteroate synthase) - SP related
+in the folate synthesis pathway
+ 
+S436A, A437G, K540E, A581G, A613T
+ 
+-pfK13(P.falciparum Kelch 13)
+ 
+Essential for erythrocytic stages
+Energy-dependent efflux pump responsible for decreased druc accumulation in multi-drug-resistant cells
+P.falciparam resistanct to the drug cq have multiple copies of gene coding for MDR
+Resistance emerged in southeast Asia
+Highest prevalence of PfK13 mutations in GMS , C580Y
+Rwanda, R561H
+Related to changes in clearance time
+ 
+ 
+ 
+-pfMDR1(multi-drug resistance 1 protein)
+Mumefantrine : N86
+Mefloquine : increased copy number
+Amodiaquine(86Y, not validated)
+CQ :( in comnination with Pfcrt only) : N86Y, Y184YF, S1034C, N1042D, D1246Y
+ 
+
+
+Treatment and resistance genes
+
+
+
+Cloroquine(CQ) : still in mesoamerica, hispaniola
+ 
+* 4-aminoquinolines
+* Pfcrt : K76T, C72S, M74I, N75E, A220S, Q271E, N326S, I356T, R371I
+* pfmdr1 : N86Y, Y184F, S1034C, N1042D, D1246Y
+ 
+ACT
+ 
+AL (Artemether-lumefantrine) - Amino alcohol
+* Pfmdr1 N86(Angola dataset 2019 also had it 
+AS-AQ(artesunate-amodiaquine) - 4-aminoquinolines
+* Pfmdr1 (86Y)
+ 
+AS-MQ(artesunate-mefloquine) - amino-alcohols
+* pfmdr1 increased copy number
+
+DHA-PPQ(dihydroartemisinin-piperaquine)
+* pfpm2-3 increased copy number
+* pfcrt
+    * in vivo : T93S, H97Y, F145I, I128F, C350R
+    * in vitro: T93S, H97Y, F145I, I128F, M343L, G353V
+
+AS-SP(artisunate-sulfadoxine-pyrimethamine) - antifolate
+* Pfdhps(sulfodoxine) : S436A/F, A437G, K540E, A581G, A613T/S
+* pfdhfr(pyrimethamine) : N51I, C59R, S108N, and I164L
+* pfdhfr(proguanil) : A16V, N51I, C59R, S108N, I164L
+
+AS-PY(artisunate-pyronardine)
+* Yet to be validated
+Atovaquone(Naphthquinone) 
+* pfcytb : Y268N/S/C
+ 
+SP drug mechanism 
+1) Interfere with DHPS
+2) Interfere with DHFR
+ 
+Pregnant women(IPTp) :SP
+Infant prevention(IPTi) :SP (where less than 50%prevalence of mutation Pfdhps 540)
+Seasonal malaria chemoprevention(SMC) :children during malaria season, AQ+SP
+
+Artimisinin Partial Resistance
+* PfK13 BTB/POZ and propeller domain : associated with delayed parasite clearance
+* Not inn this domain but in clinical studies : K189T, E252Q(dependent in vitro)
+* A578S : Asia, Africa studies but not associated with clinical or in vitro resistance to artemisinin
+* Candidate
+    * 1) A statistically significant association (p<0.05) between pfK13 mutation and clearance half life > 5 hours or day 3 parasitemia
+    * 2) survival of >1% using the RSA(0-3h) in at least five different individual isolates with a given mutation | statistical significance in RSA assay between culture-adapted recombinant isogenic parasite lines (express a variant allele PfK13 as compared with the wild-type allele)
+    * P441L, G449A, C469F/Y, A481V, R515K, P527H, N537I/D, G538V, V568G, R622I, A675V
+* Validate : both conditions
+    * F446I, N458Y, M467I, Y493H, R539T, I543T, P553L, R561H, P574L, C580Y
+* associated but sample size was small : K479I, G553A, R575K, M579I, D584V, P667T, F637I, H719N
+
+
+Recrudescence Reinfection marker
+
+
+
+
+1. WHO : msp1, msp2, glurp (high polymorphic markers)
+2. cpmp
+ 
+Add a new section here
+WHO African Region summary
+
+
+
+
+1. Central Africa (10 countries) : 2 recommended AL , seven recommended AS-AQ, and one recommends AL or AS-AQ
+* When Pfpm2-3 is related to PPQ, Burundi in 2019 reported highest prevalence of pfpm2-3 amplication
+* PfK13: mostly wildtype.
+    * M461I and P574L(validated), C469F(candidate marker) from Chinese travelers from Guinea
+    * P553L and R539T(validated) from Chinese travelers from Angola
+    * R561H in Congo
+    * M579I and Q613E : detected but not validated
+2. Easter and Southern Africa (20 countries) : 14 recommend AL, three recommend AS-AQ, and one recommends AL or AS-AQ
+* PfK13 : mostly wild type
+    * P574H : Rwanda and Uganda
+    * R561H : Rwanda, western GMS, Myanmar
+    * R622I (candidate) : Ethiopia, china traveler from Mozambique, Zambia
+    * C469F, A675V, N585K : frequently identified but not candidate or validated
+    * N585K : detected in six studies in Kenya
+* Pfpm203 amplications in six countries
+3. West Africa(17 countries) : 5 recommended AL, three recommended AS-AQ, seven recommended AL or AS-AQ, one recommends AL, AS-AQ and DHA-PPQ
+ 
+* PfK13 mutations: most are wild type
+    * M461I, R539T, C580Y( 3 validated markers) 
+    * R539T , C580Y from Ghana
+* Pfpm2-3 in six countries
+ 
+ 
+*P.vivax : rarely reported from WHO but Ethiopia, Madagascar, Mauritania
