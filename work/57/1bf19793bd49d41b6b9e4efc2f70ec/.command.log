@@ -1,0 +1,2 @@
+python: can't open file '/Users/subinpark/Downloads/nextflow_cloud/annotate.py': [Errno 2] No such file or directory
+Error response from daemon: Cannot kill container: nxf-oo5Uzf5pwGn2ipGVvxuI0lk7: Container 86ddf180c93cb2aadd0132e8a6d4aa440d2826ef35f8a2f0f2167e2e33e7e078 is not running

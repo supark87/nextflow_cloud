@@ -1,0 +1,8 @@
+Started analysis of 19ANBe21D0042PfFxxx0_S40_L001_trimmed_R1.fastq
+Approx 15% complete for 19ANBe21D0042PfFxxx0_S40_L001_trimmed_R1.fastq
+Approx 30% complete for 19ANBe21D0042PfFxxx0_S40_L001_trimmed_R1.fastq
+Approx 45% complete for 19ANBe21D0042PfFxxx0_S40_L001_trimmed_R1.fastq
+Approx 65% complete for 19ANBe21D0042PfFxxx0_S40_L001_trimmed_R1.fastq
+Approx 80% complete for 19ANBe21D0042PfFxxx0_S40_L001_trimmed_R1.fastq
+Approx 95% complete for 19ANBe21D0042PfFxxx0_S40_L001_trimmed_R1.fastq
+time="2021-01-19T14:33:18-05:00" level=error msg="error waiting for container: invalid character 'u' looking for beginning of value"

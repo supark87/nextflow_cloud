@@ -1,0 +1,19 @@
+INFO	2021-01-19 21:05:00	MergeVcfs	
+
+********** NOTE: Picard's command line syntax is changing.
+**********
+********** For more information, please see:
+********** https://github.com/broadinstitute/picard/wiki/Command-Line-Syntax-Transition-For-Users-(Pre-Transition)
+**********
+********** The command line looks like this in the new syntax:
+**********
+**********    MergeVcfs -I 19ANBe21D0042PfFxxx0_S40_L001-1.ann.vcf -I 19ANBe21D0042PfFxxx0_S40_L001-2.ann.vcf -I 19ANBe21D0042PfFxxx0_S40_L001-3.ann.vcf -O final_19ANBe00D0042PfFxxx0_S8_L001.vcf
+**********
+
+
+21:05:01.621 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/usr/picard/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Tue Jan 19 21:05:01 UTC 2021] MergeVcfs INPUT=[19ANBe21D0042PfFxxx0_S40_L001-1.ann.vcf, 19ANBe21D0042PfFxxx0_S40_L001-2.ann.vcf, 19ANBe21D0042PfFxxx0_S40_L001-3.ann.vcf] OUTPUT=final_19ANBe00D0042PfFxxx0_S8_L001.vcf    VERBOSITY=INFO QUIET=false VALIDATION_STRINGENCY=STRICT COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=true CREATE_MD5_FILE=false GA4GH_CLIENT_SECRETS=client_secrets.json USE_JDK_DEFLATER=false USE_JDK_INFLATER=false
+[Tue Jan 19 21:05:01 UTC 2021] Executing as root@59bfa3f5387d on Linux 4.19.121-linuxkit amd64; OpenJDK 64-Bit Server VM 1.8.0_275-b01; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: 2.24.0-1-g74a85ab-SNAPSHOT
+[Tue Jan 19 21:05:02 UTC 2021] picard.vcf.MergeVcfs done. Elapsed time: 0.01 minutes.
+Runtime.totalMemory()=504889344
+Error response from daemon: Cannot kill container: nxf-7PhI9LMsjZV1rFJ0u8Uv8X9r: Container 59bfa3f5387d78c05a833f0c3be2d243b943a8ea228d8b6fd96eda6601bd19f7 is not running

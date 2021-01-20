@@ -1,0 +1,126 @@
+00:00:00	SnpEff version SnpEff 4.3t (build 2017-11-24 10:18), by Pablo Cingolani
+00:00:00	Command: 'build'
+00:00:00	Building database for '6genes2'
+00:00:00	Reading configuration file 'data/snpEff.config'. Genome: '6genes2'
+00:00:00	Reading config file: /Users/subinpark/Downloads/nextflow_cloud/data/snpEff.config
+00:00:01	done
+Reading GFF3 data file  : '/Users/subinpark/Downloads/nextflow_cloud/data/6genes2/genes.gff'
+WARNING: Gene 'DHFR-TS' already added. File '/Users/subinpark/Downloads/nextflow_cloud/data/6genes2/genes.gff' line 7	'DHFR	Geneious	gene	0	1827	.	+	.	Name=DHFR-TS	gene	'
+WARNING: Transcript 'DHFR-TS' already added. File '/Users/subinpark/Downloads/nextflow_cloud/data/6genes2/genes.gff' line 8	'DHFR	Geneious	mRNA	0	1827	.	+	.	Name=DHFR-TS	mRNA	'
+WARNING: Gene 'K13' already added. File '/Users/subinpark/Downloads/nextflow_cloud/data/6genes2/genes.gff' line 37	'K13	Geneious	gene	0	2181	.	+	.	Name=K13	gene	'
+WARNING: Transcript 'K13' already added. File '/Users/subinpark/Downloads/nextflow_cloud/data/6genes2/genes.gff' line 38	'K13	Geneious	mrna	0	2181	.	+	.	Name=K13	mRNA	'
+WARNING: Gene 'coI' already added. File '/Users/subinpark/Downloads/nextflow_cloud/data/6genes2/genes.gff' line 82	'mitochondrialgenome	Geneious	gene	1932	3471	.	+	.	Name=coI	gene	'
+WARNING: Gene 'CYTB' already added. File '/Users/subinpark/Downloads/nextflow_cloud/data/6genes2/genes.gff' line 83	'mitochondrialgenome	Geneious	gene	3491	4622	.	+	.	Name=CYTB	gene	'
+WARNING: Gene 'coxIII' already added. File '/Users/subinpark/Downloads/nextflow_cloud/data/6genes2/genes.gff' line 84	'mitochondrialgenome	Geneious	gene	733	1573	.	-	.	Name=coxIII	gene	'
+WARNING: Transcript 'PfCRT' already added. File '/Users/subinpark/Downloads/nextflow_cloud/data/6genes2/genes.gff' line 92	'PfCRT	Geneious	mRNA	363	632	.	+	.	Name=PfCRT	mRNA;ID=bzcskIIvfech8+btxCZTp0boHZA.1603866125801.2	'
+WARNING: Transcript 'PfCRT' already added. File '/Users/subinpark/Downloads/nextflow_cloud/data/6genes2/genes.gff' line 93	'PfCRT	Geneious	mRNA	811	984	.	+	.	Name=PfCRT	mRNA;ID=bzcskIIvfech8+btxCZTp0boHZA.1603866125801.2	'
+WARNING: Transcript 'PfCRT' already added. File '/Users/subinpark/Downloads/nextflow_cloud/data/6genes2/genes.gff' line 94	'PfCRT	Geneious	mRNA	1156	1289	.	+	.	Name=PfCRT	mRNA;ID=bzcskIIvfech8+btxCZTp0boHZA.1603866125801.2	'
+WARNING: Transcript 'PfCRT' already added. File '/Users/subinpark/Downloads/nextflow_cloud/data/6genes2/genes.gff' line 95	'PfCRT	Geneious	mRNA	1442	1514	.	+	.	Name=PfCRT	mRNA;ID=bzcskIIvfech8+btxCZTp0boHZA.1603866125801.2	'
+WARNING: Transcript 'PfCRT' already added. File '/Users/subinpark/Downloads/nextflow_cloud/data/6genes2/genes.gff' line 96	'PfCRT	Geneious	mRNA	1637	1713	.	+	.	Name=PfCRT	mRNA;ID=bzcskIIvfech8+btxCZTp0boHZA.1603866125801.2	'
+WARNING: Transcript 'PfCRT' already added. File '/Users/subinpark/Downloads/nextflow_cloud/data/6genes2/genes.gff' line 97	'PfCRT	Geneious	mRNA	1809	1892	.	+	.	Name=PfCRT	mRNA;ID=bzcskIIvfech8+btxCZTp0boHZA.1603866125801.2	'
+WARNING: Transcript 'PfCRT' already added. File '/Users/subinpark/Downloads/nextflow_cloud/data/6genes2/genes.gff' line 98	'PfCRT	Geneious	mRNA	2019	2070	.	+	.	Name=PfCRT	mRNA;ID=bzcskIIvfech8+btxCZTp0boHZA.1603866125801.2	'
+WARNING: Transcript 'PfCRT' already added. File '/Users/subinpark/Downloads/nextflow_cloud/data/6genes2/genes.gff' line 99	'PfCRT	Geneious	mRNA	2207	2264	.	+	.	Name=PfCRT	mRNA;ID=bzcskIIvfech8+btxCZTp0boHZA.1603866125801.2	'
+WARNING: Transcript 'PfCRT' already added. File '/Users/subinpark/Downloads/nextflow_cloud/data/6genes2/genes.gff' line 100	'PfCRT	Geneious	mRNA	2412	2505	.	+	.	Name=PfCRT	mRNA;ID=bzcskIIvfech8+btxCZTp0boHZA.1603866125801.2	'
+WARNING: Transcript 'PfCRT' already added. File '/Users/subinpark/Downloads/nextflow_cloud/data/6genes2/genes.gff' line 101	'PfCRT	Geneious	mRNA	2698	2743	.	+	.	Name=PfCRT	mRNA;ID=bzcskIIvfech8+btxCZTp0boHZA.1603866125801.2	'
+WARNING: Transcript 'PfCRT' already added. File '/Users/subinpark/Downloads/nextflow_cloud/data/6genes2/genes.gff' line 102	'PfCRT	Geneious	mRNA	2890	2945	.	+	.	Name=PfCRT	mRNA;ID=bzcskIIvfech8+btxCZTp0boHZA.1603866125801.2	'
+WARNING: Transcript 'PfCRT' already added. File '/Users/subinpark/Downloads/nextflow_cloud/data/6genes2/genes.gff' line 103	'PfCRT	Geneious	mRNA	3114	3191	.	+	.	Name=PfCRT	mRNA;ID=bzcskIIvfech8+btxCZTp0boHZA.1603866125801.2	'
+WARNING: Gene 'PfMDR1' already added. File '/Users/subinpark/Downloads/nextflow_cloud/data/6genes2/genes.gff' line 175	'PfMDR1	Geneious	gene	0	4260	.	+	.	Name=PfMDR1	gene	'
+WARNING: Transcript 'PfMDR1' already added. File '/Users/subinpark/Downloads/nextflow_cloud/data/6genes2/genes.gff' line 176	'PfMDR1	Geneious	mRNA	0	4260	.	+	.	Name=PfMDR1	mRNA	'
+
+	Total: 2 markers added.
+
+	Create exons from CDS (if needed): ....................
+	Exons created for 8 transcripts.
+
+	Deleting redundant exons (if needed): 
+		Total transcripts with deleted exons: 0
+
+	Collapsing zero length introns (if needed): 
+		Total collapsed transcripts: 0
+	Reading sequences   :
+	Reading FASTA file: '/Users/subinpark/Downloads/nextflow_cloud/data/genomes/6genes2.fa'
+		Reading sequence 'DHFR', length: 1827
+		Adding genomic sequences to exons: 	Done (1 sequences added, 0 ignored).
+		Reading sequence 'DHPS', length: 2417
+		Adding genomic sequences to exons: 	Done (0 sequences added, 0 ignored).
+		Reading sequence 'K13', length: 2181
+		Adding genomic sequences to exons: 	Done (1 sequences added, 0 ignored).
+		Reading sequence 'mitochondrialgenome', length: 5967
+		Adding genomic sequences to exons: 	Done (3 sequences added, 0 ignored).
+		Reading sequence 'PfCRT', length: 3399
+		Adding genomic sequences to exons: 	Done (14 sequences added, 0 ignored).
+		Reading sequence 'PfMDR1', length: 4260
+		Adding genomic sequences to exons: 	Done (1 sequences added, 0 ignored).
+	Total: 20 sequences added, 0 sequences ignored.
+
+	Adjusting transcripts: 
+	Adjusting genes: 
+	Adjusting chromosomes lengths: 
+	Ranking exons: 
+	Create UTRs from CDS (if needed): 
+	Correcting exons based on frame information.
+	WARNING: All frames are zero! This seems rather odd, please check that 'frame' information in your 'genes' file is accurate.
+.
+	Remove empty chromosomes: 
+
+	Marking as 'coding' from CDS information: 
+	Done: 0 transcripts marked
+#-----------------------------------------------
+# Genome name                : '6genes2'
+# Genome version             : '6genes2'
+# Genome ID                  : '6genes2[0]'
+# Has protein coding info    : true
+# Has Tr. Support Level info : true
+# Genes                      : 9
+# Protein coding genes       : 9
+#-----------------------------------------------
+# Transcripts                : 9
+# Avg. transcripts per gene  : 1.00
+# TSL transcripts            : 0
+#-----------------------------------------------
+# Checked transcripts        : 
+#               AA sequences :      0 ( 0.00% )
+#              DNA sequences :      0 ( 0.00% )
+#-----------------------------------------------
+# Protein coding transcripts : 9
+#              Length errors :      7 ( 77.78% )
+#  STOP codons in CDS errors :      6 ( 66.67% )
+#         START codon errors :      9 ( 100.00% )
+#        STOP codon warnings :      1 ( 11.11% )
+#              UTR sequences :      0 ( 0.00% )
+#               Total Errors :      9 ( 100.00% )
+# WARNING                    : No protein coding transcript has UTR
+#-----------------------------------------------
+# Cds                        : 20
+# Exons                      : 20
+# Exons with sequence        : 20
+# Exons without sequence     : 0
+# Avg. exons per transcript  : 2.22
+# WARNING!                   : Mitochondrion chromosome 'mitochondrialgenome' does not have a mitochondrion codon table (codon table = 'Standard'). You should update the config file.
+#-----------------------------------------------
+# Number of chromosomes      : 6
+# Chromosomes                : Format 'chromo_name size codon_table'
+#		'mitochondrialgenome'	5967	Standard
+#		'PfMDR1'	4260	Standard
+#		'PfCRT'	3399	Standard
+#		'DHPS'	2417	Standard
+#		'K13'	2181	Standard
+#		'DHFR'	1827	Standard
+#-----------------------------------------------
+
+	00:00:01	Caracterizing exons by splicing (stage 1) : 
+
+00:00:01	Caracterizing exons by splicing (stage 2) : 
+	00:00:01	done.
+00:00:01	[Optional] Rare amino acid annotations
+00:00:01	Warning: Cannot read optional protein sequence file '/Users/subinpark/Downloads/nextflow_cloud/data/6genes2/protein.fa', nothing done.
+00:00:01	Saving database
+00:00:01	[Optional] Reading regulation elements: GFF
+00:00:01	Warning: Cannot read optional regulation file '/Users/subinpark/Downloads/nextflow_cloud/data/6genes2/regulation.gff', nothing done.
+00:00:01	[Optional] Reading regulation elements: BED 
+00:00:01	Cannot find optional regulation dir '/Users/subinpark/Downloads/nextflow_cloud/data/6genes2/regulation.bed/', nothing done.
+00:00:01	[Optional] Reading motifs: GFF
+00:00:01	Warning: Cannot open PWMs file /Users/subinpark/Downloads/nextflow_cloud/data/6genes2/pwms.bin. Nothing done
+00:00:01	Done
+00:00:01	Logging
+nxf-yoqKZRGORdKLoF5beHgb4kVg

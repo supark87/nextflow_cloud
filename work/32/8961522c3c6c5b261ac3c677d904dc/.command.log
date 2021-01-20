@@ -1,0 +1,2 @@
+/opt/miniconda/envs/gatk/bin/python: can't open file '/Users/subinpark/Downloads/nextflow_cloud/annotate.py': [Errno 2] No such file or directory
+Error response from daemon: Cannot kill container: nxf-LlaA5yI8NKpN0zJN0fe2tZr1: Container f5e691925a246f92bd11ed6c8858a02a20add5415880ff733863a03f7e40a23c is not running

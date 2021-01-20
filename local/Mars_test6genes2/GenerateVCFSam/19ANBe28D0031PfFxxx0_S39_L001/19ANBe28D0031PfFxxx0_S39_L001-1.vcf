@@ -1,0 +1,54 @@
+##fileformat=VCFv4.2
+##FILTER=<ID=PASS,Description="All filters passed">
+##bcftoolsVersion=1.9+htslib-1.9
+##bcftoolsCommand=mpileup -f 6genes2.fa 19ANBe28D0031PfFxxx0_S39_L001_SR.bam
+##reference=file://6genes2.fa
+##contig=<ID=DHFR,length=1827>
+##contig=<ID=DHPS,length=2417>
+##contig=<ID=K13,length=2181>
+##contig=<ID=mitochondrialgenome,length=5967>
+##contig=<ID=PfCRT,length=3399>
+##contig=<ID=PfMDR1,length=4260>
+##ALT=<ID=*,Description="Represents allele(s) other than observed.">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=IDV,Number=1,Type=Integer,Description="Maximum number of reads supporting an indel">
+##INFO=<ID=IMF,Number=1,Type=Float,Description="Maximum fraction of reads supporting an indel">
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw read depth">
+##INFO=<ID=VDB,Number=1,Type=Float,Description="Variant Distance Bias for filtering splice-site artefacts in RNA-seq data (bigger is better)",Version="3">
+##INFO=<ID=RPB,Number=1,Type=Float,Description="Mann-Whitney U test of Read Position Bias (bigger is better)">
+##INFO=<ID=MQB,Number=1,Type=Float,Description="Mann-Whitney U test of Mapping Quality Bias (bigger is better)">
+##INFO=<ID=BQB,Number=1,Type=Float,Description="Mann-Whitney U test of Base Quality Bias (bigger is better)">
+##INFO=<ID=MQSB,Number=1,Type=Float,Description="Mann-Whitney U test of Mapping Quality vs Strand Bias (bigger is better)">
+##INFO=<ID=SGB,Number=1,Type=Float,Description="Segregation based metric.">
+##INFO=<ID=MQ0F,Number=1,Type=Float,Description="Fraction of MQ0 reads (smaller is better)">
+##FORMAT=<ID=PL,Number=G,Type=Integer,Description="List of Phred-scaled genotype likelihoods">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##INFO=<ID=ICB,Number=1,Type=Float,Description="Inbreeding Coefficient Binomial test (bigger is better)">
+##INFO=<ID=HOB,Number=1,Type=Float,Description="Bias in the number of HOMs number (smaller is better)">
+##INFO=<ID=AC,Number=A,Type=Integer,Description="Allele count in genotypes for each ALT allele, in the same order as listed">
+##INFO=<ID=AN,Number=1,Type=Integer,Description="Total number of alleles in called genotypes">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Number of high-quality ref-forward , ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=MQ,Number=1,Type=Integer,Description="Average mapping quality">
+##bcftools_callVersion=1.9+htslib-1.9
+##bcftools_callCommand=call -vm 19ANBe28D0031PfFxxx0_S39_L001.mpileup; Date=Tue Jan 19 19:37:58 2021
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	19ANBe28D0031PfFxxx0_S39_L001
+DHFR	152	.	A	T	209	.	DP=94;VDB=0.657366;SGB=-0.693147;MQ0F=0.0212766;AC=2;AN=2;DP4=0,0,50,0;MQ=39	GT:PL	1/1:239,151,0
+DHFR	175	.	T	C	208	.	DP=89;VDB=0.687969;SGB=-0.693147;MQ0F=0.011236;AC=2;AN=2;DP4=0,0,48,0;MQ=40	GT:PL	1/1:238,144,0
+DHFR	323	.	G	A	225	.	DP=52;VDB=0.139662;SGB=-0.693097;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,26,4;MQ=42	GT:PL	1/1:255,90,0
+DHFR	1823	.	CTTAA	CTTATTAA	83	.	INDEL;IDV=6;IMF=1;DP=6;VDB=0.00131677;SGB=-0.616816;MQSB=0.875;MQ0F=0;AC=2;AN=2;DP4=0,0,2,4;MQ=32	GT:PL	1/1:119,21,6
+DHPS	4	.	GA	GATATATAATATGGA,GTATGGA	54	.	INDEL;IDV=6;IMF=0.75;DP=8;VDB=3.36789e-05;SGB=-0.636426;MQSB=0.992367;MQ0F=0;AC=1,1;AN=2;DP4=0,1,4,3;MQ=23	GT:PL	1/2:113,53,45,67,0,61
+DHPS	1486	.	C	G	225	.	DP=48;VDB=0.628151;SGB=-0.692976;MQSB=0.958333;MQ0F=0.0208333;AC=2;AN=2;DP4=0,0,24,2;MQ=40	GT:PL	1/1:255,75,0
+DHPS	1487	.	A	T	225	.	DP=48;VDB=0.634211;SGB=-0.692976;MQSB=0.958333;MQ0F=0.0208333;AC=2;AN=2;DP4=0,0,24,2;MQ=40	GT:PL	1/1:255,78,0
+mitochondrialgenome	2365	.	T	C	8.99921	.	DP=2;SGB=-0.379885;MQ0F=0;AC=2;AN=2;DP4=0,0,1,0;MQ=42	GT:PL	1/1:38,3,0
+mitochondrialgenome	4952	.	T	C	12.6566	.	DP=4;SGB=-0.379885;MQ0F=0;AC=2;AN=2;DP4=0,0,1,0;MQ=42	GT:PL	1/1:42,3,0
+PfCRT	306	.	ATTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT	ATTTTTTTTTTTTTTTTTTTTT	10.1438	.	INDEL;IDV=6;IMF=0.857143;DP=7;VDB=0.00779031;SGB=-0.556411;MQSB=0.8;MQ0F=0;ICB=1;HOB=0.5;AC=1;AN=2;DP4=1,2,4,0;MQ=20	GT:PL	0/1:42,0,12
+PfCRT	916	.	C	T	206	.	DP=27;VDB=0.0784785;SGB=-0.686358;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,13,1;MQ=36	GT:PL	1/1:236,42,0
+PfCRT	1576	.	CTTTTTTTTTTTTT	CTTTTTTTTTTTTTTTT,CTTTTTTTTTTTTTTTTTT	35.4917	.	INDEL;IDV=15;IMF=0.9375;DP=16;VDB=0.340089;SGB=-0.651104;MQSB=0.892753;MQ0F=0;AC=1,1;AN=2;DP4=3,5,4,4;MQ=37	GT:PL	1/2:95,54,49,54,0,44
+PfCRT	1778	.	A	G	7.4835	.	DP=42;VDB=0.960765;SGB=-0.556411;RPB=0.304076;MQB=0.953497;BQB=0.423112;MQ0F=0;ICB=1;HOB=0.5;AC=1;AN=2;DP4=9,0,4,0;MQ=41	GT:PL	0/1:41,0,159
+PfCRT	1778	.	ATATGTATGTATGTAT	ATGTATGTATGTATGTAT,ATATGTATGTATGTATGTAT	139	.	INDEL;IDV=15;IMF=0.357143;DP=42;VDB=0.999999;SGB=-0.689466;MQSB=0.997097;MQ0F=0;AC=1,1;AN=2;DP4=13,13,11,5;MQ=41	GT:PL	1/2:200,45,92,139,0,160
+PfCRT	2193	.	A	T	55	.	DP=8;VDB=0.220755;SGB=-0.511536;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,1,2;MQ=30	GT:PL	1/1:85,9,0
+PfCRT	2402	.	G	T	165	.	DP=20;VDB=0.00214409;SGB=-0.670168;MQ0F=0;AC=2;AN=2;DP4=0,0,10,0;MQ=40	GT:PL	1/1:195,30,0
+PfCRT	2767	.	ATTTTTTTTTTTTTTTTTT	ATTTTTTTTTTTTTTTTTTTTTT	6.3173	.	INDEL;IDV=4;IMF=0.8;DP=5;VDB=0.374631;SGB=-0.511536;MQSB=0.666667;MQ0F=0.2;AC=2;AN=2;DP4=1,1,2,1;MQ=17	GT:PL	1/1:32,2,0
+PfCRT	2854	.	ATTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT	ATTTTTTTTTTTTTTTTTTT	21.1093	.	INDEL;IDV=9;IMF=0.9;DP=10;VDB=0.0021735;SGB=-0.651104;MQSB=0.952347;MQ0F=0.2;AC=2;AN=2;DP4=1,1,4,4;MQ=8	GT:PL	1/1:48,9,0
+PfCRT	3013	.	CATATATATATATATATATATATATAT	CATATATATATATATATATATATAT	26.4242	.	INDEL;IDV=2;IMF=1;DP=2;VDB=0.22;SGB=-0.453602;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,1,1;MQ=42	GT:PL	1/1:56,6,0
+PfMDR1	1951	.	GATAATAATAATAATAATAATAATAATAATAA	GATAATAATAATAA	190	.	INDEL;IDV=11;IMF=0.916667;DP=12;VDB=0.178357;SGB=-0.670168;MQSB=0.444281;MQ0F=0;AC=2;AN=2;DP4=1,1,3,7;MQ=29	GT:PL	1/1:217,17,0

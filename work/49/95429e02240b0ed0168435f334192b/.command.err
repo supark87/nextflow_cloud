@@ -1,0 +1,11 @@
+java.lang.RuntimeException: Property: 'varType.genome' not found
+	at org.snpeff.interval.Genome.<init>(Genome.java:106)
+	at org.snpeff.snpEffect.Config.readGenomeConfig(Config.java:681)
+	at org.snpeff.snpEffect.Config.readConfig(Config.java:649)
+	at org.snpeff.snpEffect.Config.init(Config.java:480)
+	at org.snpeff.snpEffect.Config.<init>(Config.java:117)
+	at org.snpeff.SnpEff.loadConfig(SnpEff.java:451)
+	at org.snpeff.snpEffect.commandLine.SnpEffCmdEff.run(SnpEffCmdEff.java:1000)
+	at org.snpeff.snpEffect.commandLine.SnpEffCmdEff.run(SnpEffCmdEff.java:984)
+	at org.snpeff.SnpEff.run(SnpEff.java:1183)
+	at org.snpeff.SnpEff.main(SnpEff.java:162)

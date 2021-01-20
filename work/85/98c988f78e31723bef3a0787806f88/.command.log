@@ -1,0 +1,55 @@
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+19:38:16.257 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/gatk/gatk-package-4.1.8.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+19:38:17.517 INFO  HaplotypeCaller - ------------------------------------------------------------
+19:38:17.518 INFO  HaplotypeCaller - The Genome Analysis Toolkit (GATK) v4.1.8.0
+19:38:17.518 INFO  HaplotypeCaller - For support and documentation go to https://software.broadinstitute.org/gatk/
+19:38:17.518 INFO  HaplotypeCaller - Executing as root@28a5666fb59b on Linux v4.19.121-linuxkit amd64
+19:38:17.518 INFO  HaplotypeCaller - Java runtime: OpenJDK 64-Bit Server VM v1.8.0_275-8u275-b01-0ubuntu1~18.04-b01
+19:38:17.519 INFO  HaplotypeCaller - Start Date/Time: January 19, 2021 7:38:16 PM GMT
+19:38:17.519 INFO  HaplotypeCaller - ------------------------------------------------------------
+19:38:17.519 INFO  HaplotypeCaller - ------------------------------------------------------------
+19:38:17.520 INFO  HaplotypeCaller - HTSJDK Version: 2.22.0
+19:38:17.520 INFO  HaplotypeCaller - Picard Version: 2.22.8
+19:38:17.520 INFO  HaplotypeCaller - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+19:38:17.520 INFO  HaplotypeCaller - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+19:38:17.520 INFO  HaplotypeCaller - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+19:38:17.520 INFO  HaplotypeCaller - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+19:38:17.520 INFO  HaplotypeCaller - Deflater: IntelDeflater
+19:38:17.520 INFO  HaplotypeCaller - Inflater: IntelInflater
+19:38:17.520 INFO  HaplotypeCaller - GCS max retries/reopens: 20
+19:38:17.520 INFO  HaplotypeCaller - Requester pays: disabled
+19:38:17.521 INFO  HaplotypeCaller - Initializing engine
+WARNING	2021-01-19 19:38:17	SamFiles	The index file /Users/subinpark/Downloads/nextflow_cloud/work/9c/7895000cb347c3d4e59964fd5d3ca6/19ANBe28D0009PfFxxx0_S33_L001_SR.bai was found by resolving the canonical path of a symlink: /Users/subinpark/Downloads/nextflow_cloud/work/85/98c988f78e31723bef3a0787806f88/19ANBe28D0009PfFxxx0_S33_L001_SR.bam -> /Users/subinpark/Downloads/nextflow_cloud/work/9c/7895000cb347c3d4e59964fd5d3ca6/19ANBe28D0009PfFxxx0_S33_L001_SR.bam
+19:38:19.133 INFO  HaplotypeCaller - Done initializing engine
+19:38:19.249 INFO  HaplotypeCallerEngine - Disabling physical phasing, which is supported only for reference-model confidence output
+19:38:19.328 INFO  NativeLibraryLoader - Loading libgkl_utils.so from jar:file:/gatk/gatk-package-4.1.8.0-local.jar!/com/intel/gkl/native/libgkl_utils.so
+19:38:19.341 INFO  NativeLibraryLoader - Loading libgkl_pairhmm_omp.so from jar:file:/gatk/gatk-package-4.1.8.0-local.jar!/com/intel/gkl/native/libgkl_pairhmm_omp.so
+19:38:19.500 INFO  IntelPairHmm - Flush-to-zero (FTZ) is enabled when running PairHMM
+19:38:19.501 INFO  IntelPairHmm - Available threads: 16
+19:38:19.501 INFO  IntelPairHmm - Requested threads: 4
+19:38:19.502 INFO  PairHMM - Using the OpenMP multi-threaded AVX-accelerated native PairHMM implementation
+19:38:19.635 INFO  ProgressMeter - Starting traversal
+19:38:19.635 INFO  ProgressMeter -        Current Locus  Elapsed Minutes     Regions Processed   Regions/Minute
+19:38:21.273 WARN  InbreedingCoeff - InbreedingCoeff will not be calculated; at least 10 samples must have called genotypes
+19:38:22.540 INFO  HaplotypeCaller - 0 read(s) filtered by: MappingQualityReadFilter 
+0 read(s) filtered by: MappingQualityAvailableReadFilter 
+0 read(s) filtered by: MappedReadFilter 
+0 read(s) filtered by: NotSecondaryAlignmentReadFilter 
+0 read(s) filtered by: NotDuplicateReadFilter 
+0 read(s) filtered by: PassesVendorQualityCheckReadFilter 
+0 read(s) filtered by: NonZeroReferenceLengthAlignmentReadFilter 
+0 read(s) filtered by: GoodCigarReadFilter 
+0 read(s) filtered by: WellformedReadFilter 
+0 total reads filtered
+19:38:22.540 INFO  ProgressMeter -          PfMDR1:2555              0.0                    75           1549.1
+19:38:22.540 INFO  ProgressMeter - Traversal complete. Processed 75 total regions in 0.0 minutes.
+19:38:22.604 INFO  VectorLoglessPairHMM - Time spent in setup for JNI call : 0.0063464260000000005
+19:38:22.604 INFO  PairHMM - Total compute time in PairHMM computeLogLikelihoods() : 0.051697051
+19:38:22.605 INFO  SmithWatermanAligner - Total compute time in java Smith-Waterman : 0.10 sec
+19:38:22.607 INFO  HaplotypeCaller - Shutting down engine
+[January 19, 2021 7:38:22 PM GMT] org.broadinstitute.hellbender.tools.walkers.haplotypecaller.HaplotypeCaller done. Elapsed time: 0.11 minutes.
+Runtime.totalMemory()=655360000
+Using GATK jar /gatk/gatk-package-4.1.8.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /gatk/gatk-package-4.1.8.0-local.jar HaplotypeCaller -R /Users/subinpark/Downloads/nextflow_cloud/ref/pfalciparum/6genes2.fa -I 19ANBe28D0009PfFxxx0_S33_L001_SR.bam -O 19ANBe28D0009PfFxxx0_S33_L001-2.vcf

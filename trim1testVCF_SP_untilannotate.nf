@@ -275,7 +275,7 @@ process annotate {
 
 process merge_local {
     container 'broadinstitute/picard'
-    publishdir "$params.output.folder/final_vcf/${sample}", mode : "copy"
+    publishDir "$params.output.folder/final_vcf/${sample}", mode : "copy"
 
     input:
         set val(sample), path(vcf_path1), path(vcf_path2), path(vcf_path3) from anno_out1
@@ -287,19 +287,20 @@ process merge_local {
     script:
     """
     
-    java -jar /usr/picard/picard.jar MergeVcfs I=vcf_path1 I=vcf_path2 I=vcf_path3 O=final_${sample}.vcf
+    java -jar /usr/picard/picard.jar MergeVcfs I=${vcf_path1} I=${vcf_path2} I=${vcf_path3} O=final_${sample}.vcf
 
     """
 
 }
 
-//process merge {
-//     container 'tools:latest'
+// process merge {
+//     container 'supark87/tools2'
 //     publishDir "$params.output.folder/final_vcf/${sample}", mode : "copy"
 
 //     input:
 //         set val(sample), path(vcf_path1), path(vcf_path2), path(vcf_path3) from anno_out1
 //         set val(sample), path(bam_path) from postal_out4
+//         path(pyscripts_path) from pyscripts
 
 //     output:
 //         tuple val(sample), path("final_${sample}.vcf") into merge_out
@@ -307,12 +308,13 @@ process merge_local {
 //     script:
 //         """
 //         samtools index ${bam_path}
-//         python $baseDir/annotate.py -r $baseDir/ref/pfalciparum/6genes2.fa -b $baseDir/6genes2.bed -o ${sample} -v1 ${vcf_path1} -v2 ${vcf_path2} -v3 ${vcf_path3} -m ${bam_path} -voi $baseDir/ref/pfalciparum/Reportable_SNPs.csv -name ${sample}
+//         pip install nest
+//         python ${pyscripts_path}/annotate.py -r $baseDir/ref/pfalciparum/6genes2.fa -b $baseDir/6genes2.bed -o ${sample} -v1 ${vcf_path1} -v2 ${vcf_path2} -v3 ${vcf_path3} -m ${bam_path} -voi $baseDir/ref/pfalciparum/Reportable_SNPs.csv -name ${sample}
 //         """
 // }
 
 process vartpype {
-    container 'snpeff'
+    container 'supark87/snpeff'
     publishDir "$params.output.folder/vartype/${sample}", mode : "copy"
 
     input:
@@ -323,7 +325,7 @@ process vartpype {
 
     script:
         """
-        java -jar $baseDir/snpEFF/SnpSift.jar varType ${vcf_path1} > ${sample}_1.vartype.vcf
+        java -jar /tmp/snpEff/snpEff.jar varType ${vcf_path1} > ${sample}_1.vartype.vcf
         """
 }
 

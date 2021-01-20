@@ -1,0 +1,2 @@
+time="2021-01-19T14:33:18-05:00" level=error msg="error waiting for container: invalid character 'u' looking for beginning of value"
+docker: error during connect: Post http://%2Fvar%2Frun%2Fdocker.sock/v1.41/containers/e3f3e6f3ae3b9468dedd117501703bf3351434b2a4af7a6df046803c2118b586/start: EOF.

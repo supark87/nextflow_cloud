@@ -1,0 +1,14 @@
+# The following table is formatted as tab separated values. 
+#GeneName	GeneId	TranscriptId	BioType	variants_impact_HIGH	variants_impact_LOW	variants_impact_MODIFIER	variants_effect_conservative_inframe_deletion	variants_effect_disruptive_inframe_insertion	variants_effect_downstream_gene_variant	variants_effect_intron_variant	variants_effect_stop_gained	variants_effect_stop_lost	variants_effect_synonymous_variant	variants_effect_upstream_gene_variant
+CYTB	GENE_CYTB	TRANSCRIPT_CYTB	protein_coding	0	0	1	0	0	0	0	0	0	0	1
+DHFR-TS	GENE_DHFR-TS	TRANSCRIPT_DHFR-TS	protein_coding	1	1	0	0	0	0	0	0	1	1	0
+DHFR-TS	GENE_DHFR-TS_circ	TRANSCRIPT_DHFR-TS_circ	protein_coding	0	0	2	0	0	0	0	0	0	0	2
+K13	GENE_K13	TRANSCRIPT_K13	protein_coding	1	0	0	0	1	0	0	1	0	0	0
+K13	GENE_K13_circ	TRANSCRIPT_K13_circ	protein_coding	0	0	1	0	0	0	0	0	0	0	1
+MS1	GENE_MS1	TRANSCRIPT_MS1	protein_coding	0	0	8	0	0	8	0	0	0	0	0
+PfCRT	GENE_PfCRT	TRANSCRIPT_PfCRT	protein_coding	0	1	7	0	0	0	7	0	0	1	0
+PfCRT	PfCRT	PfCRT	protein_coding	0	0	8	0	0	8	0	0	0	0	0
+PfMDR1	GENE_PfMDR1	TRANSCRIPT_PfMDR1	protein_coding	1	0	0	1	0	0	0	0	1	0	0
+PfMDR1	GENE_PfMDR1_circ	TRANSCRIPT_PfMDR1_circ	protein_coding	0	0	1	0	0	0	0	0	0	0	1
+coI	GENE_coI	TRANSCRIPT_coI	protein_coding	0	0	1	0	0	0	0	0	0	0	1
+coxIII	GENE_coxIII	TRANSCRIPT_coxIII	protein_coding	0	0	1	0	0	0	0	0	0	0	1

@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "pyscripts/annotate.py", line 14, in <module>
+    from nest.bbduk import QualCheck
+  File "/opt/miniconda/envs/gatk/lib/python3.6/site-packages/nest.py", line 4
+    if isinstance(each_item, indent = False ,list):
+                                            ^
+SyntaxError: positional argument follows keyword argument

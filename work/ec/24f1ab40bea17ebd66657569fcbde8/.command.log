@@ -1,0 +1,2 @@
+Error response from daemon: Cannot kill container: nxf-0xzYNlF7bEE0wjX9k1lIiV87: Container dceaa8d7b2c23e75fa91771de5cfa6c989d239dbb86990fe770b38a0a74bf77c is not running
+/Users/subinpark/Downloads/nextflow_cloud/work/ec/24f1ab40bea17ebd66657569fcbde8/.command.sh: line 2: samtools: command not found

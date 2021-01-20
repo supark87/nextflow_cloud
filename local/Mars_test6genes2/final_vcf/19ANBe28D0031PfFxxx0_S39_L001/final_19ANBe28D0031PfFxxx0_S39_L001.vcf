@@ -1,0 +1,48 @@
+##fileformat=VCFv4.2
+##ALT=<ID=*,Description="Represents allele(s) other than observed.">
+##FILTER=<ID=PASS,Description="All filters passed">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=PL,Number=G,Type=Integer,Description="List of Phred-scaled genotype likelihoods">
+##INFO=<ID=AC,Number=A,Type=Integer,Description="Allele count in genotypes for each ALT allele, in the same order as listed">
+##INFO=<ID=AN,Number=1,Type=Integer,Description="Total number of alleles in called genotypes">
+##INFO=<ID=ANN,Number=.,Type=String,Description="Functional annotations: 'Allele | Annotation | Annotation_Impact | Gene_Name | Gene_ID | Feature_Type | Feature_ID | Transcript_BioType | Rank | HGVS.c | HGVS.p | cDNA.pos / cDNA.length | CDS.pos / CDS.length | AA.pos / AA.length | Distance | ERRORS / WARNINGS / INFO'">
+##INFO=<ID=BQB,Number=1,Type=Float,Description="Mann-Whitney U test of Base Quality Bias (bigger is better)">
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw read depth">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Number of high-quality ref-forward , ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=HOB,Number=1,Type=Float,Description="Bias in the number of HOMs number (smaller is better)">
+##INFO=<ID=ICB,Number=1,Type=Float,Description="Inbreeding Coefficient Binomial test (bigger is better)">
+##INFO=<ID=IDV,Number=1,Type=Integer,Description="Maximum number of reads supporting an indel">
+##INFO=<ID=IMF,Number=1,Type=Float,Description="Maximum fraction of reads supporting an indel">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=LOF,Number=.,Type=String,Description="Predicted loss of function effects for this variant. Format: 'Gene_Name | Gene_ID | Number_of_transcripts_in_gene | Percent_of_transcripts_affected'">
+##INFO=<ID=MQ,Number=1,Type=Float,Description="RMS Mapping Quality">
+##INFO=<ID=MQ0F,Number=1,Type=Float,Description="Fraction of MQ0 reads (smaller is better)">
+##INFO=<ID=MQB,Number=1,Type=Float,Description="Mann-Whitney U test of Mapping Quality Bias (bigger is better)">
+##INFO=<ID=MQSB,Number=1,Type=Float,Description="Mann-Whitney U test of Mapping Quality vs Strand Bias (bigger is better)">
+##INFO=<ID=NMD,Number=.,Type=String,Description="Predicted nonsense mediated decay effects for this variant. Format: 'Gene_Name | Gene_ID | Number_of_transcripts_in_gene | Percent_of_transcripts_affected'">
+##INFO=<ID=RPB,Number=1,Type=Float,Description="Mann-Whitney U test of Read Position Bias (bigger is better)">
+##INFO=<ID=SGB,Number=1,Type=Float,Description="Segregation based metric.">
+##INFO=<ID=VDB,Number=1,Type=Float,Description="Variant Distance Bias for filtering splice-site artefacts in RNA-seq data (bigger is better)",Version="3">
+##SnpEffCmd="SnpEff  6genes2 19ANBe21D0042PfFxxx0_S40_L001-1.vcf "
+##SnpEffVersion="4.3t (build 2017-11-24 10:18), by Pablo Cingolani"
+##bcftoolsCommand=mpileup -f 6genes2.fa 19ANBe21D0042PfFxxx0_S40_L001_SR.bam
+##bcftoolsVersion=1.9+htslib-1.9
+##bcftools_callCommand=call -vm 19ANBe21D0042PfFxxx0_S40_L001.mpileup; Date=Tue Jan 19 19:37:57 2021
+##bcftools_callVersion=1.9+htslib-1.9
+##contig=<ID=DHFR,length=1827>
+##contig=<ID=DHPS,length=2417>
+##contig=<ID=K13,length=2181>
+##contig=<ID=mitochondrialgenome,length=5967>
+##contig=<ID=PfCRT,length=3399>
+##contig=<ID=PfMDR1,length=4260>
+##reference=file://6genes2.fa
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	19ANBe21D0042PfFxxx0_S40_L001
+DHFR	4	.	AT	ATATGAT	6.52	.	AC=2;AN=2;ANN=ATATGAT|frameshift_variant|HIGH|DHFR-TS|GENE_DHFR-TS|transcript|TRANSCRIPT_DHFR-TS|protein_coding|1/1|c.2_6dupATGAT|p.Gly3fs|7/1828|7/1828|3/608||WARNING_TRANSCRIPT_MULTIPLE_STOP_CODONS,ATATGAT|upstream_gene_variant|MODIFIER|DHFR-TS|GENE_DHFR-TS_circ|transcript|TRANSCRIPT_DHFR-TS_circ|protein_coding||c.-1826_-1822dupATGAT|||||1821|WARNING_TRANSCRIPT_MULTIPLE_STOP_CODONS;DP=6;DP4=0,0,3,3;IDV=6;IMF=1;INDEL;MQ=8;MQ0F=0.666667;MQSB=0.861511;SGB=-0.616816;VDB=0.000527421	GT:PL	1/1:35,6,0
+DHFR	4	.	AT	ATATGAT	6.52	.	AC=2;AN=2;ANN=ATATGAT|frameshift_variant|HIGH|DHFR-TS|GENE_DHFR-TS|transcript|TRANSCRIPT_DHFR-TS|protein_coding|1/1|c.2_6dupATGAT|p.Gly3fs|7/1828|7/1828|3/608||WARNING_TRANSCRIPT_MULTIPLE_STOP_CODONS,ATATGAT|upstream_gene_variant|MODIFIER|DHFR-TS|GENE_DHFR-TS_circ|transcript|TRANSCRIPT_DHFR-TS_circ|protein_coding||c.-1826_-1822dupATGAT|||||1821|WARNING_TRANSCRIPT_MULTIPLE_STOP_CODONS;DP=6;DP4=0,0,3,3;IDV=6;IMF=1;INDEL;MQ=8;MQ0F=0.666667;MQSB=0.861511;SGB=-0.616816;VDB=0.000527421	GT:PL	1/1:35,6,0
+DHFR	4	.	AT	ATATGAT	6.52	.	AC=2;AN=2;ANN=ATATGAT|frameshift_variant|HIGH|DHFR-TS|GENE_DHFR-TS|transcript|TRANSCRIPT_DHFR-TS|protein_coding|1/1|c.2_6dupATGAT|p.Gly3fs|7/1828|7/1828|3/608||WARNING_TRANSCRIPT_MULTIPLE_STOP_CODONS,ATATGAT|upstream_gene_variant|MODIFIER|DHFR-TS|GENE_DHFR-TS_circ|transcript|TRANSCRIPT_DHFR-TS_circ|protein_coding||c.-1826_-1822dupATGAT|||||1821|WARNING_TRANSCRIPT_MULTIPLE_STOP_CODONS;DP=6;DP4=0,0,3,3;IDV=6;IMF=1;INDEL;MQ=8;MQ0F=0.666667;MQSB=0.861511;SGB=-0.616816;VDB=0.000527421	GT:PL	1/1:35,6,0
+DHFR	152	.	A	T	12.66	.	AC=2;AN=2;ANN=T|stop_lost|HIGH|DHFR-TS|GENE_DHFR-TS|transcript|TRANSCRIPT_DHFR-TS|protein_coding|1/1|c.153A>T|p.Ter51Tyrext*?|153/1828|153/1828|51/608||WARNING_TRANSCRIPT_MULTIPLE_STOP_CODONS,T|upstream_gene_variant|MODIFIER|DHFR-TS|GENE_DHFR-TS_circ|transcript|TRANSCRIPT_DHFR-TS_circ|protein_coding||c.-1675A>T|||||1675|WARNING_TRANSCRIPT_MULTIPLE_STOP_CODONS;DP=2;DP4=0,0,1,0;MQ=42;MQ0F=0;SGB=-0.379885	GT:PL	1/1:42,3,0
+DHFR	152	.	A	T	12.66	.	AC=2;AN=2;ANN=T|stop_lost|HIGH|DHFR-TS|GENE_DHFR-TS|transcript|TRANSCRIPT_DHFR-TS|protein_coding|1/1|c.153A>T|p.Ter51Tyrext*?|153/1828|153/1828|51/608||WARNING_TRANSCRIPT_MULTIPLE_STOP_CODONS,T|upstream_gene_variant|MODIFIER|DHFR-TS|GENE_DHFR-TS_circ|transcript|TRANSCRIPT_DHFR-TS_circ|protein_coding||c.-1675A>T|||||1675|WARNING_TRANSCRIPT_MULTIPLE_STOP_CODONS;DP=2;DP4=0,0,1,0;MQ=42;MQ0F=0;SGB=-0.379885	GT:PL	1/1:42,3,0
+DHFR	152	.	A	T	12.66	.	AC=2;AN=2;ANN=T|stop_lost|HIGH|DHFR-TS|GENE_DHFR-TS|transcript|TRANSCRIPT_DHFR-TS|protein_coding|1/1|c.153A>T|p.Ter51Tyrext*?|153/1828|153/1828|51/608||WARNING_TRANSCRIPT_MULTIPLE_STOP_CODONS,T|upstream_gene_variant|MODIFIER|DHFR-TS|GENE_DHFR-TS_circ|transcript|TRANSCRIPT_DHFR-TS_circ|protein_coding||c.-1675A>T|||||1675|WARNING_TRANSCRIPT_MULTIPLE_STOP_CODONS;DP=2;DP4=0,0,1,0;MQ=42;MQ0F=0;SGB=-0.379885	GT:PL	1/1:42,3,0
+DHFR	323	.	G	A	12.66	.	AC=2;AN=2;ANN=A|synonymous_variant|LOW|DHFR-TS|GENE_DHFR-TS|transcript|TRANSCRIPT_DHFR-TS|protein_coding|1/1|c.324G>A|p.Lys108Lys|324/1828|324/1828|108/608||WARNING_TRANSCRIPT_MULTIPLE_STOP_CODONS,A|upstream_gene_variant|MODIFIER|DHFR-TS|GENE_DHFR-TS_circ|transcript|TRANSCRIPT_DHFR-TS_circ|protein_coding||c.-1504G>A|||||1504|WARNING_TRANSCRIPT_MULTIPLE_STOP_CODONS;DP=2;DP4=0,0,1,0;MQ=42;MQ0F=0;SGB=-0.379885	GT:PL	1/1:42,3,0
+DHFR	323	.	G	A	12.66	.	AC=2;AN=2;ANN=A|synonymous_variant|LOW|DHFR-TS|GENE_DHFR-TS|transcript|TRANSCRIPT_DHFR-TS|protein_coding|1/1|c.324G>A|p.Lys108Lys|324/1828|324/1828|108/608||WARNING_TRANSCRIPT_MULTIPLE_STOP_CODONS,A|upstream_gene_variant|MODIFIER|DHFR-TS|GENE_DHFR-TS_circ|transcript|TRANSCRIPT_DHFR-TS_circ|protein_coding||c.-1504G>A|||||1504|WARNING_TRANSCRIPT_MULTIPLE_STOP_CODONS;DP=2;DP4=0,0,1,0;MQ=42;MQ0F=0;SGB=-0.379885	GT:PL	1/1:42,3,0
+DHFR	323	.	G	A	12.66	.	AC=2;AN=2;ANN=A|synonymous_variant|LOW|DHFR-TS|GENE_DHFR-TS|transcript|TRANSCRIPT_DHFR-TS|protein_coding|1/1|c.324G>A|p.Lys108Lys|324/1828|324/1828|108/608||WARNING_TRANSCRIPT_MULTIPLE_STOP_CODONS,A|upstream_gene_variant|MODIFIER|DHFR-TS|GENE_DHFR-TS_circ|transcript|TRANSCRIPT_DHFR-TS_circ|protein_coding||c.-1504G>A|||||1504|WARNING_TRANSCRIPT_MULTIPLE_STOP_CODONS;DP=2;DP4=0,0,1,0;MQ=42;MQ0F=0;SGB=-0.379885	GT:PL	1/1:42,3,0

@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "pyscripts/annotate.py", line 14, in <module>
+    from nest.bbduk import QualCheck
+ModuleNotFoundError: No module named 'nest'
+Error response from daemon: Cannot kill container: nxf-FiqswGh7jX16VOHIv7AZg7Tw: Container 00d50bffded7ee0165f3e06a93a02fa25d13db414931eaecf03c0a519413070b is not running

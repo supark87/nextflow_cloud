@@ -1,0 +1,194 @@
+Jan-19 15:34:50.390 [main] DEBUG nextflow.cli.Launcher - $> nextflow run trim1testVCF_SP_untilannotate.nf -with-docker container -resume
+Jan-19 15:34:50.508 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 20.10.0
+Jan-19 15:34:50.525 [main] INFO  nextflow.cli.CmdRun - Launching `trim1testVCF_SP_untilannotate.nf` [romantic_blackwell] - revision: 46d809265b
+Jan-19 15:34:50.549 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /Users/subinpark/Downloads/nextflow_cloud/nextflow.config
+Jan-19 15:34:50.550 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/subinpark/Downloads/nextflow_cloud/nextflow.config
+Jan-19 15:34:50.568 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Jan-19 15:34:51.197 [main] DEBUG nextflow.config.ConfigBuilder - Enabling execution in Docker container as requested by cli option `-with-docker container`
+Jan-19 15:34:51.242 [main] DEBUG nextflow.Session - Session uuid: c800da78-316d-444f-84b7-2b218cd4120e
+Jan-19 15:34:51.243 [main] DEBUG nextflow.Session - Run name: romantic_blackwell
+Jan-19 15:34:51.243 [main] DEBUG nextflow.Session - Executor pool size: 16
+Jan-19 15:34:51.280 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 20.10.0 build 5430
+  Created: 01-11-2020 15:14 UTC (10:14 EDT)
+  System: Mac OS X 10.15.7
+  Runtime: Groovy 3.0.5 on Java HotSpot(TM) 64-Bit Server VM 15+36-1562
+  Encoding: UTF-8 (UTF-8)
+  Process: 56857@adminusers-MBP.attlocal.net [192.168.1.116]
+  CPUs: 16 - Mem: 32 GB (258.5 MB) - Swap: 7 GB (1.5 GB)
+Jan-19 15:34:51.312 [main] DEBUG nextflow.Session - Work-dir: /Users/subinpark/Downloads/nextflow_cloud/work [Mac OS X]
+Jan-19 15:34:51.312 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/subinpark/Downloads/nextflow_cloud/bin
+Jan-19 15:34:51.354 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
+Jan-19 15:34:51.357 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jan-19 15:34:51.534 [main] DEBUG nextflow.Session - Session start invoked
+Jan-19 15:34:52.636 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jan-19 15:34:52.647 [main] DEBUG nextflow.Session - Workflow process names [dsl1]: GenerateVCF, combineFastq, postFastQC, annotate, trimFastq, vartpype, alignReads, spread, processAlignments, filter, extract, merge, buildIndex, preFastQC
+Jan-19 15:34:52.678 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: fq/; pattern: *{R1,R2}*.fastq.gz; options: [:]
+Jan-19 15:34:52.804 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-19 15:34:52.804 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-19 15:34:52.807 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Jan-19 15:34:52.814 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=16; memory=32 GB; capacity=16; pollInterval=100ms; dumpInterval=5m
+Jan-19 15:34:52.913 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-19 15:34:52.913 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-19 15:34:52.930 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-19 15:34:52.930 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-19 15:34:52.947 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-19 15:34:52.947 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-19 15:34:52.954 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-19 15:34:52.954 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-19 15:34:52.968 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-19 15:34:52.969 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-19 15:34:52.986 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-19 15:34:52.986 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-19 15:34:53.010 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-19 15:34:53.010 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-19 15:34:53.024 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-19 15:34:53.025 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-19 15:34:53.037 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-19 15:34:53.038 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-19 15:34:53.047 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-19 15:34:53.048 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-19 15:34:53.055 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-19 15:34:53.056 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-19 15:34:53.062 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-19 15:34:53.062 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-19 15:34:53.071 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-19 15:34:53.072 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-19 15:34:53.075 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Jan-19 15:34:53.075 [main] DEBUG nextflow.Session - Session await
+Jan-19 15:34:53.116 [Actor Thread 8] INFO  nextflow.processor.TaskProcessor - [87/afe98c] Cached process > combineFastq (6)
+Jan-19 15:34:53.116 [Actor Thread 1] INFO  nextflow.processor.TaskProcessor - [1d/944f13] Cached process > combineFastq (1)
+Jan-19 15:34:53.116 [Actor Thread 9] INFO  nextflow.processor.TaskProcessor - [dc/0cba96] Cached process > combineFastq (7)
+Jan-19 15:34:53.116 [Actor Thread 7] INFO  nextflow.processor.TaskProcessor - [3e/cf61e3] Cached process > combineFastq (5)
+Jan-19 15:34:53.116 [Actor Thread 10] INFO  nextflow.processor.TaskProcessor - [31/68857d] Cached process > combineFastq (8)
+Jan-19 15:34:53.116 [Actor Thread 6] INFO  nextflow.processor.TaskProcessor - [05/7e39f4] Cached process > combineFastq (4)
+Jan-19 15:34:53.116 [Actor Thread 5] INFO  nextflow.processor.TaskProcessor - [45/8a5026] Cached process > combineFastq (3)
+Jan-19 15:34:53.116 [Actor Thread 4] INFO  nextflow.processor.TaskProcessor - [92/f55c59] Cached process > combineFastq (2)
+Jan-19 15:34:53.117 [Actor Thread 12] INFO  nextflow.processor.TaskProcessor - [0b/db5201] Cached process > buildIndex (6genes2)
+Jan-19 15:34:53.144 [Actor Thread 18] INFO  nextflow.processor.TaskProcessor - [02/d29f79] Cached process > trimFastq (1)
+Jan-19 15:34:53.146 [Actor Thread 13] INFO  nextflow.processor.TaskProcessor - [9e/b06346] Cached process > preFastQC (1)
+Jan-19 15:34:53.155 [Actor Thread 14] INFO  nextflow.processor.TaskProcessor - [66/10b526] Cached process > trimFastq (2)
+Jan-19 15:34:53.155 [Actor Thread 19] INFO  nextflow.processor.TaskProcessor - [7c/e0a539] Cached process > preFastQC (2)
+Jan-19 15:34:53.155 [Actor Thread 20] INFO  nextflow.processor.TaskProcessor - [65/2e4fce] Cached process > preFastQC (3)
+Jan-19 15:34:53.157 [Actor Thread 18] DEBUG n.util.BlockingThreadExecutorFactory - Thread pool name=FileTransfer; maxThreads=48; maxQueueSize=144; keepAlive=1m
+Jan-19 15:34:53.166 [Actor Thread 22] INFO  nextflow.processor.TaskProcessor - [fd/c74c71] Cached process > preFastQC (4)
+Jan-19 15:34:53.213 [Actor Thread 32] INFO  nextflow.processor.TaskProcessor - [e6/af4d5a] Cached process > trimFastq (8)
+Jan-19 15:34:53.213 [Actor Thread 27] INFO  nextflow.processor.TaskProcessor - [4f/9ec27e] Cached process > trimFastq (5)
+Jan-19 15:34:53.213 [Actor Thread 25] INFO  nextflow.processor.TaskProcessor - [f8/b8ce4e] Cached process > trimFastq (4)
+Jan-19 15:34:53.213 [Actor Thread 24] INFO  nextflow.processor.TaskProcessor - [66/8ae7fa] Cached process > preFastQC (5)
+Jan-19 15:34:53.213 [Actor Thread 26] INFO  nextflow.processor.TaskProcessor - [6e/ef724c] Cached process > preFastQC (6)
+Jan-19 15:34:53.213 [Actor Thread 34] INFO  nextflow.processor.TaskProcessor - [ce/00610e] Cached process > alignReads (1)
+Jan-19 15:34:53.214 [Actor Thread 21] INFO  nextflow.processor.TaskProcessor - [3a/6a8fe1] Cached process > postFastQC (1)
+Jan-19 15:34:53.214 [Actor Thread 29] INFO  nextflow.processor.TaskProcessor - [7d/c99ca5] Cached process > trimFastq (6)
+Jan-19 15:34:53.213 [Actor Thread 36] INFO  nextflow.processor.TaskProcessor - [29/7e9437] Cached process > alignReads (2)
+Jan-19 15:34:53.214 [Actor Thread 31] INFO  nextflow.processor.TaskProcessor - [a6/fdfb5e] Cached process > trimFastq (7)
+Jan-19 15:34:53.213 [Actor Thread 28] INFO  nextflow.processor.TaskProcessor - [c8/6734cd] Cached process > preFastQC (7)
+Jan-19 15:34:53.214 [Actor Thread 23] INFO  nextflow.processor.TaskProcessor - [fc/6e42b7] Cached process > trimFastq (3)
+Jan-19 15:34:53.214 [Actor Thread 15] INFO  nextflow.processor.TaskProcessor - [af/59422c] Cached process > postFastQC (2)
+Jan-19 15:34:53.214 [Actor Thread 30] INFO  nextflow.processor.TaskProcessor - [5e/cfcfbc] Cached process > preFastQC (8)
+Jan-19 15:34:53.239 [Actor Thread 11] INFO  nextflow.processor.TaskProcessor - [82/07b25f] Cached process > processAlignments (1)
+Jan-19 15:34:53.241 [Actor Thread 2] INFO  nextflow.processor.TaskProcessor - [2e/eae1ac] Cached process > postFastQC (4)
+Jan-19 15:34:53.242 [Actor Thread 26] INFO  nextflow.processor.TaskProcessor - [40/a6783c] Cached process > postFastQC (5)
+Jan-19 15:34:53.243 [Actor Thread 29] INFO  nextflow.processor.TaskProcessor - [12/da3081] Cached process > alignReads (4)
+Jan-19 15:34:53.243 [Actor Thread 23] INFO  nextflow.processor.TaskProcessor - [0b/e68e42] Cached process > postFastQC (7)
+Jan-19 15:34:53.243 [Actor Thread 19] INFO  nextflow.processor.TaskProcessor - [85/9f7c84] Cached process > alignReads (6)
+Jan-19 15:34:53.244 [Actor Thread 27] INFO  nextflow.processor.TaskProcessor - [f3/2a99ac] Cached process > postFastQC (8)
+Jan-19 15:34:53.244 [Actor Thread 25] INFO  nextflow.processor.TaskProcessor - [89/7600e8] Cached process > alignReads (7)
+Jan-19 15:34:53.244 [Actor Thread 8] INFO  nextflow.processor.TaskProcessor - [87/eef967] Cached process > alignReads (5)
+Jan-19 15:34:53.246 [Actor Thread 6] INFO  nextflow.processor.TaskProcessor - [95/514406] Cached process > postFastQC (6)
+Jan-19 15:34:53.248 [Actor Thread 10] INFO  nextflow.processor.TaskProcessor - [b2/4567b8] Cached process > postFastQC (3)
+Jan-19 15:34:53.251 [Actor Thread 11] INFO  nextflow.processor.TaskProcessor - [20/2c5b97] Cached process > processAlignments (2)
+Jan-19 15:34:53.251 [Actor Thread 26] INFO  nextflow.processor.TaskProcessor - [ab/2eca18] Cached process > processAlignments (3)
+Jan-19 15:34:53.251 [Actor Thread 23] INFO  nextflow.processor.TaskProcessor - [9c/789500] Cached process > processAlignments (4)
+Jan-19 15:34:53.253 [Actor Thread 4] INFO  nextflow.processor.TaskProcessor - [f7/7fa937] Cached process > alignReads (8)
+Jan-19 15:34:53.254 [Actor Thread 24] INFO  nextflow.processor.TaskProcessor - [eb/ed7c0b] Cached process > GenerateVCF (1)
+Jan-19 15:34:53.254 [Actor Thread 36] INFO  nextflow.processor.TaskProcessor - [92/745b91] Cached process > processAlignments (5)
+Jan-19 15:34:53.257 [Actor Thread 6] INFO  nextflow.processor.TaskProcessor - [64/a613e3] Cached process > processAlignments (6)
+Jan-19 15:34:53.257 [Actor Thread 19] INFO  nextflow.processor.TaskProcessor - [be/4a351d] Cached process > GenerateVCF (2)
+Jan-19 15:34:53.258 [Actor Thread 11] INFO  nextflow.processor.TaskProcessor - [85/98c988] Cached process > GenerateVCF (3)
+Jan-19 15:34:53.260 [Actor Thread 23] INFO  nextflow.processor.TaskProcessor - [0a/407f8c] Cached process > GenerateVCF (4)
+Jan-19 15:34:53.261 [Actor Thread 1] INFO  nextflow.processor.TaskProcessor - [26/57fca7] Cached process > alignReads (3)
+Jan-19 15:34:53.263 [Actor Thread 21] INFO  nextflow.processor.TaskProcessor - [b1/1fd6fa] Cached process > GenerateVCF (5)
+Jan-19 15:34:53.263 [Actor Thread 10] INFO  nextflow.processor.TaskProcessor - [fa/076c0b] Cached process > processAlignments (7)
+Jan-19 15:34:53.264 [Actor Thread 25] INFO  nextflow.processor.TaskProcessor - [cb/c0df0f] Cached process > GenerateVCF (6)
+Jan-19 15:34:53.265 [Actor Thread 8] INFO  nextflow.processor.TaskProcessor - [0e/d0afea] Cached process > annotate (3)
+Jan-19 15:34:53.267 [Actor Thread 6] INFO  nextflow.processor.TaskProcessor - [27/4aa41f] Cached process > annotate (4)
+Jan-19 15:34:53.270 [Actor Thread 11] INFO  nextflow.processor.TaskProcessor - [23/f33c10] Cached process > processAlignments (8)
+Jan-19 15:34:53.272 [Actor Thread 25] INFO  nextflow.processor.TaskProcessor - [88/561b13] Cached process > GenerateVCF (7)
+Jan-19 15:34:53.277 [Actor Thread 8] INFO  nextflow.processor.TaskProcessor - [eb/2ec9b8] Cached process > GenerateVCF (8)
+Jan-19 15:34:53.279 [Actor Thread 1] INFO  nextflow.processor.TaskProcessor - [29/90a68b] Cached process > annotate (7)
+Jan-19 15:34:53.312 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-19 15:34:53.315 [Task submitter] INFO  nextflow.Session - [4a/595933] Submitted process > annotate (1)
+Jan-19 15:34:53.323 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-19 15:34:53.324 [Task submitter] INFO  nextflow.Session - [1b/962c86] Submitted process > annotate (2)
+Jan-19 15:34:53.333 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-19 15:34:53.334 [Task submitter] INFO  nextflow.Session - [87/f1b70a] Submitted process > annotate (5)
+Jan-19 15:34:53.344 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-19 15:34:53.344 [Task submitter] INFO  nextflow.Session - [32/896152] Submitted process > merge (1)
+Jan-19 15:34:53.353 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-19 15:34:53.354 [Task submitter] INFO  nextflow.Session - [ee/27ca27] Submitted process > annotate (6)
+Jan-19 15:34:53.363 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-19 15:34:53.364 [Task submitter] INFO  nextflow.Session - [3a/c480c0] Submitted process > merge (2)
+Jan-19 15:34:53.375 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-19 15:34:53.375 [Task submitter] INFO  nextflow.Session - [72/50ce99] Submitted process > merge (3)
+Jan-19 15:34:53.386 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-19 15:34:53.386 [Task submitter] INFO  nextflow.Session - [00/005738] Submitted process > annotate (8)
+Jan-19 15:34:55.874 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 64; name: merge (2); status: COMPLETED; exit: 2; error: -; workDir: /Users/subinpark/Downloads/nextflow_cloud/work/3a/c480c089a950f404386ed3e828e810]
+Jan-19 15:34:55.912 [Task monitor] ERROR nextflow.processor.TaskProcessor - Error executing process > 'merge (2)'
+
+Caused by:
+  Process `merge (2)` terminated with an error exit status (2)
+
+Command executed:
+
+  samtools index 19ANBe28D0031PfFxxx0_S39_L001_SR.bam
+  /opt/miniconda/envs/gatk/bin/python /Users/subinpark/Downloads/nextflow_cloud/annotate.py -r /Users/subinpark/Downloads/nextflow_cloud/ref/pfalciparum/6genes2.fa -b /Users/subinpark/Downloads/nextflow_cloud/6genes2.bed -o 19ANBe28D0031PfFxxx0_S39_L001 -v1 19ANBe00D0031PfFxxx0_S7_L001-1.ann.vcf -v2 19ANBe00D0031PfFxxx0_S7_L001-2.ann.vcf -v3 19ANBe00D0031PfFxxx0_S7_L001-3.ann.vcf -m 19ANBe28D0031PfFxxx0_S39_L001_SR.bam -voi /Users/subinpark/Downloads/nextflow_cloud/ref/pfalciparum/Reportable_SNPs.csv -name 19ANBe28D0031PfFxxx0_S39_L001
+
+Command exit status:
+  2
+
+Command output:
+  (empty)
+
+Command error:
+  /opt/miniconda/envs/gatk/bin/python: can't open file '/Users/subinpark/Downloads/nextflow_cloud/annotate.py': [Errno 2] No such file or directory
+
+Work dir:
+  /Users/subinpark/Downloads/nextflow_cloud/work/3a/c480c089a950f404386ed3e828e810
+
+Tip: when you have fixed the problem you can continue the execution adding the option `-resume` to the run command line
+Jan-19 15:34:55.921 [Task monitor] DEBUG nextflow.Session - Session aborted -- Cause: Process `merge (2)` terminated with an error exit status (2)
+Jan-19 15:34:55.949 [Task monitor] DEBUG nextflow.Session - The following nodes are still active:
+[process] merge
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (queue) OPEN  ; channel: -
+  port 2: (cntrl) -     ; channel: $
+
+[process] vartpype
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] filter
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] extract
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] spread
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+Jan-19 15:34:55.952 [main] DEBUG nextflow.Session - Session await > all process finished
+Jan-19 15:34:55.952 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Jan-19 15:34:55.958 [main] WARN  n.processor.TaskPollingMonitor - Killing pending tasks (7)
+Jan-19 15:34:56.168 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=1; ignoredCount=0; cachedCount=60; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=7; succeedDuration=0ms; failedDuration=2.4s; cachedDuration=21m 2s;loadCpus=0; loadMemory=0; peakRunning=8; peakCpus=8; peakMemory=0; ]
+Jan-19 15:34:56.186 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+Jan-19 15:34:56.196 [main] DEBUG nextflow.util.SpuriousDeps - AWS S3 uploader shutdown
+Jan-19 15:34:56.244 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

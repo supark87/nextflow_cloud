@@ -35,3 +35,34 @@
 2021-01-06 12:15:58	9.6s	desperate_lumiere	ERR	0901810da350ac9fa537129711f0fb7b	fcf66518-1992-4117-b0ea-8f170f95b665	nextflow run trim1testVCF8.nf -with-docker 'tools:latest' -resume
 2021-01-06 12:16:20	9m 53s	lonely_mestorf	ERR	0901810da350ac9fa537129711f0fb7b	3f6a9c69-3e8e-4787-aec0-39f2b0a4feb9	nextflow run trim1testVCF8.nf -with-docker container
 2021-01-06 12:40:12	-	backstabbing_brahmagupta	-	0901810da350ac9fa537129711f0fb7b	64dbd3b7-d4b3-4a3f-8280-78ca5dd57a69	nextflow run trim1testVCF8.nf -with-docker container
+2021-01-15 13:39:26	-	evil_darwin	-	a3019d47156bcfc664cef4b7859ef88f	1bf0592f-9b69-40db-a23f-1e22da4ebcf0	nextflow run trim1testVCF_SP_untilannotate.nf -with-docker container
+2021-01-15 13:40:17	-	exotic_mclean	-	a3019d47156bcfc664cef4b7859ef88f	0b7a9d71-51b0-4778-ab4e-b41a95d105b7	nextflow run trim1testVCF_SP_untilannotate.nf -with-docker container
+2021-01-19 13:46:01	-	festering_blackwell	-	a3019d47156bcfc664cef4b7859ef88f	0c4ec423-cb8f-4c0b-99d4-6ecd07a54865	nextflow run trim1testVCF_SP_untilannotate.nf -with-docker container
+2021-01-19 14:03:46	-	tender_keller	-	a3019d47156bcfc664cef4b7859ef88f	de055de1-fc7d-4b91-9969-75606d7b9415	nextflow run trim1testVCF_SP_untilannotate.nf -with-docker container
+2021-01-19 14:04:07	-	nostalgic_monod	-	a3019d47156bcfc664cef4b7859ef88f	0dcca83f-b6da-412d-bf9b-09c7d94ae860	nextflow run trim1testVCF_SP_untilannotate.nf -with-docker container
+2021-01-19 14:04:29	-	special_goldstine	-	a3019d47156bcfc664cef4b7859ef88f	eb611392-67c2-4951-a5fd-353a0b41c12a	nextflow run trim1testVCF_SP_untilannotate.nf -with-docker container
+2021-01-19 14:04:53	-	pedantic_bose	-	a3019d47156bcfc664cef4b7859ef88f	d91d0e85-2003-4f21-8dca-2ab2ba4f0ea1	nextflow run trim1testVCF_SP_untilannotate.nf -with-docker container
+2021-01-19 14:05:33	-	sleepy_mercator	-	03f12d564251eb41a7fdad82e4f40189	35a624b8-125d-46b5-9c7f-ebddbca860a4	nextflow run trim1testVCF_SP_untilannotate.nf -with-docker container
+2021-01-19 14:06:06	6.8s	elated_kirch	OK	30872019aff72c5f130a89481068ebc0	e698f937-0884-4994-904e-9b5433eb2286	nextflow run trim1testVCF_SP_untilannotate.nf -with-docker container
+2021-01-19 14:06:25	4.5s	cheesy_liskov	OK	30872019aff72c5f130a89481068ebc0	2056d196-e81b-4c9d-b2ab-9ebc4d1c7eb7	nextflow run trim1testVCF_SP_untilannotate.nf -with-docker container
+2021-01-19 14:07:06	4m 24s	boring_nobel	ERR	30872019aff72c5f130a89481068ebc0	537a86d2-e4cb-44bf-8e33-ea15cd95bad0	nextflow run trim1testVCF_SP_untilannotate.nf -with-docker container
+2021-01-19 14:11:37	5.3s	distraught_koch	ERR	30872019aff72c5f130a89481068ebc0	c040bfcd-e161-4d67-9d86-3f14432e13b7	nextflow run trim1testVCF_SP_untilannotate.nf -with-docker container --resume
+2021-01-19 14:12:25	-	dreamy_curie	-	30872019aff72c5f130a89481068ebc0	c040bfcd-e161-4d67-9d86-3f14432e13b7	nextflow run trim1testVCF_SP_untilannotate.nf -with-docker container -with-tower -resume
+2021-01-19 14:13:31	-	wise_easley	-	30872019aff72c5f130a89481068ebc0	c040bfcd-e161-4d67-9d86-3f14432e13b7	nextflow run trim1testVCF_SP_untilannotate.nf -with-docker container -with-tower -resume
+2021-01-19 14:14:49	-	chaotic_laplace	-	30872019aff72c5f130a89481068ebc0	c040bfcd-e161-4d67-9d86-3f14432e13b7	nextflow run trim1testVCF_SP_untilannotate.nf -with-docker container -with-tower -resume
+2021-01-19 14:30:03	3m 24s	focused_mcclintock	ERR	30872019aff72c5f130a89481068ebc0	c040bfcd-e161-4d67-9d86-3f14432e13b7	nextflow run trim1testVCF_SP_untilannotate.nf -with-docker container -with-tower -resume
+2021-01-19 14:36:34	2m 20s	confident_plateau	ERR	30872019aff72c5f130a89481068ebc0	c800da78-316d-444f-84b7-2b218cd4120e	nextflow run trim1testVCF_SP_untilannotate.nf -with-docker container -with-tower
+2021-01-19 15:26:28	7.3s	silly_avogadro	ERR	4ca77c37a5422117a42b19b85c303d28	c800da78-316d-444f-84b7-2b218cd4120e	nextflow run trim1testVCF_SP_untilannotate.nf -with-docker container -with-tower -resume
+2021-01-19 15:28:01	5.2s	insane_pasteur	ERR	4ca77c37a5422117a42b19b85c303d28	c800da78-316d-444f-84b7-2b218cd4120e	nextflow run trim1testVCF_SP_untilannotate.nf -with-docker container -resume
+2021-01-19 15:28:55	4.8s	trusting_cantor	ERR	4ca77c37a5422117a42b19b85c303d28	c800da78-316d-444f-84b7-2b218cd4120e	nextflow run trim1testVCF_SP_untilannotate.nf -with-docker container -resume
+2021-01-19 15:33:27	4.5s	exotic_hoover	ERR	46d809265bc0cfd8e39860e5aa1d1627	c800da78-316d-444f-84b7-2b218cd4120e	nextflow run trim1testVCF_SP_untilannotate.nf -with-docker container -resume
+2021-01-19 15:34:51	5.2s	romantic_blackwell	ERR	46d809265bc0cfd8e39860e5aa1d1627	c800da78-316d-444f-84b7-2b218cd4120e	nextflow run trim1testVCF_SP_untilannotate.nf -with-docker container -resume
+2021-01-19 15:38:18	9.2s	mad_raman	ERR	f03dd13890dff8e6557552bf5072bdf5	c800da78-316d-444f-84b7-2b218cd4120e	nextflow run trim1testVCF_SP_untilannotate.nf -with-docker container -resume
+2021-01-19 15:39:55	12.1s	sad_khorana	ERR	d824de0c01aefd77f28aa4c74b932ca5	c800da78-316d-444f-84b7-2b218cd4120e	nextflow run trim1testVCF_SP_untilannotate.nf -with-docker container -resume
+2021-01-19 15:43:01	5.1s	determined_booth	ERR	12c0078b1bdbaf4e7536565d7b5db303	c800da78-316d-444f-84b7-2b218cd4120e	nextflow run trim1testVCF_SP_untilannotate.nf -with-docker container -resume
+2021-01-19 15:43:27	7s	magical_volhard	ERR	f03dd13890dff8e6557552bf5072bdf5	c800da78-316d-444f-84b7-2b218cd4120e	nextflow run trim1testVCF_SP_untilannotate.nf -with-docker container -resume
+2021-01-19 15:43:56	11.6s	angry_leakey	ERR	d824de0c01aefd77f28aa4c74b932ca5	c800da78-316d-444f-84b7-2b218cd4120e	nextflow run trim1testVCF_SP_untilannotate.nf -with-docker container -resume
+2021-01-19 15:58:54	-	golden_venter	-	545d2b0d70a5e8c43976a8f67b96b592	c800da78-316d-444f-84b7-2b218cd4120e	nextflow run trim1testVCF_SP_untilannotate.nf -with-docker container -resume
+2021-01-19 15:59:11	6.7s	hungry_raman	ERR	e9d57d2d6230ff51b8f39065573773e0	c800da78-316d-444f-84b7-2b218cd4120e	nextflow run trim1testVCF_SP_untilannotate.nf -with-docker container -resume
+2021-01-19 16:03:41	9.8s	fervent_montalcini	ERR	087e54f54dd0c5f1c88d78a85e644161	c800da78-316d-444f-84b7-2b218cd4120e	nextflow run trim1testVCF_SP_untilannotate.nf -with-docker container -resume
+2021-01-19 16:04:55	7.5s	peaceful_gutenberg	ERR	e7880167a2f44178e6b17804dc2a8cea	c800da78-316d-444f-84b7-2b218cd4120e	nextflow run trim1testVCF_SP_untilannotate.nf -with-docker container -resume

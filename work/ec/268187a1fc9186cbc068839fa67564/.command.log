@@ -1,0 +1,7 @@
+Started analysis of 19ANBe28D0031PfFxxx0_S39_L001_R1.fastq.gz
+Approx 30% complete for 19ANBe28D0031PfFxxx0_S39_L001_R1.fastq.gz
+Approx 65% complete for 19ANBe28D0031PfFxxx0_S39_L001_R1.fastq.gz
+Analysis complete for 19ANBe28D0031PfFxxx0_S39_L001_R1.fastq.gz
+Error response from daemon: Bad response from Docker engine
+time="2021-01-19T14:33:18-05:00" level=error msg="error waiting for container: invalid character 'u' looking for beginning of value"
+Error response from daemon: dial unix docker.raw.sock: connect: connection refused

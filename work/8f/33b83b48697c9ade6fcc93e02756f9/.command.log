@@ -1,0 +1,5 @@
+Error response from daemon: Cannot kill container: nxf-ix8luFVrkg2F6FrEl2e6yefV: Container fe170a8b4a8c98d4d1c9700f7e9b2cc0b422483329e22fb443739ad7ddf3acbf is not running
+Error response from daemon: Cannot kill container: nxf-ix8luFVrkg2F6FrEl2e6yefV: Container fe170a8b4a8c98d4d1c9700f7e9b2cc0b422483329e22fb443739ad7ddf3acbf is not running
+Error response from daemon: Cannot kill container: nxf-ix8luFVrkg2F6FrEl2e6yefV: Container fe170a8b4a8c98d4d1c9700f7e9b2cc0b422483329e22fb443739ad7ddf3acbf is not running
+time="2021-01-19T14:33:18-05:00" level=error msg="error waiting for container: invalid character 'u' looking for beginning of value"
+docker: error during connect: Post http://%2Fvar%2Frun%2Fdocker.sock/v1.41/containers/fe170a8b4a8c98d4d1c9700f7e9b2cc0b422483329e22fb443739ad7ddf3acbf/start: EOF.

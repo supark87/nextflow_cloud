@@ -1,0 +1,83 @@
+Reading GFF3 data file  : '/Users/subinpark/Downloads/nextflow_cloud/data/6genes2/genes.gff'
+
+	Total: 2 markers added.
+
+	Create exons from CDS (if needed): ....................
+	Exons created for 8 transcripts.
+
+	Deleting redundant exons (if needed): 
+		Total transcripts with deleted exons: 0
+
+	Collapsing zero length introns (if needed): 
+		Total collapsed transcripts: 0
+	Reading sequences   :
+	Reading FASTA file: '/Users/subinpark/Downloads/nextflow_cloud/data/genomes/6genes2.fa'
+		Reading sequence 'DHFR', length: 1827
+		Adding genomic sequences to exons: 	Done (1 sequences added, 0 ignored).
+		Reading sequence 'DHPS', length: 2417
+		Adding genomic sequences to exons: 	Done (0 sequences added, 0 ignored).
+		Reading sequence 'K13', length: 2181
+		Adding genomic sequences to exons: 	Done (1 sequences added, 0 ignored).
+		Reading sequence 'mitochondrialgenome', length: 5967
+		Adding genomic sequences to exons: 	Done (3 sequences added, 0 ignored).
+		Reading sequence 'PfCRT', length: 3399
+		Adding genomic sequences to exons: 	Done (14 sequences added, 0 ignored).
+		Reading sequence 'PfMDR1', length: 4260
+		Adding genomic sequences to exons: 	Done (1 sequences added, 0 ignored).
+	Total: 20 sequences added, 0 sequences ignored.
+
+	Adjusting transcripts: 
+	Adjusting genes: 
+	Adjusting chromosomes lengths: 
+	Ranking exons: 
+	Create UTRs from CDS (if needed): 
+	Correcting exons based on frame information.
+	
+	Remove empty chromosomes: 
+
+	Marking as 'coding' from CDS information: 
+	Done: 0 transcripts marked
+#-----------------------------------------------
+# Genome name                : '6genes2'
+# Genome version             : '6genes2'
+# Genome ID                  : '6genes2[0]'
+# Has protein coding info    : true
+# Has Tr. Support Level info : true
+# Genes                      : 9
+# Protein coding genes       : 9
+#-----------------------------------------------
+# Transcripts                : 9
+# Avg. transcripts per gene  : 1.00
+# TSL transcripts            : 0
+#-----------------------------------------------
+# Checked transcripts        : 
+#               AA sequences :      0 ( 0.00% )
+#              DNA sequences :      0 ( 0.00% )
+#-----------------------------------------------
+# Protein coding transcripts : 9
+#              Length errors :      7 ( 77.78% )
+#  STOP codons in CDS errors :      6 ( 66.67% )
+#         START codon errors :      9 ( 100.00% )
+#        STOP codon warnings :      1 ( 11.11% )
+#              UTR sequences :      0 ( 0.00% )
+#               Total Errors :      9 ( 100.00% )
+# WARNING                    : No protein coding transcript has UTR
+#-----------------------------------------------
+# Cds                        : 20
+# Exons                      : 20
+# Exons with sequence        : 20
+# Exons without sequence     : 0
+# Avg. exons per transcript  : 2.22
+# WARNING!                   : Mitochondrion chromosome 'mitochondrialgenome' does not have a mitochondrion codon table (codon table = 'Standard'). You should update the config file.
+#-----------------------------------------------
+# Number of chromosomes      : 6
+# Chromosomes                : Format 'chromo_name size codon_table'
+#		'mitochondrialgenome'	5967	Standard
+#		'PfMDR1'	4260	Standard
+#		'PfCRT'	3399	Standard
+#		'DHPS'	2417	Standard
+#		'K13'	2181	Standard
+#		'DHFR'	1827	Standard
+#-----------------------------------------------
+
+		

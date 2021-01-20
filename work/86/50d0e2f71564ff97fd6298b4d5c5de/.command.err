@@ -1,0 +1,6 @@
+Started analysis of 19ANBe00D0042PfFxxx0_S8_L001_R1.fastq.gz
+Approx 20% complete for 19ANBe00D0042PfFxxx0_S8_L001_R1.fastq.gz
+Approx 40% complete for 19ANBe00D0042PfFxxx0_S8_L001_R1.fastq.gz
+Approx 65% complete for 19ANBe00D0042PfFxxx0_S8_L001_R1.fastq.gz
+Approx 85% complete for 19ANBe00D0042PfFxxx0_S8_L001_R1.fastq.gz
+time="2021-01-19T14:33:18-05:00" level=error msg="error waiting for container: invalid character 'u' looking for beginning of value"

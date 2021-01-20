@@ -1,0 +1,114 @@
+#!/bin/bash
+# NEXTFLOW TASK: merge (1)
+set -e
+set -u
+NXF_DEBUG=${NXF_DEBUG:=0}; [[ $NXF_DEBUG > 1 ]] && set -x
+NXF_ENTRY=${1:-nxf_main}
+
+
+nxf_date() {
+    local ts=$(date +%s%3N);
+    if [[ ${#ts} == 10 ]]; then echo ${ts}000
+    elif [[ $ts == *%3N ]]; then echo ${ts/\%3N/000}
+    elif [[ $ts == *3N ]]; then echo ${ts/3N/000}
+    elif [[ ${#ts} == 13 ]]; then echo $ts
+    else echo "Unexpected timestamp value: $ts"; exit 1
+    fi
+}
+
+nxf_env() {
+    echo '============= task environment ============='
+    env | sort | sed "s/\(.*\)AWS\(.*\)=\(.\{6\}\).*/\1AWS\2=\3xxxxxxxxxxxxx/"
+    echo '============= task output =================='
+}
+
+nxf_kill() {
+    declare -a children
+    while read P PP;do
+        children[$PP]+=" $P"
+    done < <(ps -e -o pid= -o ppid=)
+
+    kill_all() {
+        [[ $1 != $$ ]] && kill $1 2>/dev/null || true
+        for i in ${children[$1]:=}; do kill_all $i; done
+    }
+
+    kill_all $1
+}
+
+nxf_mktemp() {
+    local base=${1:-/tmp}
+    if [[ $(uname) = Darwin ]]; then mktemp -d $base/nxf.XXXXXXXXXX
+    else TMPDIR="$base" mktemp -d -t nxf.XXXXXXXXXX
+    fi
+}
+
+on_exit() {
+    exit_status=${nxf_main_ret:=$?}
+    printf $exit_status > /Users/subinpark/Downloads/nextflow_cloud/work/c2/101b3b84d04361ae14a31b081b4d76/.exitcode
+    set +u
+    [[ "$tee1" ]] && kill $tee1 2>/dev/null
+    [[ "$tee2" ]] && kill $tee2 2>/dev/null
+    [[ "$ctmp" ]] && rm -rf $ctmp || true
+    docker rm $NXF_BOXID &>/dev/null || true
+    exit $exit_status
+}
+
+on_term() {
+    set +e
+    docker kill $NXF_BOXID
+}
+
+nxf_launch() {
+    docker run -i -v /Users/subinpark/Downloads/nextflow_cloud/work:/Users/subinpark/Downloads/nextflow_cloud/work -v "$PWD":"$PWD" -w "$PWD" --entrypoint /bin/bash --name $NXF_BOXID supark87/tools2 -c "/bin/bash -ue /Users/subinpark/Downloads/nextflow_cloud/work/c2/101b3b84d04361ae14a31b081b4d76/.command.sh"
+}
+
+nxf_stage() {
+    true
+    # stage input files
+    rm -f 19ANBe28D0009PfFxxx0_S33_L001-1.ann.vcf
+    rm -f 19ANBe28D0009PfFxxx0_S33_L001-2.ann.vcf
+    rm -f 19ANBe28D0009PfFxxx0_S33_L001-3.ann.vcf
+    rm -f 19ANBe28D0009PfFxxx0_S33_L001_SR.bam
+    ln -s /Users/subinpark/Downloads/nextflow_cloud/work/0e/d0afea281fde0f6caf943dc7748e9b/19ANBe28D0009PfFxxx0_S33_L001-1.ann.vcf 19ANBe28D0009PfFxxx0_S33_L001-1.ann.vcf
+    ln -s /Users/subinpark/Downloads/nextflow_cloud/work/0e/d0afea281fde0f6caf943dc7748e9b/19ANBe28D0009PfFxxx0_S33_L001-2.ann.vcf 19ANBe28D0009PfFxxx0_S33_L001-2.ann.vcf
+    ln -s /Users/subinpark/Downloads/nextflow_cloud/work/0e/d0afea281fde0f6caf943dc7748e9b/19ANBe28D0009PfFxxx0_S33_L001-3.ann.vcf 19ANBe28D0009PfFxxx0_S33_L001-3.ann.vcf
+    ln -s /Users/subinpark/Downloads/nextflow_cloud/work/9c/7895000cb347c3d4e59964fd5d3ca6/19ANBe28D0009PfFxxx0_S33_L001_SR.bam 19ANBe28D0009PfFxxx0_S33_L001_SR.bam
+}
+
+nxf_unstage() {
+    true
+    [[ ${nxf_main_ret:=0} != 0 ]] && return
+}
+
+nxf_main() {
+    trap on_exit EXIT
+    trap on_term TERM INT USR2
+    trap '' USR1
+
+    [[ "${NXF_CHDIR:-}" ]] && cd "$NXF_CHDIR"
+    export NXF_BOXID="nxf-$(dd bs=18 count=1 if=/dev/urandom 2>/dev/null | base64 | tr +/ 0A)"
+    NXF_SCRATCH=''
+    [[ $NXF_DEBUG > 0 ]] && nxf_env
+    touch /Users/subinpark/Downloads/nextflow_cloud/work/c2/101b3b84d04361ae14a31b081b4d76/.command.begin
+    set +u
+    set -u
+    [[ $NXF_SCRATCH ]] && echo "nxf-scratch-dir $HOSTNAME:$NXF_SCRATCH" && cd $NXF_SCRATCH
+    nxf_stage
+
+    set +e
+    local ctmp=$(set +u; nxf_mktemp /dev/shm 2>/dev/null || nxf_mktemp $TMPDIR)
+    local cout=$ctmp/.command.out; mkfifo $cout
+    local cerr=$ctmp/.command.err; mkfifo $cerr
+    tee .command.out < $cout &
+    tee1=$!
+    tee .command.err < $cerr >&2 &
+    tee2=$!
+    ( nxf_launch ) >$cout 2>$cerr &
+    pid=$!
+    wait $pid || nxf_main_ret=$?
+    wait $tee1 $tee2
+    nxf_unstage
+}
+
+$NXF_ENTRY
